@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import CategoryBadge from './CategoryBadge.astro';
+import { getDateLocale, getLocalizedPath } from '../i18n/utils';
 
 interface Props {
   title: string;
@@ -11,6 +12,7 @@ interface Props {
   coverImageAlt: string;
   slug: string;
   featured?: boolean;
+  lang?: 'es' | 'en';
 }
 
 const {
@@ -22,17 +24,20 @@ const {
   coverImageAlt,
   slug,
   featured = false,
+  lang = 'es',
 } = Astro.props;
 
-const formattedDate = new Intl.DateTimeFormat('es-ES', {
+const formattedDate = new Intl.DateTimeFormat(getDateLocale(lang), {
   year: 'numeric',
   month: 'short',
   day: 'numeric',
 }).format(date);
+
+const href = getLocalizedPath(`blog/${slug}`, lang);
 ---
 
 <article class:list={['blog-card card', { 'blog-card--featured': featured }]}>
-  <a href={`/blog/${slug}`} class="blog-card__link">
+  <a href={href} class="blog-card__link">
     <div class="blog-card__image-wrapper">
       <Image
         src={coverImage}
@@ -45,7 +50,7 @@ const formattedDate = new Intl.DateTimeFormat('es-ES', {
     </div>
     <div class="blog-card__body">
       <div class="blog-card__meta">
-        <CategoryBadge category={category} />
+        <CategoryBadge category={category} lang={lang} />
         <time datetime={date.toISOString()}>{formattedDate}</time>
       </div>
       <h3 class="blog-card__title">{title}</h3>

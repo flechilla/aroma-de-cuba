@@ -1,14 +1,18 @@
 ---
+import { getOgLocale } from '../i18n/utils';
+
 interface Props {
   title: string;
   description: string;
   canonicalUrl: string;
   ogImage: string;
   article?: boolean;
+  lang?: 'es' | 'en';
 }
 
-const { title, description, canonicalUrl, ogImage, article = false } = Astro.props;
+const { title, description, canonicalUrl, ogImage, article = false, lang = 'es' } = Astro.props;
 const fullTitle = title.includes('Aroma de Cuba') ? title : `${title} — Aroma de Cuba`;
+const ogLocale = getOgLocale(lang);
 ---
 
 <title>{fullTitle}</title>
@@ -22,7 +26,7 @@ const fullTitle = title.includes('Aroma de Cuba') ? title : `${title} — Aroma 
 <meta property="og:url" content={canonicalUrl} />
 <meta property="og:image" content={new URL(ogImage, Astro.site)} />
 <meta property="og:site_name" content="Aroma de Cuba" />
-<meta property="og:locale" content="es_ES" />
+<meta property="og:locale" content={ogLocale} />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />

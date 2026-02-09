@@ -1,0 +1,68 @@
+---
+import { getLangFromUrl } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const pathname = Astro.url.pathname;
+
+// Build the equivalent path in the other language
+function getAlternatePath(): string {
+  if (lang === 'es') {
+    // Currently Spanish → link to English
+    // Map Spanish slugs to English equivalents
+    if (pathname === '/') return '/en/';
+    if (pathname === '/historia' || pathname === '/historia/') return '/en/history';
+    // For all other paths, just prefix with /en
+    return `/en${pathname}`;
+  } else {
+    // Currently English → link to Spanish
+    const withoutPrefix = pathname.replace(/^\/en/, '');
+    // Map English slugs to Spanish equivalents
+    if (withoutPrefix === '/' || withoutPrefix === '') return '/';
+    if (withoutPrefix === '/history' || withoutPrefix === '/history/') return '/historia';
+    return withoutPrefix || '/';
+  }
+}
+
+const alternatePath = getAlternatePath();
+const alternateLabel = lang === 'es' ? 'EN' : 'ES';
+const currentLabel = lang === 'es' ? 'ES' : 'EN';
+---
+
+<div class="lang-switcher">
+  <span class="lang-switcher__current" aria-current="true">{currentLabel}</span>
+  <span class="lang-switcher__sep" aria-hidden="true">|</span>
+  <a href={alternatePath} class="lang-switcher__link">{alternateLabel}</a>
+</div>
+
+<style>
+  .lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 500;
+  }
+
+  .lang-switcher__current {
+    color: var(--color-coral);
+    font-weight: 600;
+  }
+
+  .lang-switcher__sep {
+    color: var(--color-piedra);
+  }
+
+  .lang-switcher__link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--border-radius);
+    transition: color var(--transition-fast), background-color var(--transition-fast);
+  }
+
+  .lang-switcher__link:hover {
+    color: var(--color-tabaco);
+    background-color: var(--color-arena);
+  }
+</style>

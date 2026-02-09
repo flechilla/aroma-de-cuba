@@ -18,4 +18,11 @@ export default defineConfig({
   image: {
     domains: [],
   },
+  i18n: {
+    defaultLocale: 'es',
+    locales: ['es', 'en'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });

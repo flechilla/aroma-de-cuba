@@ -7,12 +7,13 @@ interface Props {
   description: string;
   heroImage?: ImageMetadata;
   heroImageAlt?: string;
+  lang?: 'es' | 'en';
 }
 
-const { title, description, heroImage, heroImageAlt } = Astro.props;
+const { title, description, heroImage, heroImageAlt, lang = 'es' } = Astro.props;
 ---
 
-<BaseLayout title={`${title} — Aroma de Cuba`} description={description}>
+<BaseLayout title={`${title} — Aroma de Cuba`} description={description} lang={lang}>
   <SectionHero
     title={title}
     description={description}

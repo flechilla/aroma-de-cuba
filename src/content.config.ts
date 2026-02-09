@@ -40,6 +40,7 @@ const pages = defineCollection({
       heroImageAlt: z.string().optional(),
       lastUpdated: z.coerce.date(),
       order: z.number().default(0),
+      lang: z.enum(['es', 'en']).default('es'),
     }),
 });
 

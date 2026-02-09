@@ -1,4 +1,8 @@
 ---
+import { getLangFromUrl, useTranslations, getLocalizedPath } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const year = new Date().getFullYear();
 ---
 
@@ -7,29 +11,29 @@ const year = new Date().getFullYear();
   <div class="footer__content container">
     <div class="footer__brand">
       <p class="footer__name">Aroma de Cuba</p>
-      <p class="footer__tagline">Noticias, cultura y sabor desde la isla</p>
+      <p class="footer__tagline">{t('home.subtitle')}</p>
     </div>
 
-    <nav class="footer__nav" aria-label="Navegación del pie de página">
+    <nav class="footer__nav" aria-label={lang === 'es' ? 'Navegación del pie de página' : 'Footer navigation'}>
       <div class="footer__section">
-        <h3 class="footer__heading">Secciones</h3>
+        <h3 class="footer__heading">{t('footer.sections')}</h3>
         <ul class="footer__list" role="list">
-          <li><a href="/blog">Noticias</a></li>
-          <li><a href="/historia">Historia</a></li>
-          <li><a href="/cultura">Cultura</a></li>
+          <li><a href={getLocalizedPath('blog', lang)}>{t('nav.news')}</a></li>
+          <li><a href={getLocalizedPath(lang === 'es' ? 'historia' : 'history', lang)}>{t('nav.history')}</a></li>
+          <li><a href={getLocalizedPath('cultura', lang)}>{t('nav.culture')}</a></li>
         </ul>
       </div>
       <div class="footer__section">
-        <h3 class="footer__heading">Más</h3>
+        <h3 class="footer__heading">{t('footer.more')}</h3>
         <ul class="footer__list" role="list">
-          <li><a href="/about">Nosotros</a></li>
-          <li><a href="/rss.xml">RSS Feed</a></li>
+          <li><a href={getLocalizedPath('about', lang)}>{t('nav.about')}</a></li>
+          <li><a href={getLocalizedPath('rss.xml', lang)}>RSS Feed</a></li>
         </ul>
       </div>
     </nav>
 
     <p class="footer__copy">
-      &copy; {year} Aroma de Cuba. Todos los derechos reservados.
+      &copy; {year} Aroma de Cuba. {t('footer.rights')}
     </p>
   </div>
 </footer>
