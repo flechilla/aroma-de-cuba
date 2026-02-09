@@ -1,0 +1,21 @@
+---
+interface Props {
+  category: string;
+}
+
+const { category } = Astro.props;
+
+const labels: Record<string, string> = {
+  noticias: 'Noticias',
+  historia: 'Historia',
+  turismo: 'Turismo',
+  productos: 'Productos',
+  cultura: 'Cultura',
+  gastronomia: 'Gastronomía',
+  opinion: 'Opinión',
+};
+---
+
+<span class={`badge badge--${category}`}>
+  {labels[category] || category}
+</span>

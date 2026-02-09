@@ -1,0 +1,31 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonicalUrl: string;
+  ogImage: string;
+  article?: boolean;
+}
+
+const { title, description, canonicalUrl, ogImage, article = false } = Astro.props;
+const fullTitle = title.includes('Aroma de Cuba') ? title : `${title} — Aroma de Cuba`;
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Open Graph -->
+<meta property="og:type" content={article ? 'article' : 'website'} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={new URL(ogImage, Astro.site)} />
+<meta property="og:site_name" content="Aroma de Cuba" />
+<meta property="og:locale" content="es_ES" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL(ogImage, Astro.site)} />

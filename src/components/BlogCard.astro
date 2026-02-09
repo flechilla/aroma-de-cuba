@@ -1,0 +1,140 @@
+---
+import { Image } from 'astro:assets';
+import CategoryBadge from './CategoryBadge.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  category: string;
+  coverImage: ImageMetadata;
+  coverImageAlt: string;
+  slug: string;
+  featured?: boolean;
+}
+
+const {
+  title,
+  description,
+  date,
+  category,
+  coverImage,
+  coverImageAlt,
+  slug,
+  featured = false,
+} = Astro.props;
+
+const formattedDate = new Intl.DateTimeFormat('es-ES', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+}).format(date);
+---
+
+<article class:list={['blog-card card', { 'blog-card--featured': featured }]}>
+  <a href={`/blog/${slug}`} class="blog-card__link">
+    <div class="blog-card__image-wrapper">
+      <Image
+        src={coverImage}
+        alt={coverImageAlt}
+        width={featured ? 800 : 400}
+        height={featured ? 420 : 225}
+        class="blog-card__image"
+        loading="lazy"
+      />
+    </div>
+    <div class="blog-card__body">
+      <div class="blog-card__meta">
+        <CategoryBadge category={category} />
+        <time datetime={date.toISOString()}>{formattedDate}</time>
+      </div>
+      <h3 class="blog-card__title">{title}</h3>
+      <p class="blog-card__excerpt">{description}</p>
+    </div>
+  </a>
+</article>
+
+<style>
+  .blog-card__link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .blog-card__image-wrapper {
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+  }
+
+  .blog-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+
+  .blog-card:hover .blog-card__image {
+    transform: scale(1.03);
+  }
+
+  .blog-card__body {
+    padding: var(--space-4) var(--space-6) var(--space-6);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-card__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-3);
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+  }
+
+  .blog-card__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--color-tabaco);
+    margin-bottom: var(--space-2);
+    line-height: var(--leading-snug);
+  }
+
+  .blog-card:hover .blog-card__title {
+    color: var(--color-coral);
+  }
+
+  .blog-card__excerpt {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-normal);
+    flex: 1;
+  }
+
+  /* Featured card — larger, horizontal on desktop */
+  .blog-card--featured .blog-card__link {
+    flex-direction: row;
+  }
+
+  .blog-card--featured .blog-card__image-wrapper {
+    flex: 0 0 55%;
+    aspect-ratio: auto;
+  }
+
+  .blog-card--featured .blog-card__title {
+    font-size: var(--text-2xl);
+  }
+
+  @media (max-width: 768px) {
+    .blog-card--featured .blog-card__link {
+      flex-direction: column;
+    }
+    .blog-card--featured .blog-card__image-wrapper {
+      aspect-ratio: 16 / 9;
+    }
+  }
+</style>

@@ -1,0 +1,189 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import CategoryBadge from '@components/CategoryBadge.astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+  title: string;
+  description: string;
+  author: string;
+  date: Date;
+  updatedDate?: Date;
+  category: string;
+  tags: string[];
+  coverImage: ImageMetadata;
+  coverImageAlt: string;
+}
+
+const {
+  title,
+  description,
+  author,
+  date,
+  updatedDate,
+  category,
+  tags,
+  coverImage,
+  coverImageAlt,
+} = Astro.props;
+
+const formattedDate = new Intl.DateTimeFormat('es-ES', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+}).format(date);
+
+const formattedUpdated = updatedDate
+  ? new Intl.DateTimeFormat('es-ES', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    }).format(updatedDate)
+  : null;
+---
+
+<BaseLayout title={`${title} — Aroma de Cuba`} description={description} article>
+  <article class="blog-post">
+    <header class="blog-post__header">
+      <div class="container container--narrow">
+        <CategoryBadge category={category} />
+        <h1 class="blog-post__title" transition:name="post-title">
+          {title}
+        </h1>
+        <p class="blog-post__description">{description}</p>
+        <div class="blog-post__meta">
+          <span class="blog-post__author">{author}</span>
+          <time datetime={date.toISOString()}>{formattedDate}</time>
+          {formattedUpdated && (
+            <span class="blog-post__updated">
+              Actualizado: <time datetime={updatedDate!.toISOString()}>{formattedUpdated}</time>
+            </span>
+          )}
+        </div>
+      </div>
+    </header>
+
+    <div class="blog-post__cover">
+      <Image
+        src={coverImage}
+        alt={coverImageAlt}
+        width={1200}
+        height={630}
+        loading="eager"
+        class="blog-post__cover-image"
+      />
+    </div>
+
+    <div class="container container--narrow">
+      <div class="prose">
+        <slot />
+      </div>
+
+      {tags.length > 0 && (
+        <footer class="blog-post__tags">
+          <span class="blog-post__tags-label">Etiquetas:</span>
+          {tags.map((tag) => (
+            <a href={`/blog?tag=${tag}`} class="blog-post__tag">
+              #{tag}
+            </a>
+          ))}
+        </footer>
+      )}
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .blog-post__header {
+    padding-block: var(--space-12) var(--space-8);
+    text-align: center;
+  }
+
+  .blog-post__title {
+    font-family: var(--font-display);
+    font-size: var(--text-5xl);
+    margin-block: var(--space-4) var(--space-4);
+    color: var(--color-tabaco);
+  }
+
+  .blog-post__description {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    color: var(--color-piedra-oscura);
+    font-style: italic;
+    max-width: 50ch;
+    margin-inline: auto;
+  }
+
+  .blog-post__meta {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .blog-post__meta > *:not(:last-child)::after {
+    content: '·';
+    margin-left: var(--space-4);
+  }
+
+  .blog-post__author {
+    font-weight: 600;
+    color: var(--color-text-secondary);
+  }
+
+  .blog-post__cover {
+    max-width: 56rem;
+    margin-inline: auto;
+    margin-bottom: var(--space-10);
+    padding-inline: var(--space-6);
+  }
+
+  .blog-post__cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+  }
+
+  .blog-post__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-10);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .blog-post__tags-label {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+  }
+
+  .blog-post__tag {
+    font-size: var(--text-sm);
+    color: var(--color-ron);
+    text-decoration: none;
+  }
+
+  .blog-post__tag:hover {
+    color: var(--color-coral);
+  }
+
+  @media (max-width: 768px) {
+    .blog-post__title {
+      font-size: var(--text-3xl);
+    }
+    .blog-post__meta {
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+    .blog-post__meta > *::after {
+      display: none;
+    }
+  }
+</style>

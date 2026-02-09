@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#2B2926"/>
+  <!-- Warm stage light effect -->
+  <ellipse cx="600" cy="100" rx="500" ry="300" fill="#C4533A" opacity="0.12"/>
+  <ellipse cx="400" cy="150" rx="300" ry="250" fill="#E8A838" opacity="0.08"/>
+  <!-- Musical notes floating -->
+  <g fill="#F4E8D1" opacity="0.2">
+    <text x="150" y="200" font-size="60" font-family="serif">&#9835;</text>
+    <text x="400" y="150" font-size="45" font-family="serif">&#9834;</text>
+    <text x="700" y="180" font-size="55" font-family="serif">&#9835;</text>
+    <text x="950" y="220" font-size="40" font-family="serif">&#9834;</text>
+    <text x="1050" y="160" font-size="50" font-family="serif">&#9835;</text>
+  </g>
+  <!-- Trumpet silhouette -->
+  <g transform="translate(350,250)" fill="#E8A838" opacity="0.6">
+    <rect x="0" y="30" width="250" height="20" rx="10"/>
+    <rect x="250" y="20" width="30" height="40" rx="5"/>
+    <path d="M280 0 L280 80 L360 100 L360 -20 Z" opacity="0.8"/>
+    <!-- Valves -->
+    <rect x="80" y="10" width="12" height="25" rx="3"/>
+    <rect x="120" y="5" width="12" height="30" rx="3"/>
+    <rect x="160" y="10" width="12" height="25" rx="3"/>
+  </g>
+  <!-- Guitar silhouette -->
+  <g transform="translate(700,220)" fill="#8B5E3C" opacity="0.5">
+    <ellipse cx="60" cy="120" rx="60" ry="80"/>
+    <ellipse cx="60" cy="120" rx="20" ry="25" fill="#2B2926" opacity="0.5"/>
+    <rect x="50" y="0" width="20" height="120" rx="3"/>
+    <rect x="35" y="-30" width="50" height="40" rx="5"/>
+    <!-- Strings hint -->
+    <line x1="48" y1="40" x2="48" y2="180" stroke="#F4E8D1" stroke-width="0.5" opacity="0.4"/>
+    <line x1="55" y1="40" x2="55" y2="185" stroke="#F4E8D1" stroke-width="0.5" opacity="0.4"/>
+    <line x1="62" y1="40" x2="62" y2="185" stroke="#F4E8D1" stroke-width="0.5" opacity="0.4"/>
+    <line x1="69" y1="40" x2="69" y2="180" stroke="#F4E8D1" stroke-width="0.5" opacity="0.4"/>
+  </g>
+  <!-- Conga drums -->
+  <g transform="translate(100,350)" fill="#C4533A" opacity="0.5">
+    <rect x="0" y="0" width="60" height="120" rx="5"/>
+    <ellipse cx="30" cy="0" rx="30" ry="12" fill="#F4E8D1" opacity="0.4"/>
+    <rect x="80" y="10" width="55" height="110" rx="5"/>
+    <ellipse cx="107" cy="10" rx="28" ry="11" fill="#F4E8D1" opacity="0.4"/>
+  </g>
+  <!-- Floor -->
+  <rect x="0" y="560" width="1200" height="70" fill="#5C3D2E" opacity="0.4"/>
+  <!-- Spotlight circles -->
+  <circle cx="300" cy="580" r="100" fill="#E8A838" opacity="0.05"/>
+  <circle cx="600" cy="580" r="120" fill="#C4533A" opacity="0.05"/>
+  <circle cx="900" cy="580" r="100" fill="#E8A838" opacity="0.05"/>
+</svg>

@@ -1,0 +1,207 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import BlogCard from '@components/BlogCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const sortedPosts = allPosts.sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
+
+const featuredPost = sortedPosts.find((p) => p.data.featured) || sortedPosts[0];
+const recentPosts = sortedPosts
+  .filter((p) => p.id !== featuredPost?.id)
+  .slice(0, 6);
+
+const sections = [
+  {
+    title: 'Historia',
+    description: 'Cinco siglos de una historia fascinante y compleja',
+    href: '/historia',
+    color: 'var(--color-ron)',
+  },
+  {
+    title: 'Cultura',
+    description: 'Música, arte, danza y tradición viva',
+    href: '/cultura',
+    color: 'var(--color-palma)',
+  },
+  {
+    title: 'Nosotros',
+    description: 'Conoce al equipo detrás de Aroma de Cuba',
+    href: '/about',
+    color: 'var(--color-azul)',
+  },
+];
+---
+
+<BaseLayout
+  title="Aroma de Cuba — Noticias, cultura y sabor desde la isla"
+  description="Blog dedicado a Cuba: noticias actuales, historia, turismo, productos y cultura cubana."
+>
+  <!-- Hero -->
+  <section class="home-hero">
+    <div class="container">
+      <h1 class="home-hero__title">Aroma de Cuba</h1>
+      <p class="home-hero__subtitle">Noticias, cultura y sabor desde la isla</p>
+      <div class="tile-border" style="max-width: 100px; margin-top: var(--space-4); margin-inline: auto;" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- Featured Post -->
+  {featuredPost && (
+    <section class="section container" aria-labelledby="featured-heading">
+      <h2 id="featured-heading" class="sr-only">Artículo destacado</h2>
+      <BlogCard
+        title={featuredPost.data.title}
+        description={featuredPost.data.description}
+        date={featuredPost.data.date}
+        category={featuredPost.data.category}
+        coverImage={featuredPost.data.coverImage}
+        coverImageAlt={featuredPost.data.coverImageAlt}
+        slug={featuredPost.id}
+        featured
+      />
+    </section>
+  )}
+
+  <!-- Recent Posts -->
+  {recentPosts.length > 0 && (
+    <section class="section container" aria-labelledby="recent-heading">
+      <h2 id="recent-heading" class="section__title">Últimas noticias</h2>
+      <div class="posts-grid">
+        {recentPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            category={post.data.category}
+            coverImage={post.data.coverImage}
+            coverImageAlt={post.data.coverImageAlt}
+            slug={post.id}
+          />
+        ))}
+      </div>
+      <div class="section__cta">
+        <a href="/blog" class="button">Ver todas las noticias</a>
+      </div>
+    </section>
+  )}
+
+  <!-- Section Cards -->
+  <section class="section container" aria-labelledby="explore-heading">
+    <h2 id="explore-heading" class="section__title">Explora Cuba</h2>
+    <div class="sections-grid">
+      {sections.map(({ title, description, href, color }) => (
+        <a href={href} class="section-card" style={`--accent: ${color}`}>
+          <h3 class="section-card__title">{title}</h3>
+          <p class="section-card__description">{description}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .home-hero {
+    background: var(--color-tabaco);
+    color: var(--color-arena);
+    padding-block: var(--space-20) var(--space-16);
+    text-align: center;
+  }
+
+  .home-hero__title {
+    font-family: var(--font-display);
+    font-size: var(--text-6xl);
+    color: var(--color-arena);
+    margin-bottom: var(--space-3);
+    letter-spacing: -0.02em;
+  }
+
+  .home-hero__subtitle {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    color: var(--color-ceniza);
+    font-style: italic;
+  }
+
+  .section {
+    padding-block: var(--space-12);
+  }
+
+  .section__title {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    color: var(--color-tabaco);
+    margin-bottom: var(--space-8);
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    gap: var(--space-6);
+  }
+
+  .section__cta {
+    text-align: center;
+    margin-top: var(--space-10);
+  }
+
+  .button {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-blanco);
+    background: var(--color-coral);
+    padding: var(--space-3) var(--space-8);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background var(--transition-fast);
+  }
+
+  .button:hover {
+    background: var(--color-rojo);
+    color: var(--color-blanco);
+  }
+
+  .sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    gap: var(--space-6);
+  }
+
+  .section-card {
+    padding: var(--space-8) var(--space-6);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-top: 3px solid var(--accent, var(--color-coral));
+    border-radius: var(--border-radius-lg);
+    text-decoration: none;
+    transition: box-shadow var(--transition-normal), transform var(--transition-normal);
+  }
+
+  .section-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+
+  .section-card__title {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    color: var(--color-tabaco);
+    margin-bottom: var(--space-2);
+  }
+
+  .section-card__description {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-normal);
+  }
+
+  @media (max-width: 640px) {
+    .home-hero__title {
+      font-size: var(--text-4xl);
+    }
+  }
+</style>

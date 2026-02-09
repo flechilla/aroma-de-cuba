@@ -1,0 +1,52 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import SectionHero from '@components/SectionHero.astro';
+---
+
+<BaseLayout
+  title="Nosotros — Aroma de Cuba"
+  description="Conoce al equipo detrás de Aroma de Cuba, un blog dedicado a compartir la cultura, historia y noticias de Cuba."
+>
+  <SectionHero
+    title="Nosotros"
+    description="Quiénes somos y por qué hacemos lo que hacemos"
+  />
+
+  <div class="about-content container container--narrow">
+    <div class="prose">
+      <h2>Sobre Aroma de Cuba</h2>
+      <p>
+        Aroma de Cuba nació de una pasión profunda por la isla y su gente. Somos un equipo
+        de periodistas, escritores y amantes de Cuba que creemos en contar las historias
+        que importan — las que huelen a café recién colado, suenan a son montuno y
+        saben a mango maduro en una tarde de verano.
+      </p>
+
+      <p>
+        Nuestro objetivo es ofrecer una ventana auténtica a Cuba: sus noticias, su
+        historia milenaria, su cultura vibrante y los productos que han puesto a la
+        isla en el mapa mundial. No buscamos el sensacionalismo ni la nostalgia
+        superficial. Buscamos la verdad, contada con respeto y con amor.
+      </p>
+
+      <h2>Nuestra misión</h2>
+      <p>
+        Creemos que Cuba merece ser contada desde dentro, con las voces de quienes la
+        viven y la sienten. Cada artículo que publicamos es una invitación a descubrir
+        — o redescubrir — una isla que nunca deja de sorprender.
+      </p>
+
+      <h2>Contacto</h2>
+      <p>
+        ¿Tienes una historia que contar? ¿Quieres colaborar con nosotros?
+        Escríbenos a <strong>hola@aromadecuba.com</strong> y hablemos.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .about-content {
+    padding-block: var(--space-12) var(--space-20);
+  }
+</style>

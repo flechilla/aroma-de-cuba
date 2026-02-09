@@ -1,0 +1,56 @@
+---
+interface Props {
+  author?: string;
+}
+
+const { author } = Astro.props;
+---
+
+<figure class="cuban-quote">
+  <blockquote>
+    <slot />
+  </blockquote>
+  {author && <figcaption class="cuban-quote__author">— {author}</figcaption>}
+</figure>
+
+<style>
+  .cuban-quote {
+    margin-block: var(--space-10);
+    padding: var(--space-8);
+    background: var(--color-arena);
+    border-left: 4px solid var(--color-coral);
+    border-radius: 0 var(--border-radius-lg) var(--border-radius-lg) 0;
+    position: relative;
+  }
+
+  .cuban-quote::before {
+    content: '\201C';
+    font-family: var(--font-display);
+    font-size: 4rem;
+    color: var(--color-ron);
+    opacity: 0.3;
+    position: absolute;
+    top: -0.25rem;
+    left: var(--space-4);
+    line-height: 1;
+  }
+
+  .cuban-quote blockquote {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-style: italic;
+    color: var(--color-tabaco);
+    line-height: var(--leading-snug);
+  }
+
+  .cuban-quote__author {
+    margin-top: var(--space-3);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-style: normal;
+    color: var(--color-piedra-oscura);
+  }
+</style>

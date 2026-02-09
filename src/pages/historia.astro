@@ -1,0 +1,20 @@
+---
+import { getEntry, render } from 'astro:content';
+import PageLayout from '@layouts/PageLayout.astro';
+import CubanQuote from '@components/CubanQuote.astro';
+import InfoBox from '@components/InfoBox.astro';
+
+const page = await getEntry('pages', 'historia');
+if (!page) throw new Error('Page "historia" not found in pages collection');
+
+const { Content } = await render(page);
+---
+
+<PageLayout
+  title={page.data.title}
+  description={page.data.description}
+  heroImage={page.data.heroImage}
+  heroImageAlt={page.data.heroImageAlt}
+>
+  <Content components={{ CubanQuote, InfoBox }} />
+</PageLayout>

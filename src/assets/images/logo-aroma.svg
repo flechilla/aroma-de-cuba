@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <!-- Coffee cup icon -->
+  <g transform="translate(5,10)">
+    <path d="M0 20c0-10 8-18 20-18s20 8 20 18c0 8-5 15-12 18H12C5 35 0 28 0 20z" fill="#5C3D2E"/>
+    <ellipse cx="20" cy="18" rx="14" ry="6" fill="#8B5E3C" opacity="0.7"/>
+    <path d="M40 14c5-2 12 2 12 8s-7 12-12 10" stroke="#5C3D2E" stroke-width="2.5" fill="none"/>
+    <!-- Steam -->
+    <path d="M12 0c2-5 5-6 3-10" stroke="#C5BDB5" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M20 -2c2-5 5-7 3-12" stroke="#C5BDB5" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <path d="M28 0c2-5 5-6 3-10" stroke="#C5BDB5" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Text -->
+  <text x="65" y="38" font-family="Georgia, 'Playfair Display', serif" font-size="28" font-weight="700" fill="#5C3D2E" letter-spacing="-0.5">Aroma de Cuba</text>
+</svg>

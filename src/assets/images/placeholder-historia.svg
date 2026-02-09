@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F4E8D1"/>
+  <!-- Aged paper texture -->
+  <rect width="1200" height="630" fill="#8B5E3C" opacity="0.08"/>
+  <!-- Capitolio dome silhouette -->
+  <g transform="translate(300,80)">
+    <!-- Main building body -->
+    <rect x="0" y="250" width="600" height="300" fill="#5C3D2E" opacity="0.2"/>
+    <!-- Columns -->
+    <rect x="50" y="250" width="20" height="200" fill="#5C3D2E" opacity="0.25"/>
+    <rect x="120" y="250" width="20" height="200" fill="#5C3D2E" opacity="0.25"/>
+    <rect x="190" y="250" width="20" height="200" fill="#5C3D2E" opacity="0.25"/>
+    <rect x="390" y="250" width="20" height="200" fill="#5C3D2E" opacity="0.25"/>
+    <rect x="460" y="250" width="20" height="200" fill="#5C3D2E" opacity="0.25"/>
+    <rect x="530" y="250" width="20" height="200" fill="#5C3D2E" opacity="0.25"/>
+    <!-- Pediment -->
+    <polygon points="0,250 300,150 600,250" fill="#5C3D2E" opacity="0.18"/>
+    <!-- Dome -->
+    <ellipse cx="300" cy="150" rx="100" ry="120" fill="#8B5E3C" opacity="0.2"/>
+    <rect x="280" y="30" width="40" height="60" fill="#8B5E3C" opacity="0.2"/>
+    <ellipse cx="300" cy="30" rx="25" ry="15" fill="#8B5E3C" opacity="0.2"/>
+    <!-- Lantern on top -->
+    <rect x="295" y="10" width="10" height="25" fill="#8B5E3C" opacity="0.25"/>
+  </g>
+  <!-- Steps -->
+  <rect x="300" y="530" width="600" height="15" fill="#5C3D2E" opacity="0.12"/>
+  <rect x="280" y="545" width="640" height="15" fill="#5C3D2E" opacity="0.1"/>
+  <rect x="260" y="560" width="680" height="15" fill="#5C3D2E" opacity="0.08"/>
+  <!-- Palm trees on sides -->
+  <g opacity="0.15" fill="#3A6B4A">
+    <rect x="100" y="300" width="15" height="280" rx="5"/>
+    <ellipse cx="107" cy="300" rx="50" ry="15" transform="rotate(-30 107 300)"/>
+    <ellipse cx="107" cy="300" rx="50" ry="15" transform="rotate(30 107 300)"/>
+    <ellipse cx="107" cy="300" rx="50" ry="15" transform="rotate(-60 107 300)"/>
+    <rect x="1080" y="320" width="15" height="260" rx="5"/>
+    <ellipse cx="1087" cy="320" rx="50" ry="15" transform="rotate(-30 1087 320)"/>
+    <ellipse cx="1087" cy="320" rx="50" ry="15" transform="rotate(30 1087 320)"/>
+  </g>
+  <!-- Vintage vignette -->
+  <rect width="1200" height="630" fill="none" stroke="#8B5E3C" stroke-width="40" opacity="0.06" rx="20"/>
+</svg>

@@ -1,0 +1,33 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import SectionHero from '@components/SectionHero.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  heroImage?: ImageMetadata;
+  heroImageAlt?: string;
+}
+
+const { title, description, heroImage, heroImageAlt } = Astro.props;
+---
+
+<BaseLayout title={`${title} — Aroma de Cuba`} description={description}>
+  <SectionHero
+    title={title}
+    description={description}
+    image={heroImage}
+    imageAlt={heroImageAlt}
+  />
+  <div class="page-content container container--narrow">
+    <div class="prose">
+      <slot />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-content {
+    padding-block: var(--space-12) var(--space-20);
+  }
+</style>

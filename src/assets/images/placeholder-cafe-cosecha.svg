@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#3A6B4A"/>
+  <!-- Mountain landscape -->
+  <polygon points="0,630 300,250 600,630" fill="#2B2926" opacity="0.2"/>
+  <polygon points="400,630 700,200 1000,630" fill="#2B2926" opacity="0.15"/>
+  <polygon points="700,630 1000,280 1200,630" fill="#2B2926" opacity="0.2"/>
+  <!-- Coffee plant rows -->
+  <g opacity="0.4">
+    <circle cx="200" cy="420" r="25" fill="#5C3D2E"/>
+    <circle cx="260" cy="410" r="20" fill="#5C3D2E"/>
+    <circle cx="320" cy="425" r="22" fill="#5C3D2E"/>
+    <circle cx="400" cy="415" r="24" fill="#5C3D2E"/>
+    <circle cx="480" cy="420" r="21" fill="#5C3D2E"/>
+    <circle cx="560" cy="410" r="23" fill="#5C3D2E"/>
+    <circle cx="650" cy="425" r="20" fill="#5C3D2E"/>
+    <circle cx="730" cy="415" r="25" fill="#5C3D2E"/>
+    <circle cx="810" cy="420" r="22" fill="#5C3D2E"/>
+    <circle cx="900" cy="412" r="24" fill="#5C3D2E"/>
+    <circle cx="980" cy="422" r="21" fill="#5C3D2E"/>
+  </g>
+  <!-- Coffee cup icon -->
+  <g transform="translate(500,180)">
+    <path d="M0 60c0-30 25-55 100-55s100 25 100 55c0 25-15 45-40 55H40C15 105 0 85 0 60z" fill="#F4E8D1" opacity="0.9"/>
+    <ellipse cx="100" cy="50" rx="70" ry="20" fill="#8B5E3C" opacity="0.7"/>
+    <path d="M200 40c15-5 35 5 35 25s-20 35-35 30" stroke="#F4E8D1" stroke-width="4" fill="none" opacity="0.7"/>
+    <!-- Steam -->
+    <path d="M60 0c5-15 15-20 10-35" stroke="#F4E8D1" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round"/>
+    <path d="M100 -5c5-15 15-25 10-40" stroke="#F4E8D1" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round"/>
+    <path d="M140 0c5-15 15-20 10-35" stroke="#F4E8D1" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round"/>
+  </g>
+  <!-- Coffee beans scattered -->
+  <g fill="#5C3D2E" opacity="0.3">
+    <ellipse cx="150" cy="520" rx="12" ry="8" transform="rotate(-30 150 520)"/>
+    <ellipse cx="350" cy="550" rx="10" ry="7" transform="rotate(20 350 550)"/>
+    <ellipse cx="800" cy="530" rx="11" ry="7" transform="rotate(-15 800 530)"/>
+    <ellipse cx="1050" cy="510" rx="12" ry="8" transform="rotate(40 1050 510)"/>
+  </g>
+  <!-- Sun -->
+  <circle cx="900" cy="120" r="50" fill="#E8A838" opacity="0.7"/>
+</svg>
