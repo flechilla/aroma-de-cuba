@@ -25,6 +25,8 @@ interface Props {
     tags?: string[];
   };
   faqItems?: FaqItem[];
+  translationSlug?: string;
+  currentSlug?: string;
 }
 
 const {
@@ -35,6 +37,8 @@ const {
   lang,
   articleData,
   faqItems,
+  translationSlug,
+  currentSlug,
 } = Astro.props;
 
 const resolvedLang = lang ?? getLangFromUrl(Astro.url);
@@ -69,6 +73,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       lang={resolvedLang}
       articleData={articleData}
       faqItems={faqItems}
+      translationSlug={translationSlug}
+      currentSlug={currentSlug}
     />
     <ClientRouter />
   </head>

@@ -1,10 +1,18 @@
 ---
 import { getLangFromUrl } from '../i18n/utils';
 
+interface Props {
+  alternateHref?: string;
+}
+
+const { alternateHref } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const pathname = Astro.url.pathname;
 
 function getAlternatePath(): string {
+  // If an explicit alternate href is provided, use it
+  if (alternateHref) return alternateHref;
+
   if (lang === 'es') {
     if (pathname === '/') return '/en/';
     if (pathname === '/historia' || pathname === '/historia/') return '/en/history';
@@ -18,6 +26,12 @@ function getAlternatePath(): string {
     // Tag archives: /blog/etiqueta/X → /en/blog/tag/X
     const tagMatch = pathname.match(/^\/blog\/etiqueta\/(.+)/);
     if (tagMatch) return `/en/blog/tag/${tagMatch[1]}`;
+    // Blog posts: /blog/slug/ → /en/blog/slug/ (same slug by default)
+    const blogMatch = pathname.match(/^\/blog\/([^/]+)\/?$/);
+    if (blogMatch) return `/en/blog/${blogMatch[1]}/`;
+    // Blog pagination: /blog/2/ → /en/blog/2/
+    const blogPageMatch = pathname.match(/^\/blog\/(\d+)\/?$/);
+    if (blogPageMatch) return `/en/blog/${blogPageMatch[1]}/`;
     return `/en${pathname}`;
   } else {
     const withoutPrefix = pathname.replace(/^\/en/, '');
@@ -33,6 +47,12 @@ function getAlternatePath(): string {
     // Tag archives: /blog/tag/X → /blog/etiqueta/X
     const tagMatch = withoutPrefix.match(/^\/blog\/tag\/(.+)/);
     if (tagMatch) return `/blog/etiqueta/${tagMatch[1]}`;
+    // Blog posts: /blog/slug/ → /blog/slug/ (same slug by default)
+    const blogMatch = withoutPrefix.match(/^\/blog\/([^/]+)\/?$/);
+    if (blogMatch) return `/blog/${blogMatch[1]}/`;
+    // Blog pagination
+    const blogPageMatch = withoutPrefix.match(/^\/blog\/(\d+)\/?$/);
+    if (blogPageMatch) return `/blog/${blogPageMatch[1]}/`;
     return withoutPrefix || '/';
   }
 }

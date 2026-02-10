@@ -31,6 +31,7 @@ interface Props {
   readingTime?: number;
   headings?: Array<{ depth: number; slug: string; text: string }>;
   faq?: FaqItem[];
+  translationSlug?: string;
 }
 
 const {
@@ -48,6 +49,7 @@ const {
   readingTime,
   headings = [],
   faq = [],
+  translationSlug,
 } = Astro.props;
 
 const t = useTranslations(lang);
@@ -88,6 +90,8 @@ const articleData = {
   lang={lang}
   articleData={articleData}
   faqItems={faq}
+  translationSlug={translationSlug}
+  currentSlug={slug}
 >
   <article>
     <header class="py-12 pb-8 text-center">

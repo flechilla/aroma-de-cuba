@@ -21,6 +21,8 @@ interface Props {
     tags?: string[];
   };
   faqItems?: FaqItem[];
+  translationSlug?: string;
+  currentSlug?: string;
 }
 
 const {
@@ -32,6 +34,8 @@ const {
   lang = 'es',
   articleData,
   faqItems,
+  translationSlug,
+  currentSlug,
 } = Astro.props;
 
 const fullTitle = title.includes('Aroma de Cuba') ? title : `${title} — Aroma de Cuba`;
@@ -44,13 +48,29 @@ const pathname = Astro.url.pathname;
 let esUrl: string;
 let enUrl: string;
 
-if (lang === 'es') {
-  esUrl = canonicalUrl;
-  enUrl = new URL(`/en${pathname}`, Astro.site).href;
+// Check if this is a blog post (has currentSlug)
+const isBlogPost = !!currentSlug;
+
+if (isBlogPost) {
+  // For blog posts, use translationSlug if available, otherwise use currentSlug
+  const altSlug = translationSlug || currentSlug;
+  if (lang === 'es') {
+    esUrl = canonicalUrl;
+    enUrl = new URL(`/en/blog/${altSlug}/`, Astro.site).href;
+  } else {
+    enUrl = canonicalUrl;
+    esUrl = new URL(`/blog/${altSlug}/`, Astro.site).href;
+  }
 } else {
-  enUrl = canonicalUrl;
-  const withoutEn = pathname.replace(/^\/en/, '') || '/';
-  esUrl = new URL(withoutEn, Astro.site).href;
+  // For non-blog pages, use simple prefix logic
+  if (lang === 'es') {
+    esUrl = canonicalUrl;
+    enUrl = new URL(`/en${pathname}`, Astro.site).href;
+  } else {
+    enUrl = canonicalUrl;
+    const withoutEn = pathname.replace(/^\/en/, '') || '/';
+    esUrl = new URL(withoutEn, Astro.site).href;
+  }
 }
 
 // Organization JSON-LD

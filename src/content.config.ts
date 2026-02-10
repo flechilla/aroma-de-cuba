@@ -34,6 +34,9 @@ const blog = defineCollection({
           })
         )
         .optional(),
+      // Slug of the translated version (without lang prefix)
+      // e.g., Spanish post with translationSlug: "cuban-coffee-history" points to /en/blog/cuban-coffee-history/
+      translationSlug: z.string().optional(),
     }),
 });
 

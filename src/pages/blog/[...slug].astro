@@ -7,7 +7,8 @@ import InfoBox from '@components/InfoBox.astro';
 export async function getStaticPaths() {
   const posts = await getCollection('blog', ({ data, id }) => !data.draft && id.startsWith('es/'));
   return posts.map((post) => ({
-    params: { slug: post.id },
+    // Strip 'es/' prefix from post.id for clean URLs: /blog/slug/ instead of /blog/es/slug/
+    params: { slug: post.id.replace(/^es\//, '') },
     props: { post },
   }));
 }
@@ -31,11 +32,12 @@ const readingTime = Math.max(1, Math.ceil(wordCount / 200));
   tags={post.data.tags}
   coverImage={post.data.coverImage}
   coverImageAlt={post.data.coverImageAlt}
-  slug={post.id}
+  slug={post.id.replace(/^es\//, '')}
   lang="es"
   readingTime={readingTime}
   headings={headings}
   faq={post.data.faq}
+  translationSlug={post.data.translationSlug}
 >
   <Content components={{ CubanQuote, InfoBox }} />
 </BlogPostLayout>
