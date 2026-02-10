@@ -9,22 +9,25 @@ export async function GET() {
   
   const recentNews = posts
     .filter(post => {
+      if (!post.data.date || !post.data.category) return false;
       const postDate = new Date(post.data.date);
       return postDate >= twoDaysAgo && post.data.category === 'noticias';
     })
     .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
-${recentNews.map(post => {
-  const lang = post.slug.startsWith('es/') ? 'es' : 'en';
-  const langName = lang === 'es' ? 'Spanish' : 'English';
-  const url = lang === 'es' 
-    ? `https://aromadecuba.com/blog/${post.slug}/`
-    : `https://aromadecuba.com/en/blog/${post.slug}/`;
-  
-  return `  <url>
+  const sitemapEntries = recentNews.map(post => {
+    // Determine language from slug or id
+    const slug = post.slug || post.id || '';
+    const isSpanish = slug.startsWith('es/') || slug.includes('/es/');
+    const lang = isSpanish ? 'es' : 'en';
+    
+    // Build URL based on language
+    const cleanSlug = slug.replace(/^(es|en)\//, '');
+    const url = isSpanish 
+      ? `https://aromadecuba.com/blog/es/${cleanSlug}/`
+      : `https://aromadecuba.com/en/blog/en/${cleanSlug}/`;
+    
+    return `  <url>
     <loc>${url}</loc>
     <news:news>
       <news:publication>
@@ -35,7 +38,12 @@ ${recentNews.map(post => {
       <news:title>${escapeXml(post.data.title)}</news:title>
     </news:news>
   </url>`;
-}).join('\n')}
+  });
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+${sitemapEntries.join('\n')}
 </urlset>`;
 
   return new Response(sitemap, {
@@ -47,6 +55,7 @@ ${recentNews.map(post => {
 }
 
 function escapeXml(str: string): string {
+  if (!str) return '';
   return str
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
