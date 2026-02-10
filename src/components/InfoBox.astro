@@ -7,60 +7,28 @@ interface Props {
 const { type = 'info', title } = Astro.props;
 
 const icons: Record<string, string> = {
-  info: 'ℹ',
-  tip: '★',
-  warning: '⚠',
-  history: '⌛',
+  info: '\u2139',
+  tip: '\u2605',
+  warning: '\u26A0',
+  history: '\u231B',
 };
+
+const styleMap: Record<string, string> = {
+  info: 'bg-[#f0f5fa] border-azul',
+  tip: 'bg-[#f5f9f0] border-palma',
+  warning: 'bg-[#fdf5ec] border-sol',
+  history: 'bg-arena border-ron',
+};
+
+const styles = styleMap[type] || styleMap.info;
 ---
 
-<aside class={`info-box info-box--${type}`} role="note">
-  <div class="info-box__header">
-    <span class="info-box__icon" aria-hidden="true">{icons[type]}</span>
-    {title && <strong class="info-box__title">{title}</strong>}
+<aside class={`my-8 p-6 rounded-lg border ${styles}`} role="note">
+  <div class="flex items-center gap-2 mb-3">
+    <span class="text-lg" aria-hidden="true">{icons[type]}</span>
+    {title && <strong class="font-body text-sm uppercase tracking-wide">{title}</strong>}
   </div>
-  <div class="info-box__content">
+  <div class="text-base leading-relaxed [&>p:last-child]:mb-0">
     <slot />
   </div>
 </aside>
-
-<style>
-  .info-box {
-    margin-block: var(--space-8);
-    padding: var(--space-6);
-    border-radius: var(--border-radius-lg);
-    border: 1px solid var(--color-border);
-  }
-
-  .info-box--info    { background: #f0f5fa; border-color: var(--color-azul); }
-  .info-box--tip     { background: #f5f9f0; border-color: var(--color-palma); }
-  .info-box--warning { background: #fdf5ec; border-color: var(--color-sol); }
-  .info-box--history { background: var(--color-arena); border-color: var(--color-ron); }
-
-  .info-box__header {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-    margin-bottom: var(--space-3);
-  }
-
-  .info-box__icon {
-    font-size: var(--text-lg);
-  }
-
-  .info-box__title {
-    font-family: var(--font-body);
-    font-size: var(--text-sm);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .info-box__content {
-    font-size: var(--text-base);
-    line-height: var(--leading-normal);
-  }
-
-  .info-box__content :global(p:last-child) {
-    margin-bottom: 0;
-  }
-</style>

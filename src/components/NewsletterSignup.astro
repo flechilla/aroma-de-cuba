@@ -1,0 +1,61 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+interface Props {
+  variant?: 'section' | 'inline';
+  lang?: 'es' | 'en';
+}
+
+const { variant = 'section', lang: propLang } = Astro.props;
+const lang = propLang ?? getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+{variant === 'section' ? (
+  <section class="bg-arena py-16">
+    <div class="w-full max-w-[72rem] mx-auto px-6 text-center">
+      <h2 class="font-display text-3xl text-tabaco mb-3">{t('home.newsletterTitle')}</h2>
+      <p class="font-heading text-lg text-piedra-oscura italic mb-8 max-w-[50ch] mx-auto">{t('home.newsletterDesc')}</p>
+      <form class="flex gap-3 max-w-md mx-auto max-sm:flex-col" data-newsletter-form>
+        <input
+          type="email"
+          required
+          placeholder={t('home.newsletterPlaceholder')}
+          class="flex-1 px-4 py-3 rounded border border-ceniza bg-blanco text-humo font-body text-sm focus:outline-none focus:border-coral focus:ring-2 focus:ring-coral/20"
+        />
+        <button type="submit" class="px-6 py-3 bg-coral text-blanco font-body text-sm font-semibold rounded transition-colors hover:bg-rojo cursor-pointer">
+          {t('home.newsletterButton')}
+        </button>
+      </form>
+      <p class="hidden mt-4 text-sm text-palma font-medium" data-newsletter-success>{t('home.newsletterSuccess')}</p>
+    </div>
+  </section>
+) : (
+  <div class="bg-arena/50 rounded-lg p-6">
+    <h3 class="font-heading text-lg text-tabaco font-semibold mb-2">{t('home.newsletterTitle')}</h3>
+    <p class="text-sm text-piedra-oscura mb-4">{t('home.newsletterDesc')}</p>
+    <form class="flex gap-2 max-sm:flex-col" data-newsletter-form>
+      <input
+        type="email"
+        required
+        placeholder={t('home.newsletterPlaceholder')}
+        class="flex-1 px-3 py-2 rounded border border-ceniza bg-blanco text-humo font-body text-sm focus:outline-none focus:border-coral"
+      />
+      <button type="submit" class="px-4 py-2 bg-coral text-blanco font-body text-sm font-semibold rounded transition-colors hover:bg-rojo cursor-pointer">
+        {t('home.newsletterButton')}
+      </button>
+    </form>
+    <p class="hidden mt-3 text-sm text-palma font-medium" data-newsletter-success>{t('home.newsletterSuccess')}</p>
+  </div>
+)}
+
+<script>
+  document.querySelectorAll('[data-newsletter-form]').forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const success = form.parentElement?.querySelector('[data-newsletter-success]') || form.nextElementSibling;
+      if (success) success.classList.remove('hidden');
+      (form as HTMLFormElement).reset();
+    });
+  });
+</script>

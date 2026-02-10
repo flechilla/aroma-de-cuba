@@ -11,88 +11,23 @@ interface Props {
 const { title, description, image, imageAlt } = Astro.props;
 ---
 
-<section class="section-hero">
+<section class="relative py-20 bg-tabaco text-arena overflow-hidden min-h-80 flex items-center">
   {image && (
-    <div class="section-hero__bg">
+    <div class="absolute inset-0">
       <Image
         src={image}
         alt={imageAlt || ''}
         width={1400}
         height={500}
-        class="section-hero__image"
+        class="w-full h-full object-cover"
         loading="eager"
       />
-      <div class="section-hero__overlay" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-humo/85 via-humo/60 to-humo/40" aria-hidden="true"></div>
     </div>
   )}
-  <div class="section-hero__content container">
-    <h1 class="section-hero__title">{title}</h1>
-    <p class="section-hero__description">{description}</p>
-    <div class="tile-border" aria-hidden="true" style="max-width: 120px; margin-top: var(--space-6);"></div>
+  <div class="relative z-10 w-full max-w-[72rem] mx-auto px-6">
+    <h1 class="font-display text-5xl text-arena mb-4 max-md:text-3xl">{title}</h1>
+    <p class="font-heading text-xl text-ceniza max-w-[45ch] italic">{description}</p>
+    <div class="tile-border max-w-30 mt-6" aria-hidden="true"></div>
   </div>
 </section>
-
-<style>
-  .section-hero {
-    position: relative;
-    padding-block: var(--space-20);
-    background: var(--color-tabaco);
-    color: var(--color-arena);
-    overflow: hidden;
-    min-height: 20rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .section-hero__bg {
-    position: absolute;
-    inset: 0;
-  }
-
-  .section-hero__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .section-hero__overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to right,
-      rgba(43, 41, 38, 0.85) 0%,
-      rgba(43, 41, 38, 0.6) 60%,
-      rgba(43, 41, 38, 0.4) 100%
-    );
-  }
-
-  .section-hero__content {
-    position: relative;
-    z-index: 1;
-  }
-
-  .section-hero__title {
-    font-family: var(--font-display);
-    font-size: var(--text-5xl);
-    color: var(--color-arena);
-    margin-bottom: var(--space-4);
-  }
-
-  .section-hero__description {
-    font-family: var(--font-heading);
-    font-size: var(--text-xl);
-    color: var(--color-ceniza);
-    max-width: 45ch;
-    font-style: italic;
-  }
-
-  @media (max-width: 768px) {
-    .section-hero {
-      min-height: 14rem;
-      padding-block: var(--space-12);
-    }
-    .section-hero__title {
-      font-size: var(--text-3xl);
-    }
-  }
-</style>

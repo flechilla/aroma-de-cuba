@@ -10,8 +10,20 @@ const { category, lang = 'es' } = Astro.props;
 const t = useTranslations(lang);
 
 const label = t(`category.${category}` as any) || category;
+
+const colorMap: Record<string, string> = {
+  noticias: 'bg-coral text-blanco',
+  historia: 'bg-ron text-blanco',
+  turismo: 'bg-azul text-blanco',
+  productos: 'bg-tabaco text-arena',
+  cultura: 'bg-palma text-blanco',
+  gastronomia: 'bg-sol text-tabaco',
+  opinion: 'bg-piedra text-blanco',
+};
+
+const colors = colorMap[category] || 'bg-piedra text-blanco';
 ---
 
-<span class={`badge badge--${category}`}>
+<span class={`inline-block font-body text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded ${colors}`}>
   {label}
 </span>

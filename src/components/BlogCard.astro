@@ -13,6 +13,7 @@ interface Props {
   slug: string;
   featured?: boolean;
   lang?: 'es' | 'en';
+  readingTime?: number;
 }
 
 const {
@@ -25,6 +26,7 @@ const {
   slug,
   featured = false,
   lang = 'es',
+  readingTime,
 } = Astro.props;
 
 const formattedDate = new Intl.DateTimeFormat(getDateLocale(lang), {
@@ -34,112 +36,31 @@ const formattedDate = new Intl.DateTimeFormat(getDateLocale(lang), {
 }).format(date);
 
 const href = getLocalizedPath(`blog/${slug}`, lang);
+const readingLabel = lang === 'es' ? 'min de lectura' : 'min read';
 ---
 
-<article class:list={['blog-card card', { 'blog-card--featured': featured }]}>
-  <a href={href} class="blog-card__link">
-    <div class="blog-card__image-wrapper">
+<article class={`group bg-blanco border border-ceniza rounded-lg overflow-hidden shadow-[var(--shadow-warm-sm)] transition-all duration-250 hover:shadow-[var(--shadow-warm-md)] hover:-translate-y-0.5 ${featured ? '' : ''}`}>
+  <a href={href} class={`no-underline text-inherit flex h-full ${featured ? 'flex-row max-md:flex-col' : 'flex-col'}`}>
+    <div class={`overflow-hidden ${featured ? 'flex-[0_0_55%] max-md:aspect-video' : 'aspect-video'}`}>
       <Image
         src={coverImage}
         alt={coverImageAlt}
         width={featured ? 800 : 400}
         height={featured ? 420 : 225}
-        class="blog-card__image"
+        class="w-full h-full object-cover transition-transform duration-250 group-hover:scale-[1.03]"
         loading="lazy"
       />
     </div>
-    <div class="blog-card__body">
-      <div class="blog-card__meta">
+    <div class="p-4 px-6 pb-6 flex-1 flex flex-col">
+      <div class="flex items-center gap-3 mb-3 text-xs text-piedra">
         <CategoryBadge category={category} lang={lang} />
         <time datetime={date.toISOString()}>{formattedDate}</time>
+        {readingTime && <span>{readingTime} {readingLabel}</span>}
       </div>
-      <h3 class="blog-card__title">{title}</h3>
-      <p class="blog-card__excerpt">{description}</p>
+      <h3 class={`font-heading font-bold text-tabaco mb-2 leading-snug group-hover:text-coral transition-colors ${featured ? 'text-2xl' : 'text-xl'}`}>
+        {title}
+      </h3>
+      <p class="text-sm text-piedra-oscura leading-relaxed flex-1">{description}</p>
     </div>
   </a>
 </article>
-
-<style>
-  .blog-card__link {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  .blog-card__image-wrapper {
-    overflow: hidden;
-    aspect-ratio: 16 / 9;
-  }
-
-  .blog-card__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform var(--transition-normal);
-  }
-
-  .blog-card:hover .blog-card__image {
-    transform: scale(1.03);
-  }
-
-  .blog-card__body {
-    padding: var(--space-4) var(--space-6) var(--space-6);
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .blog-card__meta {
-    display: flex;
-    align-items: center;
-    gap: var(--space-3);
-    margin-bottom: var(--space-3);
-    font-size: var(--text-xs);
-    color: var(--color-text-muted);
-  }
-
-  .blog-card__title {
-    font-family: var(--font-heading);
-    font-size: var(--text-xl);
-    font-weight: 700;
-    color: var(--color-tabaco);
-    margin-bottom: var(--space-2);
-    line-height: var(--leading-snug);
-  }
-
-  .blog-card:hover .blog-card__title {
-    color: var(--color-coral);
-  }
-
-  .blog-card__excerpt {
-    font-size: var(--text-sm);
-    color: var(--color-text-secondary);
-    line-height: var(--leading-normal);
-    flex: 1;
-  }
-
-  /* Featured card — larger, horizontal on desktop */
-  .blog-card--featured .blog-card__link {
-    flex-direction: row;
-  }
-
-  .blog-card--featured .blog-card__image-wrapper {
-    flex: 0 0 55%;
-    aspect-ratio: auto;
-  }
-
-  .blog-card--featured .blog-card__title {
-    font-size: var(--text-2xl);
-  }
-
-  @media (max-width: 768px) {
-    .blog-card--featured .blog-card__link {
-      flex-direction: column;
-    }
-    .blog-card--featured .blog-card__image-wrapper {
-      aspect-ratio: 16 / 9;
-    }
-  }
-</style>

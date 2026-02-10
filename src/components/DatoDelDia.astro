@@ -1,0 +1,93 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+interface Props {
+  lang?: 'es' | 'en';
+}
+
+const { lang: propLang } = Astro.props;
+const lang = propLang ?? getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const datos = {
+  es: [
+    { fact: 'Cuba tiene más de 4.000 cuevas, incluyendo la cueva más grande del Caribe.', source: 'Geografía cubana' },
+    { fact: 'El son cubano es Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO.', source: 'UNESCO' },
+    { fact: 'La Habana Vieja fue fundada en 1519 y es Patrimonio de la Humanidad desde 1982.', source: 'UNESCO' },
+    { fact: 'Cuba produce algunos de los mejores puros del mundo en la región de Vuelta Abajo.', source: 'Industria tabacalera' },
+    { fact: 'El béisbol llegó a Cuba en 1874 y se convirtió en el deporte nacional.', source: 'Historia deportiva' },
+    { fact: 'Cuba tiene la mayor proporción de médicos por habitante del mundo.', source: 'OMS' },
+    { fact: 'El Malecón de La Habana tiene 8 kilómetros de longitud.', source: 'Arquitectura cubana' },
+    { fact: 'La música cubana ha influenciado géneros como el jazz, salsa y reggaetón.', source: 'Musicología' },
+    { fact: 'Trinidad, fundada en 1514, es una de las ciudades coloniales mejor preservadas de América.', source: 'UNESCO' },
+    { fact: 'El café cubano se cultiva en las montañas de Sierra Maestra desde el siglo XVIII.', source: 'Historia agrícola' },
+    { fact: 'Cuba tiene más de 350 playas en sus 5.746 km de costa.', source: 'Turismo cubano' },
+    { fact: 'El ron cubano tiene una tradición de más de 150 años de producción artesanal.', source: 'Industria ronera' },
+    { fact: 'Alejo Carpentier, padre del realismo mágico, nació en La Habana en 1904.', source: 'Literatura cubana' },
+    { fact: 'El sistema de salud cubano es reconocido mundialmente por su medicina preventiva.', source: 'OPS' },
+    { fact: 'La rumba cubana fue declarada Patrimonio Cultural Inmaterial de la UNESCO en 2016.', source: 'UNESCO' },
+    { fact: 'Cuba tiene 9 sitios declarados Patrimonio de la Humanidad por la UNESCO.', source: 'UNESCO' },
+    { fact: 'El Valle de Viñales es famoso por sus mogotes, formaciones geológicas únicas.', source: 'Geología' },
+    { fact: 'La tumba francesa, tradición danzaria cubana, es Patrimonio Inmaterial de la UNESCO.', source: 'UNESCO' },
+    { fact: 'Cuba fue el primer país de Latinoamérica en tener servicio de telefonía.', source: 'Historia tecnológica' },
+    { fact: 'El dominó es el juego de mesa más popular en Cuba, jugado en cada esquina.', source: 'Cultura popular' },
+    { fact: 'Las casas particulares cubanas son una de las experiencias turísticas más auténticas del Caribe.', source: 'Turismo' },
+    { fact: 'Wifredo Lam, uno de los pintores más importantes del siglo XX, era cubano.', source: 'Arte cubano' },
+    { fact: 'La trova cubana es una tradición musical que data del siglo XIX.', source: 'Música cubana' },
+    { fact: 'Cuba tiene la tasa de alfabetización más alta de Latinoamérica: 99.8%.', source: 'UNESCO' },
+    { fact: 'El coco rallado con azúcar, llamado "cucurucho", es un dulce típico de Baracoa.', source: 'Gastronomía' },
+    { fact: 'La Ciénaga de Zapata es el humedal más grande del Caribe insular.', source: 'Ecología' },
+    { fact: 'El sistema de ballet cubano es uno de los más prestigiosos del mundo.', source: 'Ballet Nacional de Cuba' },
+    { fact: 'Cuba exporta médicos a más de 60 países como parte de su diplomacia médica.', source: 'Política exterior' },
+    { fact: 'El "punto cubano" es una tradición poética campesina declarada patrimonio UNESCO.', source: 'UNESCO' },
+    { fact: 'La arquitectura Art Déco de La Habana es una de las colecciones más grandes del mundo.', source: 'Arquitectura' },
+    { fact: 'El tocororo, ave nacional de Cuba, tiene los colores de la bandera cubana.', source: 'Fauna cubana' },
+  ],
+  en: [
+    { fact: 'Cuba has over 4,000 caves, including the largest cave in the Caribbean.', source: 'Cuban geography' },
+    { fact: 'Cuban son music is a UNESCO Intangible Cultural Heritage of Humanity.', source: 'UNESCO' },
+    { fact: 'Old Havana was founded in 1519 and became a World Heritage Site in 1982.', source: 'UNESCO' },
+    { fact: 'Cuba produces some of the world\'s finest cigars in the Vuelta Abajo region.', source: 'Tobacco industry' },
+    { fact: 'Baseball arrived in Cuba in 1874 and became the national sport.', source: 'Sports history' },
+    { fact: 'Cuba has the highest doctor-to-patient ratio in the world.', source: 'WHO' },
+    { fact: 'The Malecón in Havana stretches 8 kilometers along the coast.', source: 'Cuban architecture' },
+    { fact: 'Cuban music has influenced genres like jazz, salsa, and reggaeton.', source: 'Musicology' },
+    { fact: 'Trinidad, founded in 1514, is one of the best-preserved colonial cities in the Americas.', source: 'UNESCO' },
+    { fact: 'Cuban coffee has been grown in the Sierra Maestra mountains since the 18th century.', source: 'Agricultural history' },
+    { fact: 'Cuba has over 350 beaches along its 5,746 km coastline.', source: 'Cuban tourism' },
+    { fact: 'Cuban rum has a tradition of over 150 years of artisanal production.', source: 'Rum industry' },
+    { fact: 'Alejo Carpentier, father of magical realism, was born in Havana in 1904.', source: 'Cuban literature' },
+    { fact: 'Cuba\'s healthcare system is worldwide recognized for preventive medicine.', source: 'PAHO' },
+    { fact: 'Cuban rumba was declared UNESCO Intangible Cultural Heritage in 2016.', source: 'UNESCO' },
+    { fact: 'Cuba has 9 UNESCO World Heritage Sites.', source: 'UNESCO' },
+    { fact: 'The Viñales Valley is famous for its mogotes, unique geological formations.', source: 'Geology' },
+    { fact: 'Tumba francesa, a Cuban dance tradition, is a UNESCO Intangible Heritage.', source: 'UNESCO' },
+    { fact: 'Cuba was the first Latin American country to have telephone service.', source: 'Tech history' },
+    { fact: 'Dominoes is the most popular board game in Cuba, played on every corner.', source: 'Popular culture' },
+    { fact: 'Cuban casa particulares are one of the most authentic tourist experiences in the Caribbean.', source: 'Tourism' },
+    { fact: 'Wifredo Lam, one of the most important 20th-century painters, was Cuban.', source: 'Cuban art' },
+    { fact: 'Cuban trova is a musical tradition dating back to the 19th century.', source: 'Cuban music' },
+    { fact: 'Cuba has the highest literacy rate in Latin America: 99.8%.', source: 'UNESCO' },
+    { fact: 'Grated coconut with sugar, called "cucurucho", is a typical sweet from Baracoa.', source: 'Gastronomy' },
+    { fact: 'The Zapata Swamp is the largest wetland in the insular Caribbean.', source: 'Ecology' },
+    { fact: 'Cuba\'s ballet system is one of the most prestigious in the world.', source: 'National Ballet of Cuba' },
+    { fact: 'Cuba exports doctors to over 60 countries as part of its medical diplomacy.', source: 'Foreign policy' },
+    { fact: '"Punto cubano" is a peasant poetic tradition declared UNESCO heritage.', source: 'UNESCO' },
+    { fact: 'Havana\'s Art Deco architecture is one of the largest collections in the world.', source: 'Architecture' },
+    { fact: 'The tocororo, Cuba\'s national bird, has the colors of the Cuban flag.', source: 'Cuban fauna' },
+  ],
+};
+
+const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / (1000 * 60 * 60 * 24));
+const langDatos = datos[lang];
+const today = langDatos[dayOfYear % langDatos.length];
+---
+
+<aside class="bg-arena border-l-4 border-sol rounded-r-lg p-6 relative">
+  <h3 class="font-heading text-lg font-semibold text-tabaco mb-3 flex items-center gap-2">
+    <span aria-hidden="true">&#9733;</span>
+    {t('home.datoDelDia')}
+  </h3>
+  <p class="font-heading text-base italic text-piedra-oscura leading-relaxed">{today.fact}</p>
+  <p class="mt-2 text-xs text-piedra">&mdash; {today.source}</p>
+</aside>

@@ -1,0 +1,35 @@
+---
+import { getLangFromUrl, useTranslations, getLocalizedPath } from '../i18n/utils';
+
+interface Props {
+  items?: Array<{ label: string; href?: string }>;
+}
+
+const { items } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const homeHref = getLocalizedPath('', lang);
+
+const crumbs = [
+  { label: t('breadcrumbs.home'), href: homeHref },
+  ...(items || []),
+];
+---
+
+<nav class="text-sm text-piedra mb-6" aria-label="Breadcrumb">
+  <ol class="flex flex-wrap items-center gap-1 list-none" itemscope itemtype="https://schema.org/BreadcrumbList">
+    {crumbs.map((crumb, i) => (
+      <li class="flex items-center gap-1" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        {i > 0 && <span class="text-ceniza" aria-hidden="true">/</span>}
+        {crumb.href && i < crumbs.length - 1 ? (
+          <a href={crumb.href} class="text-piedra-oscura no-underline hover:text-coral transition-colors" itemprop="item">
+            <span itemprop="name">{crumb.label}</span>
+          </a>
+        ) : (
+          <span class="text-tabaco font-medium" itemprop="name">{crumb.label}</span>
+        )}
+        <meta itemprop="position" content={String(i + 1)} />
+      </li>
+    ))}
+  </ol>
+</nav>

@@ -17,7 +17,7 @@ const t = useTranslations(lang);
     description={t('about.subtitle')}
   />
 
-  <div class="about-content container container--narrow">
+  <div class="py-12 pb-20 w-full max-w-3xl mx-auto px-6">
     <div class="prose">
       <h2>{t('about.heading1')}</h2>
       <p>{t('about.p1')}</p>
@@ -33,9 +33,3 @@ const t = useTranslations(lang);
     </div>
   </div>
 </BaseLayout>
-
-<style>
-  .about-content {
-    padding-block: var(--space-12) var(--space-20);
-  }
-</style>

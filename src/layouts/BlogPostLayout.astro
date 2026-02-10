@@ -1,6 +1,11 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import CategoryBadge from '@components/CategoryBadge.astro';
+import Breadcrumbs from '@components/Breadcrumbs.astro';
+import RelatedPosts from '@components/RelatedPosts.astro';
+import ShareButtons from '@components/ShareButtons.astro';
+import NewsletterSignup from '@components/NewsletterSignup.astro';
+import TableOfContents from '@components/TableOfContents.astro';
 import { Image } from 'astro:assets';
 import { getDateLocale, getLocalizedPath } from '../i18n/utils';
 import { useTranslations } from '../i18n/utils';
@@ -16,6 +21,9 @@ interface Props {
   coverImage: ImageMetadata;
   coverImageAlt: string;
   lang?: 'es' | 'en';
+  slug: string;
+  readingTime?: number;
+  headings?: Array<{ depth: number; slug: string; text: string }>;
 }
 
 const {
@@ -29,6 +37,9 @@ const {
   coverImage,
   coverImageAlt,
   lang = 'es',
+  slug,
+  readingTime,
+  headings = [],
 } = Astro.props;
 
 const t = useTranslations(lang);
@@ -47,150 +58,91 @@ const formattedUpdated = updatedDate
       day: 'numeric',
     }).format(updatedDate)
   : null;
+
+const categoryLabel = t(`category.${category}` as any) || category;
+const articleUrl = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
-<BaseLayout title={`${title} — Aroma de Cuba`} description={description} article lang={lang}>
-  <article class="blog-post">
-    <header class="blog-post__header">
-      <div class="container container--narrow">
+<BaseLayout
+  title={`${title} — Aroma de Cuba`}
+  description={description}
+  article
+  lang={lang}
+>
+  <article>
+    <header class="py-12 pb-8 text-center">
+      <div class="max-w-3xl mx-auto px-6">
+        <Breadcrumbs items={[
+          { label: t('blog.title'), href: getLocalizedPath('blog', lang) },
+          { label: categoryLabel, href: getLocalizedPath(lang === 'es' ? `blog/categoria/${category}` : `blog/category/${category}`, lang) },
+          { label: title },
+        ]} />
         <CategoryBadge category={category} lang={lang} />
-        <h1 class="blog-post__title" transition:name="post-title">
+        <h1 class="font-display text-5xl my-4 text-tabaco max-md:text-3xl" transition:name="post-title">
           {title}
         </h1>
-        <p class="blog-post__description">{description}</p>
-        <div class="blog-post__meta">
-          <span class="blog-post__author">{author}</span>
+        <p class="font-heading text-xl text-piedra-oscura italic max-w-[50ch] mx-auto">{description}</p>
+        <div class="flex justify-center gap-4 mt-6 text-sm text-piedra max-md:flex-col max-md:gap-1">
+          <span class="font-semibold text-piedra-oscura">{author}</span>
+          <span class="max-md:hidden">&middot;</span>
           <time datetime={date.toISOString()}>{formattedDate}</time>
           {formattedUpdated && (
-            <span class="blog-post__updated">
+            <span>
               {t('post.updated')} <time datetime={updatedDate!.toISOString()}>{formattedUpdated}</time>
             </span>
+          )}
+          {readingTime && (
+            <>
+              <span class="max-md:hidden">&middot;</span>
+              <span>{readingTime} {t('post.readingTime')}</span>
+            </>
           )}
         </div>
       </div>
     </header>
 
-    <div class="blog-post__cover">
+    <div class="max-w-4xl mx-auto mb-10 px-6">
       <Image
         src={coverImage}
         alt={coverImageAlt}
         width={1200}
         height={630}
         loading="eager"
-        class="blog-post__cover-image"
+        class="w-full h-auto rounded-lg aspect-[1200/630] object-cover"
       />
     </div>
 
-    <div class="container container--narrow">
+    <div class="max-w-3xl mx-auto px-6">
+      <TableOfContents headings={headings} lang={lang} />
+
       <div class="prose">
         <slot />
       </div>
 
       {tags.length > 0 && (
-        <footer class="blog-post__tags">
-          <span class="blog-post__tags-label">{t('post.tags')}</span>
+        <footer class="flex flex-wrap gap-2 mt-10 pt-6 border-t border-ceniza">
+          <span class="text-sm font-semibold text-piedra-oscura">{t('post.tags')}</span>
           {tags.map((tag) => (
-            <a href={getLocalizedPath(`blog?tag=${tag}`, lang)} class="blog-post__tag">
+            <a
+              href={getLocalizedPath(lang === 'es' ? `blog/etiqueta/${tag}` : `blog/tag/${tag}`, lang)}
+              class="text-sm text-ron no-underline hover:text-coral"
+            >
               #{tag}
             </a>
           ))}
         </footer>
       )}
+
+      <ShareButtons title={title} url={articleUrl} lang={lang} />
+
+      <NewsletterSignup variant="inline" lang={lang} />
+
+      <RelatedPosts
+        currentSlug={slug}
+        category={category}
+        tags={tags}
+        lang={lang}
+      />
     </div>
   </article>
 </BaseLayout>
-
-<style>
-  .blog-post__header {
-    padding-block: var(--space-12) var(--space-8);
-    text-align: center;
-  }
-
-  .blog-post__title {
-    font-family: var(--font-display);
-    font-size: var(--text-5xl);
-    margin-block: var(--space-4) var(--space-4);
-    color: var(--color-tabaco);
-  }
-
-  .blog-post__description {
-    font-family: var(--font-heading);
-    font-size: var(--text-xl);
-    color: var(--color-piedra-oscura);
-    font-style: italic;
-    max-width: 50ch;
-    margin-inline: auto;
-  }
-
-  .blog-post__meta {
-    display: flex;
-    justify-content: center;
-    gap: var(--space-4);
-    margin-top: var(--space-6);
-    font-size: var(--text-sm);
-    color: var(--color-text-muted);
-  }
-
-  .blog-post__meta > *:not(:last-child)::after {
-    content: '·';
-    margin-left: var(--space-4);
-  }
-
-  .blog-post__author {
-    font-weight: 600;
-    color: var(--color-text-secondary);
-  }
-
-  .blog-post__cover {
-    max-width: 56rem;
-    margin-inline: auto;
-    margin-bottom: var(--space-10);
-    padding-inline: var(--space-6);
-  }
-
-  .blog-post__cover-image {
-    width: 100%;
-    height: auto;
-    border-radius: var(--border-radius-lg);
-    aspect-ratio: 1200 / 630;
-    object-fit: cover;
-  }
-
-  .blog-post__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-    margin-top: var(--space-10);
-    padding-top: var(--space-6);
-    border-top: 1px solid var(--color-border);
-  }
-
-  .blog-post__tags-label {
-    font-size: var(--text-sm);
-    font-weight: 600;
-    color: var(--color-text-secondary);
-  }
-
-  .blog-post__tag {
-    font-size: var(--text-sm);
-    color: var(--color-ron);
-    text-decoration: none;
-  }
-
-  .blog-post__tag:hover {
-    color: var(--color-coral);
-  }
-
-  @media (max-width: 768px) {
-    .blog-post__title {
-      font-size: var(--text-3xl);
-    }
-    .blog-post__meta {
-      flex-direction: column;
-      gap: var(--space-1);
-    }
-    .blog-post__meta > *::after {
-      display: none;
-    }
-  }
-</style>

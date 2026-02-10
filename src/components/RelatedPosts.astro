@@ -1,0 +1,56 @@
+---
+import BlogCard from './BlogCard.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations } from '../i18n/utils';
+
+interface Props {
+  currentSlug: string;
+  category: string;
+  tags: string[];
+  lang: 'es' | 'en';
+}
+
+const { currentSlug, category, tags, lang } = Astro.props;
+const t = useTranslations(lang);
+const prefix = lang === 'es' ? 'es/' : 'en/';
+
+const allPosts = await getCollection('blog', ({ data, id }) =>
+  !data.draft && id.startsWith(prefix) && id !== currentSlug
+);
+
+// Score posts by relevance: same category = 2 points, shared tag = 1 point each
+const scored = allPosts.map((post) => {
+  let score = 0;
+  if (post.data.category === category) score += 2;
+  for (const tag of post.data.tags) {
+    if (tags.includes(tag)) score += 1;
+  }
+  return { post, score };
+});
+
+const related = scored
+  .filter((s) => s.score > 0)
+  .sort((a, b) => b.score - a.score || b.post.data.date.getTime() - a.post.data.date.getTime())
+  .slice(0, 3)
+  .map((s) => s.post);
+---
+
+{related.length > 0 && (
+  <section class="mt-16 pt-10 border-t border-ceniza">
+    <h2 class="font-display text-2xl text-tabaco mb-8">{t('post.relatedPosts')}</h2>
+    <div class="grid grid-cols-[repeat(auto-fill,minmax(min(100%,16rem),1fr))] gap-6">
+      {related.map((post) => (
+        <BlogCard
+          title={post.data.title}
+          description={post.data.description}
+          date={post.data.date}
+          category={post.data.category}
+          coverImage={post.data.coverImage}
+          coverImageAlt={post.data.coverImageAlt}
+          slug={post.id}
+          lang={lang}
+        />
+      ))}
+    </div>
+  </section>
+)}

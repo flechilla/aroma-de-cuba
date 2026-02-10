@@ -1,0 +1,70 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import SectionHero from '@components/SectionHero.astro';
+import BlogCard from '@components/BlogCard.astro';
+import Breadcrumbs from '@components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations } from '../../../i18n/utils';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data, id }) => !data.draft && id.startsWith('es/'));
+  const categories = [...new Set(posts.map((p) => p.data.category))];
+
+  return categories.map((category) => ({
+    params: { category },
+    props: {
+      posts: posts
+        .filter((p) => p.data.category === category)
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime()),
+    },
+  }));
+}
+
+const { category } = Astro.params;
+const { posts } = Astro.props;
+const lang = 'es' as const;
+const t = useTranslations(lang);
+
+const categoryLabel = t(`category.${category}` as any) || category;
+
+function getReadingTime(body: string | undefined): number {
+  if (!body) return 1;
+  const wordCount = body.split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.ceil(wordCount / 200));
+}
+---
+
+<BaseLayout
+  title={`${categoryLabel} — Aroma de Cuba`}
+  description={`Artículos sobre ${categoryLabel.toLowerCase()} en Aroma de Cuba`}
+  lang={lang}
+>
+  <SectionHero title={categoryLabel} description={`${posts.length} artículos`} />
+
+  <div class="w-full max-w-[72rem] mx-auto px-6 py-12 pb-20">
+    <Breadcrumbs items={[
+      { label: t('blog.title'), href: '/blog' },
+      { label: categoryLabel },
+    ]} />
+
+    {posts.length > 0 ? (
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(min(100%,20rem),1fr))] gap-6">
+        {posts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            category={post.data.category}
+            coverImage={post.data.coverImage}
+            coverImageAlt={post.data.coverImageAlt}
+            slug={post.id}
+            lang={lang}
+            readingTime={getReadingTime(post.body)}
+          />
+        ))}
+      </div>
+    ) : (
+      <p class="text-piedra italic">{t('blog.noPosts')}</p>
+    )}
+  </div>
+</BaseLayout>

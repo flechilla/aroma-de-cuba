@@ -1,114 +1,44 @@
 ---
 import { getLangFromUrl, useTranslations, getLocalizedPath } from '../i18n/utils';
+import NewsletterSignup from './NewsletterSignup.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const year = new Date().getFullYear();
 ---
 
-<footer class="footer">
+<footer class="mt-20 bg-humo text-ceniza">
   <div class="tile-border--thick" aria-hidden="true"></div>
-  <div class="footer__content container">
-    <div class="footer__brand">
-      <p class="footer__name">Aroma de Cuba</p>
-      <p class="footer__tagline">{t('home.subtitle')}</p>
+  <div class="grid grid-cols-3 gap-10 py-12 pb-8 w-full max-w-[72rem] mx-auto px-6 max-md:grid-cols-1">
+    <div>
+      <p class="font-display text-2xl text-arena mb-2">Aroma de Cuba</p>
+      <p class="text-sm text-piedra italic mb-6">{t('home.subtitle')}</p>
+      <NewsletterSignup variant="inline" lang={lang} />
     </div>
 
-    <nav class="footer__nav" aria-label={lang === 'es' ? 'Navegación del pie de página' : 'Footer navigation'}>
-      <div class="footer__section">
-        <h3 class="footer__heading">{t('footer.sections')}</h3>
-        <ul class="footer__list" role="list">
-          <li><a href={getLocalizedPath('blog', lang)}>{t('nav.news')}</a></li>
-          <li><a href={getLocalizedPath(lang === 'es' ? 'historia' : 'history', lang)}>{t('nav.history')}</a></li>
-          <li><a href={getLocalizedPath('cultura', lang)}>{t('nav.culture')}</a></li>
+    <nav class="flex gap-10" aria-label={lang === 'es' ? 'Navegación del pie de página' : 'Footer navigation'}>
+      <div>
+        <h3 class="font-body text-xs font-semibold uppercase tracking-widest text-piedra mb-4">{t('footer.sections')}</h3>
+        <ul class="list-none flex flex-col gap-2" role="list">
+          <li><a href={getLocalizedPath('blog', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.news')}</a></li>
+          <li><a href={getLocalizedPath(lang === 'es' ? 'historia' : 'history', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.history')}</a></li>
+          <li><a href={getLocalizedPath('cultura', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.culture')}</a></li>
+          <li><a href={getLocalizedPath('turismo', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.tourism')}</a></li>
+          <li><a href={getLocalizedPath('gastronomia', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.gastronomy')}</a></li>
+          <li><a href={getLocalizedPath('productos', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.products')}</a></li>
         </ul>
       </div>
-      <div class="footer__section">
-        <h3 class="footer__heading">{t('footer.more')}</h3>
-        <ul class="footer__list" role="list">
-          <li><a href={getLocalizedPath('about', lang)}>{t('nav.about')}</a></li>
-          <li><a href={getLocalizedPath('rss.xml', lang)}>RSS Feed</a></li>
+      <div>
+        <h3 class="font-body text-xs font-semibold uppercase tracking-widest text-piedra mb-4">{t('footer.more')}</h3>
+        <ul class="list-none flex flex-col gap-2" role="list">
+          <li><a href={getLocalizedPath('about', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.about')}</a></li>
+          <li><a href={getLocalizedPath('rss.xml', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">RSS Feed</a></li>
         </ul>
       </div>
     </nav>
 
-    <p class="footer__copy">
+    <p class="col-span-full text-xs text-piedra pt-6 border-t border-white/8">
       &copy; {year} Aroma de Cuba. {t('footer.rights')}
     </p>
   </div>
 </footer>
-
-<style>
-  .footer {
-    margin-top: var(--space-20);
-    background: var(--color-humo);
-    color: var(--color-ceniza);
-  }
-
-  .footer__content {
-    padding-block: var(--space-12) var(--space-8);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-10);
-  }
-
-  .footer__name {
-    font-family: var(--font-display);
-    font-size: var(--text-2xl);
-    color: var(--color-arena);
-    margin-bottom: var(--space-2);
-  }
-
-  .footer__tagline {
-    font-size: var(--text-sm);
-    color: var(--color-piedra);
-    font-style: italic;
-  }
-
-  .footer__nav {
-    display: flex;
-    gap: var(--space-10);
-  }
-
-  .footer__heading {
-    font-family: var(--font-body);
-    font-size: var(--text-xs);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--color-piedra);
-    margin-bottom: var(--space-4);
-  }
-
-  .footer__list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-  }
-
-  .footer__list a {
-    font-size: var(--text-sm);
-    color: var(--color-ceniza);
-    text-decoration: none;
-    transition: color var(--transition-fast);
-  }
-
-  .footer__list a:hover {
-    color: var(--color-arena);
-  }
-
-  .footer__copy {
-    grid-column: 1 / -1;
-    font-size: var(--text-xs);
-    color: var(--color-piedra);
-    padding-top: var(--space-6);
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  @media (max-width: 640px) {
-    .footer__content {
-      grid-template-columns: 1fr;
-    }
-  }
-</style>

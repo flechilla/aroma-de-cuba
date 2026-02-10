@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
 import BlogCard from '@components/BlogCard.astro';
+import NewsletterSignup from '@components/NewsletterSignup.astro';
+import DatoDelDia from '@components/DatoDelDia.astro';
 import { getCollection } from 'astro:content';
 import { useTranslations, getLocalizedPath } from '../../i18n/utils';
 
@@ -12,30 +14,24 @@ const sortedPosts = allPosts.sort(
   (a, b) => b.data.date.getTime() - a.data.date.getTime()
 );
 
+function getReadingTime(body: string | undefined): number {
+  if (!body) return 1;
+  const wordCount = body.split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.ceil(wordCount / 200));
+}
+
 const featuredPost = sortedPosts.find((p) => p.data.featured) || sortedPosts[0];
 const recentPosts = sortedPosts
   .filter((p) => p.id !== featuredPost?.id)
   .slice(0, 6);
 
 const sections = [
-  {
-    title: t('home.sectionHistory'),
-    description: t('home.sectionHistoryDesc'),
-    href: getLocalizedPath('history', lang),
-    color: 'var(--color-ron)',
-  },
-  {
-    title: t('home.sectionCulture'),
-    description: t('home.sectionCultureDesc'),
-    href: getLocalizedPath('cultura', lang),
-    color: 'var(--color-palma)',
-  },
-  {
-    title: t('home.sectionAbout'),
-    description: t('home.sectionAboutDesc'),
-    href: getLocalizedPath('about', lang),
-    color: 'var(--color-azul)',
-  },
+  { title: t('home.sectionHistory'), description: t('home.sectionHistoryDesc'), href: getLocalizedPath('history', lang), color: 'var(--color-ron)' },
+  { title: t('home.sectionCulture'), description: t('home.sectionCultureDesc'), href: getLocalizedPath('culture', lang), color: 'var(--color-palma)' },
+  { title: t('home.sectionTourism'), description: t('home.sectionTourismDesc'), href: getLocalizedPath('tourism', lang), color: 'var(--color-azul)' },
+  { title: t('home.sectionGastronomy'), description: t('home.sectionGastronomyDesc'), href: getLocalizedPath('gastronomy', lang), color: 'var(--color-sol)' },
+  { title: t('home.sectionProducts'), description: t('home.sectionProductsDesc'), href: getLocalizedPath('products', lang), color: 'var(--color-tabaco)' },
+  { title: t('home.sectionNews'), description: t('home.sectionNewsDesc'), href: getLocalizedPath('blog', lang), color: 'var(--color-coral)' },
 ];
 ---
 
@@ -44,18 +40,23 @@ const sections = [
   description={t('home.metaDescription')}
   lang={lang}
 >
-  <!-- Hero -->
-  <section class="home-hero">
-    <div class="container">
-      <h1 class="home-hero__title">{t('home.title')}</h1>
-      <p class="home-hero__subtitle">{t('home.subtitle')}</p>
-      <div class="tile-border" style="max-width: 100px; margin-top: var(--space-4); margin-inline: auto;" aria-hidden="true"></div>
+  <!-- Immersive Hero -->
+  <section class="bg-gradient-to-br from-tabaco via-humo to-tabaco text-arena py-24 pb-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_30%_50%,var(--color-coral),transparent_50%),radial-gradient(circle_at_70%_30%,var(--color-azul),transparent_50%)]"></div>
+    <div class="relative z-10 w-full max-w-[72rem] mx-auto px-6">
+      <p class="font-body text-sm uppercase tracking-widest text-ceniza mb-4">{t('home.heroTagline')}</p>
+      <h1 class="font-display text-6xl text-arena mb-4 tracking-tight max-sm:text-4xl">{t('home.title')}</h1>
+      <p class="font-heading text-xl text-ceniza italic mb-8">{t('home.subtitle')}</p>
+      <div class="tile-border max-w-24 mx-auto" aria-hidden="true"></div>
+      <a href={getLocalizedPath('blog', lang)} class="inline-block mt-8 px-8 py-3 bg-coral text-blanco font-body text-sm font-semibold rounded no-underline transition-colors hover:bg-rojo">
+        {t('home.heroCta')} &rarr;
+      </a>
     </div>
   </section>
 
   <!-- Featured Post -->
   {featuredPost && (
-    <section class="section container" aria-labelledby="featured-heading">
+    <section class="py-12 w-full max-w-[72rem] mx-auto px-6" aria-labelledby="featured-heading">
       <h2 id="featured-heading" class="sr-only">{t('home.featuredHeading')}</h2>
       <BlogCard
         title={featuredPost.data.title}
@@ -67,15 +68,21 @@ const sections = [
         slug={featuredPost.id}
         featured
         lang={lang}
+        readingTime={getReadingTime(featuredPost.body)}
       />
     </section>
   )}
 
+  <!-- Dato del Dia -->
+  <section class="w-full max-w-[72rem] mx-auto px-6 pb-12">
+    <DatoDelDia lang={lang} />
+  </section>
+
   <!-- Recent Posts -->
   {recentPosts.length > 0 && (
-    <section class="section container" aria-labelledby="recent-heading">
-      <h2 id="recent-heading" class="section__title">{t('home.latestNews')}</h2>
-      <div class="posts-grid">
+    <section class="py-12 w-full max-w-[72rem] mx-auto px-6" aria-labelledby="recent-heading">
+      <h2 id="recent-heading" class="font-display text-3xl text-tabaco mb-8">{t('home.latestNews')}</h2>
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(min(100%,20rem),1fr))] gap-6">
         {recentPosts.map((post) => (
           <BlogCard
             title={post.data.title}
@@ -86,129 +93,31 @@ const sections = [
             coverImageAlt={post.data.coverImageAlt}
             slug={post.id}
             lang={lang}
+            readingTime={getReadingTime(post.body)}
           />
         ))}
       </div>
-      <div class="section__cta">
-        <a href={getLocalizedPath('blog', lang)} class="button">{t('home.viewAllNews')}</a>
+      <div class="text-center mt-10">
+        <a href={getLocalizedPath('blog', lang)} class="inline-block font-body text-sm font-semibold text-blanco bg-coral px-8 py-3 rounded no-underline transition-colors hover:bg-rojo">
+          {t('home.viewAllNews')}
+        </a>
       </div>
     </section>
   )}
 
-  <!-- Section Cards -->
-  <section class="section container" aria-labelledby="explore-heading">
-    <h2 id="explore-heading" class="section__title">{t('home.exploreCuba')}</h2>
-    <div class="sections-grid">
+  <!-- Category Showcase -->
+  <section class="py-12 w-full max-w-[72rem] mx-auto px-6" aria-labelledby="explore-heading">
+    <h2 id="explore-heading" class="font-display text-3xl text-tabaco mb-8">{t('home.exploreCuba')}</h2>
+    <div class="grid grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] gap-6">
       {sections.map(({ title, description, href, color }) => (
-        <a href={href} class="section-card" style={`--accent: ${color}`}>
-          <h3 class="section-card__title">{title}</h3>
-          <p class="section-card__description">{description}</p>
+        <a href={href} class="block p-8 px-6 bg-blanco border border-ceniza border-t-3 rounded-lg no-underline transition-all hover:shadow-[var(--shadow-warm-md)] hover:-translate-y-0.5" style={`border-top-color: ${color}`}>
+          <h3 class="font-heading text-xl text-tabaco mb-2">{title}</h3>
+          <p class="text-sm text-piedra-oscura leading-relaxed">{description}</p>
         </a>
       ))}
     </div>
   </section>
+
+  <!-- Newsletter CTA -->
+  <NewsletterSignup variant="section" lang={lang} />
 </BaseLayout>
-
-<style>
-  .home-hero {
-    background: var(--color-tabaco);
-    color: var(--color-arena);
-    padding-block: var(--space-20) var(--space-16);
-    text-align: center;
-  }
-
-  .home-hero__title {
-    font-family: var(--font-display);
-    font-size: var(--text-6xl);
-    color: var(--color-arena);
-    margin-bottom: var(--space-3);
-    letter-spacing: -0.02em;
-  }
-
-  .home-hero__subtitle {
-    font-family: var(--font-heading);
-    font-size: var(--text-xl);
-    color: var(--color-ceniza);
-    font-style: italic;
-  }
-
-  .section {
-    padding-block: var(--space-12);
-  }
-
-  .section__title {
-    font-family: var(--font-display);
-    font-size: var(--text-3xl);
-    color: var(--color-tabaco);
-    margin-bottom: var(--space-8);
-  }
-
-  .posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
-    gap: var(--space-6);
-  }
-
-  .section__cta {
-    text-align: center;
-    margin-top: var(--space-10);
-  }
-
-  .button {
-    display: inline-block;
-    font-family: var(--font-body);
-    font-size: var(--text-sm);
-    font-weight: 600;
-    color: var(--color-blanco);
-    background: var(--color-coral);
-    padding: var(--space-3) var(--space-8);
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    transition: background var(--transition-fast);
-  }
-
-  .button:hover {
-    background: var(--color-rojo);
-    color: var(--color-blanco);
-  }
-
-  .sections-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-    gap: var(--space-6);
-  }
-
-  .section-card {
-    padding: var(--space-8) var(--space-6);
-    background: var(--color-bg-card);
-    border: 1px solid var(--color-border);
-    border-top: 3px solid var(--accent, var(--color-coral));
-    border-radius: var(--border-radius-lg);
-    text-decoration: none;
-    transition: box-shadow var(--transition-normal), transform var(--transition-normal);
-  }
-
-  .section-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
-  }
-
-  .section-card__title {
-    font-family: var(--font-heading);
-    font-size: var(--text-xl);
-    color: var(--color-tabaco);
-    margin-bottom: var(--space-2);
-  }
-
-  .section-card__description {
-    font-size: var(--text-sm);
-    color: var(--color-text-secondary);
-    line-height: var(--leading-normal);
-  }
-
-  @media (max-width: 640px) {
-    .home-hero__title {
-      font-size: var(--text-4xl);
-    }
-  }
-</style>

@@ -1,0 +1,24 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import SectionLanding from '@components/SectionLanding.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations } from '../i18n/utils';
+
+const lang = 'es' as const;
+const t = useTranslations(lang);
+
+const posts = (await getCollection('blog', ({ data, id }) =>
+  !data.draft && id.startsWith('es/') && data.category === 'cultura'
+)).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout title={t('section.cultura.metaTitle')} description={t('section.cultura.metaDescription')} lang={lang}>
+  <SectionLanding
+    heroTitle={t('section.cultura.heroTitle')}
+    heroDescription={t('section.cultura.heroDesc')}
+    intro={t('section.cultura.intro')}
+    posts={posts}
+    lang={lang}
+    category="cultura"
+  />
+</BaseLayout>

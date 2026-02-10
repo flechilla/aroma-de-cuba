@@ -1,0 +1,83 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import BlogCard from '@components/BlogCard.astro';
+import Pagination from '@components/Pagination.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations, getLocalizedPath } from '../../i18n/utils';
+
+const lang = 'es' as const;
+const t = useTranslations(lang);
+const POSTS_PER_PAGE = 9;
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const allPosts = await getCollection('blog', ({ data, id }) => !data.draft && id.startsWith('es/'));
+  const posts = allPosts.sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime()
+  );
+  return paginate(posts, { pageSize: 9 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+const categories = [...new Set(page.data.map((p) => p.data.category))];
+
+// Get all categories from full collection for filter chips
+const allPosts = await getCollection('blog', ({ data, id }) => !data.draft && id.startsWith('es/'));
+const allCategories = [...new Set(allPosts.map((p) => p.data.category))];
+
+function getReadingTime(body: string | undefined): number {
+  if (!body) return 1;
+  const wordCount = body.split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.ceil(wordCount / 200));
+}
+---
+
+<BaseLayout
+  title={page.currentPage > 1 ? `${t('blog.metaTitle')} — ${t('pagination.page')} ${page.currentPage}` : t('blog.metaTitle')}
+  description={t('blog.metaDescription')}
+  lang={lang}
+>
+  <section class="py-12 pb-20">
+    <div class="w-full max-w-[72rem] mx-auto px-6">
+      <h1 class="font-display text-4xl text-tabaco">{t('blog.title')}</h1>
+      <p class="font-heading italic text-piedra-oscura mb-8">{t('blog.subtitle')}</p>
+
+      <nav class="flex flex-wrap gap-2 mb-8" aria-label={t('blog.filterLabel')}>
+        <a href={getLocalizedPath('blog', lang)} class="font-body text-sm py-2 px-4 border border-coral rounded-full no-underline bg-coral text-blanco">
+          {t('blog.filterAll')}
+        </a>
+        {allCategories.map((cat) => (
+          <a
+            href={getLocalizedPath(`blog/categoria/${cat}`, lang)}
+            class="font-body text-sm py-2 px-4 border border-ceniza rounded-full no-underline text-piedra-oscura transition-all hover:border-coral hover:text-coral"
+          >
+            {t(`category.${cat}` as any)}
+          </a>
+        ))}
+      </nav>
+
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(min(100%,20rem),1fr))] gap-6">
+        {page.data.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            category={post.data.category}
+            coverImage={post.data.coverImage}
+            coverImageAlt={post.data.coverImageAlt}
+            slug={post.id}
+            lang={lang}
+            readingTime={getReadingTime(post.body)}
+          />
+        ))}
+      </div>
+
+      <Pagination
+        currentPage={page.currentPage}
+        totalPages={page.lastPage}
+        baseUrl={getLocalizedPath('blog', lang)}
+        lang={lang}
+      />
+    </div>
+  </section>
+</BaseLayout>

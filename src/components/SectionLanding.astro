@@ -1,0 +1,68 @@
+---
+import SectionHero from './SectionHero.astro';
+import BlogCard from './BlogCard.astro';
+import NewsletterSignup from './NewsletterSignup.astro';
+import { useTranslations, getLocalizedPath } from '../i18n/utils';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  heroTitle: string;
+  heroDescription: string;
+  intro: string;
+  posts: CollectionEntry<'blog'>[];
+  lang: 'es' | 'en';
+  category: string;
+}
+
+const { heroTitle, heroDescription, intro, posts, lang, category } = Astro.props;
+const t = useTranslations(lang);
+
+const categoryPath = lang === 'es'
+  ? `blog/categoria/${category}`
+  : `blog/category/${category}`;
+
+function getReadingTime(body: string | undefined): number {
+  if (!body) return 1;
+  const wordCount = body.split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.ceil(wordCount / 200));
+}
+---
+
+<SectionHero title={heroTitle} description={heroDescription} />
+
+<div class="w-full max-w-[72rem] mx-auto px-6 py-12 pb-20">
+  <p class="font-heading text-lg text-piedra-oscura leading-relaxed max-w-[65ch] mb-12">{intro}</p>
+
+  {posts.length > 0 ? (
+    <>
+      <h2 class="font-display text-2xl text-tabaco mb-8">{t('home.latestNews')}</h2>
+      <div class="grid grid-cols-[repeat(auto-fill,minmax(min(100%,20rem),1fr))] gap-6 mb-10">
+        {posts.slice(0, 6).map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            category={post.data.category}
+            coverImage={post.data.coverImage}
+            coverImageAlt={post.data.coverImageAlt}
+            slug={post.id}
+            lang={lang}
+            readingTime={getReadingTime(post.body)}
+          />
+        ))}
+      </div>
+      <div class="text-center">
+        <a
+          href={getLocalizedPath(categoryPath, lang)}
+          class="inline-block font-body text-sm font-semibold text-blanco bg-coral px-8 py-3 rounded no-underline transition-colors hover:bg-rojo"
+        >
+          {t('section.viewAll')} &rarr;
+        </a>
+      </div>
+    </>
+  ) : (
+    <p class="text-piedra italic">{t('blog.noPosts')}</p>
+  )}
+</div>
+
+<NewsletterSignup variant="section" lang={lang} />

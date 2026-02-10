@@ -8,23 +8,121 @@ interface Props {
   ogImage: string;
   article?: boolean;
   lang?: 'es' | 'en';
+  articleData?: {
+    author?: string;
+    datePublished?: string;
+    dateModified?: string;
+    category?: string;
+    tags?: string[];
+  };
 }
 
-const { title, description, canonicalUrl, ogImage, article = false, lang = 'es' } = Astro.props;
+const {
+  title,
+  description,
+  canonicalUrl,
+  ogImage,
+  article = false,
+  lang = 'es',
+  articleData,
+} = Astro.props;
+
 const fullTitle = title.includes('Aroma de Cuba') ? title : `${title} — Aroma de Cuba`;
 const ogLocale = getOgLocale(lang);
+const siteUrl = Astro.site?.href || 'https://aromadecuba.com';
+const imageUrl = new URL(ogImage, Astro.site).href;
+
+// Build alternate URLs for hreflang
+const pathname = Astro.url.pathname;
+let esUrl: string;
+let enUrl: string;
+
+if (lang === 'es') {
+  esUrl = canonicalUrl;
+  enUrl = new URL(`/en${pathname}`, Astro.site).href;
+} else {
+  enUrl = canonicalUrl;
+  const withoutEn = pathname.replace(/^\/en/, '') || '/';
+  esUrl = new URL(withoutEn, Astro.site).href;
+}
+
+// Organization JSON-LD
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Aroma de Cuba',
+  url: siteUrl,
+  logo: new URL('/favicon.svg', Astro.site).href,
+  description: 'Noticias, cultura y sabor desde la isla',
+};
+
+// Website JSON-LD (homepage only)
+const isHomepage = pathname === '/' || pathname === '/en/' || pathname === '/en';
+const websiteSchema = isHomepage ? {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Aroma de Cuba',
+  url: siteUrl,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${siteUrl}search?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+} : null;
+
+// Article JSON-LD
+const articleSchema = article && articleData ? {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description: description,
+  image: imageUrl,
+  author: {
+    '@type': 'Person',
+    name: articleData.author || 'Aroma de Cuba',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Aroma de Cuba',
+    logo: { '@type': 'ImageObject', url: new URL('/favicon.svg', Astro.site).href },
+  },
+  datePublished: articleData.datePublished,
+  dateModified: articleData.dateModified || articleData.datePublished,
+  mainEntityOfPage: canonicalUrl,
+} : null;
+
+// BreadcrumbList JSON-LD
+const breadcrumbParts = pathname.split('/').filter(Boolean);
+const breadcrumbSchema = breadcrumbParts.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+    ...breadcrumbParts.map((part, i) => ({
+      '@type': 'ListItem',
+      position: i + 2,
+      name: part.charAt(0).toUpperCase() + part.slice(1),
+      item: new URL(breadcrumbParts.slice(0, i + 1).join('/'), Astro.site).href,
+    })),
+  ],
+} : null;
 ---
 
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />
 
+<!-- Hreflang -->
+<link rel="alternate" hreflang="es" href={esUrl} />
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="x-default" href={esUrl} />
+
 <!-- Open Graph -->
 <meta property="og:type" content={article ? 'article' : 'website'} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonicalUrl} />
-<meta property="og:image" content={new URL(ogImage, Astro.site)} />
+<meta property="og:image" content={imageUrl} />
 <meta property="og:site_name" content="Aroma de Cuba" />
 <meta property="og:locale" content={ogLocale} />
 
@@ -32,4 +130,10 @@ const ogLocale = getOgLocale(lang);
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
+<meta name="twitter:image" content={imageUrl} />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+{websiteSchema && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />}
+{articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
+{breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
