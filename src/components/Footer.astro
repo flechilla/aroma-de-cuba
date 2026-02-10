@@ -11,7 +11,10 @@ const year = new Date().getFullYear();
   <div class="tile-border--thick" aria-hidden="true"></div>
   <div class="grid grid-cols-3 gap-10 py-12 pb-8 w-full max-w-[72rem] mx-auto px-6 max-md:grid-cols-1">
     <div>
-      <p class="font-display text-2xl text-arena mb-2">Aroma de Cuba</p>
+      <div class="flex items-center gap-2 mb-2">
+        <img src="/images/brand/zunzun-square-centered.png" alt="" class="w-10 h-10" width="40" height="40" />
+        <p class="font-display text-2xl text-arena">Aroma de Cuba</p>
+      </div>
       <p class="text-sm text-piedra italic mb-6">{t('home.subtitle')}</p>
       <NewsletterSignup variant="inline" lang={lang} />
     </div>
