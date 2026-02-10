@@ -10,7 +10,7 @@ echo "[$(date '+%Y-%m-%d %H:%M:%S')] Triggering cultura content..." >> "$LOG"
     agent \
     --agent zunzun \
     --message "CRON_CULTURA_CHECK: Busca contenido sobre cultura cubana — música (son, salsa, timba, trova), arte, literatura, cine, tradiciones, patrimonio, artistas destacados. Crea un post ES/EN con imagen AI si encuentras algo interesante. Si no hay inspiración hoy, responde NO_CULTURA." \
-    --channel telegram \
+    --channel telegram:zunzun \
     --to 786730056 \
     --deliver \
     >> "$LOG" 2>&1

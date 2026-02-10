@@ -10,7 +10,7 @@ echo "[$(date '+%Y-%m-%d %H:%M:%S')] Triggering gastro content..." >> "$LOG"
     agent \
     --agent zunzun \
     --message "CRON_GASTRO_CHECK: Busca contenido interesante sobre gastronomía cubana — recetas tradicionales, ingredientes, historia culinaria, restaurantes, bebidas. Crea un post ES/EN con imagen AI si encuentras algo que no hayamos cubierto. Si no hay inspiración hoy, responde NO_GASTRO." \
-    --channel telegram \
+    --channel telegram:zunzun \
     --to 786730056 \
     --deliver \
     >> "$LOG" 2>&1

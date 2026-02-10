@@ -10,7 +10,7 @@ echo "[$(date '+%Y-%m-%d %H:%M:%S')] Triggering productos content..." >> "$LOG"
     agent \
     --agent zunzun \
     --message "CRON_PRODUCTOS_CHECK: Crea contenido sobre productos cubanos — café, ron, tabaco/puros, miel, etc. Incluye historia, variedades, cómo elegir/disfrutar. IMPORTANTE: incluir links externos donde comprar y links internos a posts relacionados. Crea post ES/EN con imagen AI. Si no hay inspiración, responde NO_PRODUCTOS." \
-    --channel telegram \
+    --channel telegram:zunzun \
     --to 786730056 \
     --deliver \
     >> "$LOG" 2>&1

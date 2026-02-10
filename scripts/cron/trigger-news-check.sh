@@ -10,7 +10,7 @@ echo "[$(date '+%Y-%m-%d %H:%M:%S')] Triggering news check..." >> "$LOG"
     agent \
     --agent zunzun \
     --message "CRON_NEWS_CHECK: Busca noticias de Cuba (economía, diáspora, política) de las últimas horas. Si hay algo relevante que no esté en news-registry.json, crea el post ES/EN con imagen AI, publica y notifícame el link. Si no hay nada nuevo, responde solo NO_NEWS." \
-    --channel telegram \
+    --channel telegram:zunzun \
     --to 786730056 \
     --deliver \
     >> "$LOG" 2>&1
