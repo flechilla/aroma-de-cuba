@@ -23,8 +23,9 @@ Thumbs.db
 # playwright
 .playwright-mcp/
 
-# verification screenshots
-*.png
+# verification screenshots (not blog images)
+/screenshots/*.png
+/*.png
 
 # Facebook credentials
 scripts/.env.facebook
