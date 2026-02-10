@@ -6,9 +6,15 @@ import RelatedPosts from '@components/RelatedPosts.astro';
 import ShareButtons from '@components/ShareButtons.astro';
 import NewsletterSignup from '@components/NewsletterSignup.astro';
 import TableOfContents from '@components/TableOfContents.astro';
+import FaqSection from '@components/FaqSection.astro';
 import { Image } from 'astro:assets';
 import { getDateLocale, getLocalizedPath } from '../i18n/utils';
 import { useTranslations } from '../i18n/utils';
+
+interface FaqItem {
+  question: string;
+  answer: string;
+}
 
 interface Props {
   title: string;
@@ -24,6 +30,7 @@ interface Props {
   slug: string;
   readingTime?: number;
   headings?: Array<{ depth: number; slug: string; text: string }>;
+  faq?: FaqItem[];
 }
 
 const {
@@ -40,6 +47,7 @@ const {
   slug,
   readingTime,
   headings = [],
+  faq = [],
 } = Astro.props;
 
 const t = useTranslations(lang);
@@ -61,6 +69,15 @@ const formattedUpdated = updatedDate
 
 const categoryLabel = t(`category.${category}` as any) || category;
 const articleUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+// Build articleData for JSON-LD
+const articleData = {
+  author,
+  datePublished: date.toISOString(),
+  dateModified: updatedDate?.toISOString() || date.toISOString(),
+  category,
+  tags,
+};
 ---
 
 <BaseLayout
@@ -68,6 +85,8 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).href;
   description={description}
   article
   lang={lang}
+  articleData={articleData}
+  faqItems={faq}
 >
   <article>
     <header class="py-12 pb-8 text-center">
@@ -118,6 +137,8 @@ const articleUrl = new URL(Astro.url.pathname, Astro.site).href;
       <div class="prose">
         <slot />
       </div>
+
+      <FaqSection items={faq} lang={lang} />
 
       {tags.length > 0 && (
         <footer class="flex flex-wrap gap-2 mt-10 pt-6 border-t border-ceniza">

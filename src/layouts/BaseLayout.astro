@@ -6,12 +6,25 @@ import SEOHead from '@components/SEOHead.astro';
 import { ClientRouter } from 'astro:transitions';
 import { getLangFromUrl } from '../i18n/utils';
 
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 interface Props {
   title: string;
   description: string;
   ogImage?: string;
   article?: boolean;
   lang?: 'es' | 'en';
+  articleData?: {
+    author?: string;
+    datePublished?: string;
+    dateModified?: string;
+    category?: string;
+    tags?: string[];
+  };
+  faqItems?: FaqItem[];
 }
 
 const {
@@ -20,6 +33,8 @@ const {
   ogImage = '/og-default.svg',
   article = false,
   lang,
+  articleData,
+  faqItems,
 } = Astro.props;
 
 const resolvedLang = lang ?? getLangFromUrl(Astro.url);
@@ -46,6 +61,8 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       ogImage={ogImage}
       article={article}
       lang={resolvedLang}
+      articleData={articleData}
+      faqItems={faqItems}
     />
     <ClientRouter />
   </head>

@@ -1,0 +1,47 @@
+---
+/**
+ * FAQ Section Component
+ * Renders FAQ items with proper semantic HTML and accordion styling
+ * Works with FAQPage schema in SEOHead.astro for SEO
+ */
+
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  items: FaqItem[];
+  lang?: 'es' | 'en';
+}
+
+const { items, lang = 'es' } = Astro.props;
+
+const title = lang === 'es' ? 'Preguntas frecuentes' : 'Frequently Asked Questions';
+---
+
+{items && items.length > 0 && (
+  <section class="faq-section mt-12 pt-8 border-t border-ceniza">
+    <h2 class="font-display text-2xl text-tabaco mb-6">{title}</h2>
+    <dl class="space-y-4">
+      {items.map((item, index) => (
+        <details 
+          class="group bg-crema/50 rounded-lg border border-ceniza overflow-hidden"
+          open={index === 0}
+        >
+          <summary class="flex justify-between items-center cursor-pointer p-4 font-heading font-semibold text-piedra-oscura hover:bg-crema transition-colors">
+            <dt class="pr-4">{item.question}</dt>
+            <span class="flex-shrink-0 ml-2 text-ron group-open:rotate-180 transition-transform">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <dd class="p-4 pt-0 text-piedra prose prose-sm max-w-none">
+            <Fragment set:html={item.answer} />
+          </dd>
+        </details>
+      ))}
+    </dl>
+  </section>
+)}
