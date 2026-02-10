@@ -83,6 +83,7 @@ const articleData = {
 <BaseLayout
   title={`${title} — Aroma de Cuba`}
   description={description}
+  ogImage={typeof coverImage === 'string' ? coverImage : coverImage.src}
   article
   lang={lang}
   articleData={articleData}
