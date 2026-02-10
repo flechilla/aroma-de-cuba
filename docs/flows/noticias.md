@@ -16,12 +16,18 @@
 ```
 1. BUSCAR
    └─ Web search: "Cuba noticias [temas] [fecha]"
+   └─ Usar múltiples queries (español + inglés)
    └─ Filtrar por freshness: últimas 24h preferido
+   └─ Buscar en fuentes variadas (no solo El País)
 
-2. EVALUAR
+2. EVALUAR (¡SER GENEROSO, NO RESTRICTIVO!)
    └─ ¿Es relevante? (economía, política, diáspora)
-   └─ ¿Ya lo publicamos? (check registry keywords + URLs)
-   └─ ¿Es actualización de algo existente? → expandir
+   └─ ¿Es un ÁNGULO NUEVO aunque sea tema similar?
+   │   → Ejemplo: "Air Canada suspende" vs "Nicaragua cierra frontera"
+   │   → Son noticias DISTINTAS aunque ambas afectan viajes
+   └─ Solo es DUPLICADO si es exactamente la misma noticia
+   └─ Verificar registry por URLs y títulos específicos, NO por tema general
+   └─ Si hay duda → PUBLICAR (mejor más contenido que menos)
 
 3. CREAR (si hay noticia nueva)
    └─ Fetch artículo fuente
