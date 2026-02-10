@@ -26,6 +26,14 @@ const blog = defineCollection({
       draft: z.boolean().default(false),
       featured: z.boolean().default(false),
       lang: z.enum(['es', 'en']).default('es'),
+      faq: z
+        .array(
+          z.object({
+            question: z.string(),
+            answer: z.string(),
+          })
+        )
+        .optional(),
     }),
 });
 
