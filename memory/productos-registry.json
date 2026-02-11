@@ -84,6 +84,13 @@
       "slugEN": "2026-02-11-refrescos-cubanos-tradicionales",
       "topic": "Refrescos cubanos tradicionales (Tropicola, Iron Beer, Materva, Jupiña)",
       "category": "productos"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-instrumentos-musicales-cubanos",
+      "slugEN": "2026-02-11-instrumentos-musicales-cubanos",
+      "topic": "Instrumentos musicales cubanos (claves, bongós, congas, tres, maracas)",
+      "category": "productos"
     }
   ]
 }
