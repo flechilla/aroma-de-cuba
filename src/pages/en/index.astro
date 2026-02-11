@@ -26,12 +26,13 @@ const recentPosts = sortedPosts
   .slice(0, 6);
 
 const sections = [
+  { title: t('home.sectionCubaUsa'), description: t('home.sectionCubaUsaDesc'), href: '/en/blog/tag/cuba-usa', color: 'var(--color-coral)', featured: true },
   { title: t('home.sectionHistory'), description: t('home.sectionHistoryDesc'), href: getLocalizedPath('history', lang), color: 'var(--color-ron)' },
   { title: t('home.sectionCulture'), description: t('home.sectionCultureDesc'), href: getLocalizedPath('culture', lang), color: 'var(--color-palma)' },
   { title: t('home.sectionTourism'), description: t('home.sectionTourismDesc'), href: getLocalizedPath('tourism', lang), color: 'var(--color-azul)' },
   { title: t('home.sectionGastronomy'), description: t('home.sectionGastronomyDesc'), href: getLocalizedPath('gastronomy', lang), color: 'var(--color-sol)' },
   { title: t('home.sectionProducts'), description: t('home.sectionProductsDesc'), href: getLocalizedPath('products', lang), color: 'var(--color-tabaco)' },
-  { title: t('home.sectionNews'), description: t('home.sectionNewsDesc'), href: getLocalizedPath('blog', lang), color: 'var(--color-coral)' },
+  { title: t('home.sectionNews'), description: t('home.sectionNewsDesc'), href: getLocalizedPath('blog', lang), color: 'var(--color-humo)' },
 ];
 ---
 
@@ -109,9 +110,16 @@ const sections = [
   <section class="py-12 w-full max-w-[72rem] mx-auto px-6" aria-labelledby="explore-heading">
     <h2 id="explore-heading" class="font-display text-3xl text-tabaco mb-8">{t('home.exploreCuba')}</h2>
     <div class="grid grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] gap-6">
-      {sections.map(({ title, description, href, color }) => (
-        <a href={href} class="block p-8 px-6 bg-blanco border border-ceniza border-t-3 rounded-lg no-underline transition-all hover:shadow-[var(--shadow-warm-md)] hover:-translate-y-0.5" style={`border-top-color: ${color}`}>
-          <h3 class="font-heading text-xl text-tabaco mb-2">{title}</h3>
+      {sections.map(({ title, description, href, color, featured }) => (
+        <a 
+          href={href} 
+          class:list={[
+            "block p-8 px-6 border border-t-3 rounded-lg no-underline transition-all hover:shadow-[var(--shadow-warm-md)] hover:-translate-y-0.5",
+            featured ? "bg-coral/10 border-coral" : "bg-blanco border-ceniza"
+          ]} 
+          style={`border-top-color: ${color}`}
+        >
+          <h3 class:list={["font-heading text-xl mb-2", featured ? "text-coral" : "text-tabaco"]}>{title}</h3>
           <p class="text-sm text-piedra-oscura leading-relaxed">{description}</p>
         </a>
       ))}

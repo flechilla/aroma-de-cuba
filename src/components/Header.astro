@@ -26,8 +26,11 @@ const flavorItems = [
   { href: getLocalizedPath(lang === 'es' ? 'productos' : 'products', lang), label: t('nav.products') },
 ];
 
+const cubaUsaPath = lang === 'es' ? '/blog/etiqueta/cuba-usa' : '/en/blog/tag/cuba-usa';
+
 const navGroups = [
   { href: getLocalizedPath('blog', lang), label: t('nav.news'), children: null },
+  { href: cubaUsaPath, label: t('nav.cubaUsa'), children: null, highlight: true },
   { href: null, label: t('nav.discover'), children: discoverItems },
   { href: null, label: t('nav.flavor'), children: flavorItems },
   { href: getLocalizedPath('about', lang), label: t('nav.about'), children: null },
@@ -79,8 +82,12 @@ const navGroups = [
           <a
             href={group.href!}
             class:list={[
-              'font-body text-sm font-medium text-piedra-oscura no-underline py-2 px-3 rounded transition-colors hover:text-tabaco hover:bg-arena max-md:py-3 max-md:px-4 max-md:text-base max-md:block',
-              { '!text-coral !font-semibold': currentPath.startsWith(group.href!) },
+              'font-body text-sm font-medium no-underline py-2 px-3 rounded transition-colors max-md:py-3 max-md:px-4 max-md:text-base max-md:block',
+              group.highlight 
+                ? 'text-coral border border-coral hover:bg-coral hover:text-blanco' 
+                : 'text-piedra-oscura hover:text-tabaco hover:bg-arena',
+              { '!text-coral !font-semibold': currentPath.startsWith(group.href!) && !group.highlight },
+              { '!bg-coral !text-blanco': currentPath.startsWith(group.href!) && group.highlight },
             ]}
             aria-current={currentPath.startsWith(group.href!) ? 'page' : undefined}
           >

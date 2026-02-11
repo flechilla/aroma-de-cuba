@@ -18,6 +18,7 @@ export const ui = {
     'nav.tourism': 'Turismo',
     'nav.gastronomy': 'Gastronomía',
     'nav.products': 'Productos',
+    'nav.cubaUsa': 'Cuba-EE.UU.',
 
     // Header
     'header.logoLabel': 'Aroma de Cuba — Inicio',
@@ -53,6 +54,8 @@ export const ui = {
     'home.sectionNewsDesc': 'Lo último desde la isla, día a día',
     'home.sectionAbout': 'Nosotros',
     'home.sectionAboutDesc': 'Conoce al equipo detrás de Aroma de Cuba',
+    'home.sectionCubaUsa': 'Cuba-EE.UU.',
+    'home.sectionCubaUsaDesc': 'Relaciones, política, diplomacia y noticias entre ambas naciones',
     'home.metaTitle': 'Aroma de Cuba — Noticias, cultura y sabor desde la isla',
     'home.metaDescription': 'Blog dedicado a Cuba: noticias actuales, historia, turismo, productos y cultura cubana.',
 
@@ -167,6 +170,7 @@ export const ui = {
     'nav.tourism': 'Tourism',
     'nav.gastronomy': 'Gastronomy',
     'nav.products': 'Products',
+    'nav.cubaUsa': 'Cuba-USA',
 
     // Header
     'header.logoLabel': 'Aroma de Cuba — Home',
@@ -202,6 +206,8 @@ export const ui = {
     'home.sectionNewsDesc': 'The latest from the island, day by day',
     'home.sectionAbout': 'About us',
     'home.sectionAboutDesc': 'Meet the team behind Aroma de Cuba',
+    'home.sectionCubaUsa': 'Cuba-USA',
+    'home.sectionCubaUsaDesc': 'Relations, politics, diplomacy, and news between both nations',
     'home.metaTitle': 'Aroma de Cuba — News, culture, and flavor from the island',
     'home.metaDescription': 'A blog dedicated to Cuba: current news, history, tourism, products, and Cuban culture.',
 
