@@ -1,0 +1,40 @@
+{
+  "lastUpdated": "2026-02-11T01:55:00Z",
+  "posts": [
+    {
+      "date": "2026-02-10",
+      "slugES": "2026-02-10-cafe-cubano-historia-receta-espuma",
+      "slugEN": "2026-02-10-cuban-coffee-cafecito-history-recipe",
+      "topic": "Café cubano",
+      "category": "gastronomia"
+    },
+    {
+      "date": "2026-02-10",
+      "slugES": "2026-02-10-ron-cubano-guia-completa-marcas-historia",
+      "slugEN": "2026-02-10-cuban-rum-complete-guide-brands-history",
+      "topic": "Ron cubano",
+      "category": "gastronomia"
+    },
+    {
+      "date": "2026-02-10",
+      "slugES": "2026-02-10-habanos-guia-puros-cubanos-marcas",
+      "slugEN": "2026-02-10-cuban-cigars-habanos-guide-brands",
+      "topic": "Habanos / Puros cubanos",
+      "category": "cultura"
+    },
+    {
+      "date": "2026-02-10",
+      "slugES": "2026-02-10-miel-cubana-oro-liquido-caribe",
+      "slugEN": "2026-02-10-cuban-honey-liquid-gold-caribbean",
+      "topic": "Miel cubana",
+      "category": "gastronomia"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-artesania-cubana-guia-tradiciones",
+      "slugEN": "2026-02-11-artesania-cubana-guia-tradiciones",
+      "topic": "Artesanía cubana (cerámica, textiles, madera, instrumentos)",
+      "category": "cultura"
+    }
+  ]
+}
