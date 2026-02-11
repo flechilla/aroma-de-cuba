@@ -9,12 +9,19 @@
       "date": "2026-02-11",
       "slug": "tostones-cubanos-receta-tradicion",
       "topic": "Tostones recipe and history"
+    },
+    {
+      "date": "2026-02-11",
+      "slug": "yuca-con-mojo-cubano",
+      "topic": "Yuca con mojo criollo - traditional Cuban cassava"
     }
   ],
   "topics_covered": [
     "café cubano",
     "tostones",
-    "plátanos verdes"
+    "plátanos verdes",
+    "yuca con mojo",
+    "mojo criollo"
   ],
   "ideas_pending": [
     "ropa vieja",
@@ -22,9 +29,10 @@
     "lechón asado",
     "arroz con pollo",
     "frijoles negros",
-    "yuca con mojo",
     "mojito history",
     "guarapo",
-    "Cuban sandwich origins"
+    "Cuban sandwich origins",
+    "picadillo cubano",
+    "tamal en hoja"
   ]
 }
