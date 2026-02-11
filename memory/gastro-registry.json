@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "date": "2026-02-10",
+      "slug": "cafe-cubano-historia-receta-espuma",
+      "topic": "Cuban coffee history and espuma technique"
+    },
+    {
+      "date": "2026-02-11",
+      "slug": "tostones-cubanos-receta-tradicion",
+      "topic": "Tostones recipe and history"
+    }
+  ],
+  "topics_covered": [
+    "café cubano",
+    "tostones",
+    "plátanos verdes"
+  ],
+  "ideas_pending": [
+    "ropa vieja",
+    "moros y cristianos",
+    "lechón asado",
+    "arroz con pollo",
+    "frijoles negros",
+    "yuca con mojo",
+    "mojito history",
+    "guarapo",
+    "Cuban sandwich origins"
+  ]
+}
