@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T04:26:00Z",
+  "lastUpdated": "2026-02-11T04:58:00Z",
   "posts": [
     {
       "date": "2026-02-10",
@@ -62,6 +62,13 @@
       "slugES": "2026-02-11-malta-cubana-bebida-tradicion",
       "slugEN": "2026-02-11-malta-cubana-bebida-tradicion",
       "topic": "Malta cubana (Malta Hatuey, bebida de malta sin alcohol)",
+      "category": "productos"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-frutas-tropicales-cubanas",
+      "slugEN": "2026-02-11-frutas-tropicales-cubanas",
+      "topic": "Frutas tropicales cubanas (mamey, mango, guayaba, anón, papaya)",
       "category": "productos"
     }
   ]
