@@ -41,6 +41,15 @@ const {
   currentSlug,
 } = Astro.props;
 
+// Build alternate href for language switcher (blog posts)
+let alternateHref: string | undefined;
+if (currentSlug && translationSlug) {
+  const resolvedLang2 = lang ?? getLangFromUrl(Astro.url);
+  alternateHref = resolvedLang2 === 'es' 
+    ? `/en/blog/${translationSlug}/`
+    : `/blog/${translationSlug}/`;
+}
+
 const resolvedLang = lang ?? getLangFromUrl(Astro.url);
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -80,7 +89,7 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
   </head>
   <body>
     <div class="accent-stripe" aria-hidden="true"></div>
-    <Header />
+    <Header alternateHref={alternateHref} />
     <main id="main-content" class="min-h-[calc(100dvh-4.5rem-20rem)]">
       <slot />
     </main>
