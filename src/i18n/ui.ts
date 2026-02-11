@@ -19,6 +19,7 @@ export const ui = {
     'nav.gastronomy': 'Gastronomía',
     'nav.products': 'Productos',
     'nav.cubaUsa': 'Cuba-EE.UU.',
+    'nav.migration': 'Migración',
 
     // Header
     'header.logoLabel': 'Aroma de Cuba — Inicio',
@@ -56,6 +57,8 @@ export const ui = {
     'home.sectionAboutDesc': 'Conoce al equipo detrás de Aroma de Cuba',
     'home.sectionCubaUsa': 'Cuba-EE.UU.',
     'home.sectionCubaUsaDesc': 'Relaciones, política, diplomacia y noticias entre ambas naciones',
+    'home.sectionMigration': 'Migración Cubana',
+    'home.sectionMigrationDesc': 'Diáspora, deportaciones, rutas migratorias y la experiencia del exilio',
     'home.metaTitle': 'Aroma de Cuba — Noticias, cultura y sabor desde la isla',
     'home.metaDescription': 'Blog dedicado a Cuba: noticias actuales, historia, turismo, productos y cultura cubana.',
 
@@ -171,6 +174,7 @@ export const ui = {
     'nav.gastronomy': 'Gastronomy',
     'nav.products': 'Products',
     'nav.cubaUsa': 'Cuba-USA',
+    'nav.migration': 'Migration',
 
     // Header
     'header.logoLabel': 'Aroma de Cuba — Home',
@@ -208,6 +212,8 @@ export const ui = {
     'home.sectionAboutDesc': 'Meet the team behind Aroma de Cuba',
     'home.sectionCubaUsa': 'Cuba-USA',
     'home.sectionCubaUsaDesc': 'Relations, politics, diplomacy, and news between both nations',
+    'home.sectionMigration': 'Cuban Migration',
+    'home.sectionMigrationDesc': 'Diaspora, deportations, migration routes, and the exile experience',
     'home.metaTitle': 'Aroma de Cuba — News, culture, and flavor from the island',
     'home.metaDescription': 'A blog dedicated to Cuba: current news, history, tourism, products, and Cuban culture.',
 

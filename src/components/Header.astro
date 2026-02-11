@@ -27,10 +27,12 @@ const flavorItems = [
 ];
 
 const cubaUsaPath = lang === 'es' ? '/blog/etiqueta/cuba-usa' : '/en/blog/tag/cuba-usa';
+const migrationPath = lang === 'es' ? '/blog/etiqueta/migracion-cubana' : '/en/blog/tag/migracion-cubana';
 
 const navGroups = [
   { href: getLocalizedPath('blog', lang), label: t('nav.news'), children: null },
   { href: cubaUsaPath, label: t('nav.cubaUsa'), children: null, highlight: true },
+  { href: migrationPath, label: t('nav.migration'), children: null, highlight: true },
   { href: null, label: t('nav.discover'), children: discoverItems },
   { href: null, label: t('nav.flavor'), children: flavorItems },
   { href: getLocalizedPath('about', lang), label: t('nav.about'), children: null },

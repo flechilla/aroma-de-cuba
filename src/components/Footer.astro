@@ -6,6 +6,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const year = new Date().getFullYear();
 const cubaUsaPath = lang === 'es' ? '/blog/etiqueta/cuba-usa' : '/en/blog/tag/cuba-usa';
+const migrationPath = lang === 'es' ? '/blog/etiqueta/migracion-cubana' : '/en/blog/tag/migracion-cubana';
 ---
 
 <footer class="mt-20 bg-humo text-ceniza">
@@ -26,6 +27,7 @@ const cubaUsaPath = lang === 'es' ? '/blog/etiqueta/cuba-usa' : '/en/blog/tag/cu
         <ul class="list-none flex flex-col gap-2" role="list">
           <li><a href={getLocalizedPath('blog', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.news')}</a></li>
           <li><a href={cubaUsaPath} class="text-sm text-coral no-underline transition-colors hover:text-arena">{t('nav.cubaUsa')}</a></li>
+          <li><a href={migrationPath} class="text-sm text-coral no-underline transition-colors hover:text-arena">{t('nav.migration')}</a></li>
           <li><a href={getLocalizedPath(lang === 'es' ? 'historia' : 'history', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.history')}</a></li>
           <li><a href={getLocalizedPath('cultura', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.culture')}</a></li>
           <li><a href={getLocalizedPath('turismo', lang)} class="text-sm text-ceniza no-underline transition-colors hover:text-arena">{t('nav.tourism')}</a></li>
