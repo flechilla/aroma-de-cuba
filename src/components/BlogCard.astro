@@ -35,7 +35,9 @@ const formattedDate = new Intl.DateTimeFormat(getDateLocale(lang), {
   day: 'numeric',
 }).format(date);
 
-const href = getLocalizedPath(`blog/${slug}`, lang);
+// Remove language prefix from slug (e.g., "es/2026-02-11-slug" -> "2026-02-11-slug")
+const cleanSlug = slug.replace(/^(es|en)\//, '');
+const href = getLocalizedPath(`blog/${cleanSlug}`, lang);
 const readingLabel = lang === 'es' ? 'min de lectura' : 'min read';
 ---
 
