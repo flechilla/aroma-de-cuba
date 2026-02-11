@@ -77,6 +77,13 @@
       "slugEN": "2026-02-11-chocolate-baracoa-cuba",
       "topic": "Chocolate de Baracoa (cacao cubano, chorote, fábricas)",
       "category": "productos"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-refrescos-cubanos-tradicionales",
+      "slugEN": "2026-02-11-refrescos-cubanos-tradicionales",
+      "topic": "Refrescos cubanos tradicionales (Tropicola, Iron Beer, Materva, Jupiña)",
+      "category": "productos"
     }
   ]
 }
