@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T02:55:00Z",
+  "lastUpdated": "2026-02-11T03:25:00Z",
   "posts": [
     {
       "date": "2026-02-10",
@@ -41,6 +41,13 @@
       "slugES": "2026-02-11-dulces-tradicionales-cubanos",
       "slugEN": "2026-02-11-dulces-tradicionales-cubanos",
       "topic": "Dulces tradicionales cubanos (guayaba, turrón de maní, coco rallado)",
+      "category": "productos"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-mojo-criollo-salsa-cubana",
+      "slugEN": "2026-02-11-mojo-criollo-salsa-cubana",
+      "topic": "Mojo criollo (marinada cubana de ajo y naranja agria)",
       "category": "productos"
     }
   ]
