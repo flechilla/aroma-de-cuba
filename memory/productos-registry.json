@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T01:55:00Z",
+  "lastUpdated": "2026-02-11T02:55:00Z",
   "posts": [
     {
       "date": "2026-02-10",
@@ -35,6 +35,13 @@
       "slugEN": "2026-02-11-artesania-cubana-guia-tradiciones",
       "topic": "Artesanía cubana (cerámica, textiles, madera, instrumentos)",
       "category": "cultura"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-dulces-tradicionales-cubanos",
+      "slugEN": "2026-02-11-dulces-tradicionales-cubanos",
+      "topic": "Dulces tradicionales cubanos (guayaba, turrón de maní, coco rallado)",
+      "category": "productos"
     }
   ]
 }
