@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T04:58:00Z",
+  "lastUpdated": "2026-02-11T05:26:00Z",
   "posts": [
     {
       "date": "2026-02-10",
@@ -69,6 +69,13 @@
       "slugES": "2026-02-11-frutas-tropicales-cubanas",
       "slugEN": "2026-02-11-frutas-tropicales-cubanas",
       "topic": "Frutas tropicales cubanas (mamey, mango, guayaba, anón, papaya)",
+      "category": "productos"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-chocolate-baracoa-cuba",
+      "slugEN": "2026-02-11-chocolate-baracoa-cuba",
+      "topic": "Chocolate de Baracoa (cacao cubano, chorote, fábricas)",
       "category": "productos"
     }
   ]
