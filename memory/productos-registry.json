@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T07:55:00Z",
+  "lastUpdated": "2026-02-11T08:26:00Z",
   "posts": [
     {
       "date": "2026-02-10",
@@ -104,6 +104,13 @@
       "slugES": "2026-02-11-pru-oriental-bebida-cubana",
       "slugEN": "2026-02-11-pru-oriental-bebida-cubana",
       "topic": "Prú Oriental (bebida fermentada tradicional de Santiago de Cuba)",
+      "category": "productos"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-cervezas-cubanas-cristal-bucanero-historia",
+      "slugEN": "2026-02-11-cervezas-cubanas-cristal-bucanero-historia",
+      "topic": "Cervezas cubanas (Cristal, Bucanero, La Tropical, Hatuey, historia cervecera)",
       "category": "productos"
     }
   ]
