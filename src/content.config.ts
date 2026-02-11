@@ -6,8 +6,8 @@ const blog = defineCollection({
   loader: glob({ pattern: '**/*.mdx', base: './src/content/blog' }),
   schema: ({ image }) =>
     z.object({
-      title: z.string().max(100),
-      description: z.string().max(200),
+      title: z.string().max(70),  // SEO: 60-65 optimal, max 70
+      description: z.string().max(160),  // SEO: meta description max 160
       author: z.string().default('Aroma de Cuba'),
       date: z.coerce.date(),
       updatedDate: z.coerce.date().optional(),
