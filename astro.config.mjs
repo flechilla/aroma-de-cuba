@@ -41,7 +41,8 @@ export default defineConfig({
         }
         
         // Individual blog posts (noticias = high priority, fresher content)
-        if (item.url.includes('/blog/es/') || item.url.includes('/blog/en/')) {
+        // URL structure: ES = /blog/slug/, EN = /en/blog/slug/
+        if (item.url.match(/\/blog\/\d{4}-\d{2}-\d{2}/) || item.url.match(/\/en\/blog\/\d{4}-\d{2}-\d{2}/)) {
           // Extract date from URL for lastmod
           const dateMatch = item.url.match(/\/(\d{4}-\d{2}-\d{2})-/);
           const lastmod = dateMatch ? dateMatch[1] : undefined;

@@ -22,10 +22,11 @@ export async function GET() {
     const lang = isSpanish ? 'es' : 'en';
     
     // Build URL based on language
+    // URL structure: ES = /blog/slug/, EN = /en/blog/slug/
     const cleanSlug = slug.replace(/^(es|en)\//, '');
     const url = isSpanish 
-      ? `https://aromadecuba.com/blog/es/${cleanSlug}/`
-      : `https://aromadecuba.com/en/blog/en/${cleanSlug}/`;
+      ? `https://aromadecuba.com/blog/${cleanSlug}/`
+      : `https://aromadecuba.com/en/blog/${cleanSlug}/`;
     
     return `  <url>
     <loc>${url}</loc>

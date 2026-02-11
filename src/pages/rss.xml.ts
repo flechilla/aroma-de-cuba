@@ -13,13 +13,17 @@ export async function GET(context: APIContext) {
     title: 'Aroma de Cuba',
     description: 'Noticias, cultura y sabor desde la isla — las últimas publicaciones del blog Aroma de Cuba.',
     site: context.site!,
-    items: sortedPosts.map((post) => ({
-      title: post.data.title,
-      pubDate: post.data.date,
-      description: post.data.description,
-      link: `/blog/${post.id}/`,
-      categories: [post.data.category, ...post.data.tags],
-    })),
+    items: sortedPosts.map((post) => {
+      // Remove language prefix from post.id (e.g., "es/2026-02-11-slug" -> "2026-02-11-slug")
+      const cleanSlug = post.id.replace(/^es\//, '');
+      return {
+        title: post.data.title,
+        pubDate: post.data.date,
+        description: post.data.description,
+        link: `/blog/${cleanSlug}/`,
+        categories: [post.data.category, ...post.data.tags],
+      };
+    }),
     customData: '<language>es</language>',
   });
 }
