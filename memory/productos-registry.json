@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T03:55:00Z",
+  "lastUpdated": "2026-02-11T04:26:00Z",
   "posts": [
     {
       "date": "2026-02-10",
@@ -55,6 +55,13 @@
       "slugES": "2026-02-11-guarapo-cubano-jugo-cana",
       "slugEN": "2026-02-11-guarapo-cubano-jugo-cana",
       "topic": "Guarapo (jugo de caña de azúcar cubano)",
+      "category": "productos"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-malta-cubana-bebida-tradicion",
+      "slugEN": "2026-02-11-malta-cubana-bebida-tradicion",
+      "topic": "Malta cubana (Malta Hatuey, bebida de malta sin alcohol)",
       "category": "productos"
     }
   ]
