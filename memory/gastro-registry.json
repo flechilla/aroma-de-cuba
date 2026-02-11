@@ -14,6 +14,11 @@
       "date": "2026-02-11",
       "slug": "yuca-con-mojo-cubano",
       "topic": "Yuca con mojo criollo - traditional Cuban cassava"
+    },
+    {
+      "date": "2026-02-11",
+      "slug": "moros-y-cristianos-receta-cubana",
+      "topic": "Moros y cristianos - Cuban black beans and rice"
     }
   ],
   "topics_covered": [
@@ -21,18 +26,21 @@
     "tostones",
     "plátanos verdes",
     "yuca con mojo",
-    "mojo criollo"
+    "mojo criollo",
+    "moros y cristianos",
+    "arroz con frijoles negros"
   ],
   "ideas_pending": [
     "ropa vieja",
-    "moros y cristianos",
     "lechón asado",
     "arroz con pollo",
-    "frijoles negros",
+    "frijoles negros (standalone)",
     "mojito history",
     "guarapo",
     "Cuban sandwich origins",
     "picadillo cubano",
-    "tamal en hoja"
+    "tamal en hoja",
+    "arroz con leche cubano",
+    "croquetas cubanas"
   ]
 }
