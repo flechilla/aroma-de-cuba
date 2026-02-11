@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T05:58:00Z",
+  "lastUpdated": "2026-02-11T06:55:00Z",
   "posts": [
     {
       "date": "2026-02-10",
@@ -90,6 +90,13 @@
       "slugES": "2026-02-11-instrumentos-musicales-cubanos",
       "slugEN": "2026-02-11-instrumentos-musicales-cubanos",
       "topic": "Instrumentos musicales cubanos (claves, bongós, congas, tres, maracas)",
+      "category": "productos"
+    },
+    {
+      "date": "2026-02-11",
+      "slugES": "2026-02-11-guayabera-cubana-historia-estilo",
+      "slugEN": "2026-02-11-guayabera-cubana-historia-estilo",
+      "topic": "Guayabera cubana (historia, estilos, tiendas, prenda formal caribeña)",
       "category": "productos"
     }
   ]
