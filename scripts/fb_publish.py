@@ -230,8 +230,8 @@ def main():
     parser.add_argument("--url", help="Blog post URL to publish")
     parser.add_argument("--title", help="Post title")
     parser.add_argument("--description", help="Post description")
-    parser.add_argument("--image", help="Image URL (optional)")
-    parser.add_argument("--photo-post", action="store_true", help="Publish as photo post instead of link post")
+    parser.add_argument("--image", help="Image URL (required for photo posts)")
+    parser.add_argument("--link-only", action="store_true", help="Force link post instead of photo post")
     
     args = parser.parse_args()
     
@@ -240,7 +240,9 @@ def main():
     elif args.test:
         test_connection()
     elif args.url and args.title and args.description:
-        if args.photo_post and args.image:
+        # Default: photo post when image provided (better engagement)
+        # Use --link-only to force old link-sharing behavior
+        if args.image and not args.link_only:
             result = publish_photo_post(args.url, args.title, args.description, args.image)
         else:
             result = publish_post(args.url, args.title, args.description, args.image)
