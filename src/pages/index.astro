@@ -50,7 +50,7 @@ const sections = [
       <h1 class="font-display text-6xl text-arena mb-4 tracking-tight max-md:text-5xl max-sm:text-4xl">{t('home.title')}</h1>
       <p class="font-heading text-xl text-ceniza italic mb-8">{t('home.subtitle')}</p>
       <div class="tile-border max-w-24 mx-auto" aria-hidden="true"></div>
-      <a href="/blog" class="inline-block mt-8 px-8 py-3 bg-coral text-blanco font-body text-sm font-semibold rounded no-underline transition-colors hover:bg-rojo">
+      <a href="/blog" class="inline-block mt-8 px-10 py-4 min-h-12 bg-coral text-blanco font-body text-base font-semibold rounded no-underline transition-colors hover:bg-rojo">
         {t('home.heroCta')} &rarr;
       </a>
     </div>
@@ -58,8 +58,11 @@ const sections = [
 
   <!-- Featured Post -->
   {featuredPost && (
-    <section class="py-12 w-full max-w-[72rem] mx-auto px-6" aria-labelledby="featured-heading">
-      <h2 id="featured-heading" class="sr-only">{t('home.featuredHeading')}</h2>
+    <section class="py-16 w-full max-w-[72rem] mx-auto px-6" aria-labelledby="featured-heading">
+      <h2 id="featured-heading" class="font-display text-2xl text-tabaco mb-6 flex items-center gap-3">
+        <span class="w-8 h-0.5 bg-coral" aria-hidden="true"></span>
+        {t('home.featuredHeading')}
+      </h2>
       <BlogCard
         title={featuredPost.data.title}
         description={featuredPost.data.description}
@@ -77,14 +80,19 @@ const sections = [
   )}
 
   <!-- Dato del Dia -->
-  <section aria-label={t('home.datoDelDia') || 'Dato del día'} class="w-full max-w-[72rem] mx-auto px-6 pb-12">
-    <DatoDelDia lang={lang} />
+  <section aria-label={t('home.datoDelDia') || 'Dato del día'} class="bg-arena/40 py-12">
+    <div class="w-full max-w-[72rem] mx-auto px-6">
+      <DatoDelDia lang={lang} />
+    </div>
   </section>
 
   <!-- Recent Posts -->
   {recentPosts.length > 0 && (
-    <section class="py-12 w-full max-w-[72rem] mx-auto px-6" aria-labelledby="recent-heading">
-      <h2 id="recent-heading" class="font-display text-3xl text-tabaco mb-8">{t('home.latestNews')}</h2>
+    <section class="py-16 w-full max-w-[72rem] mx-auto px-6" aria-labelledby="recent-heading">
+      <h2 id="recent-heading" class="font-display text-3xl text-tabaco mb-10 flex items-center gap-3">
+        <span class="w-10 h-0.5 bg-coral" aria-hidden="true"></span>
+        {t('home.latestNews')}
+      </h2>
       <div class="grid grid-cols-[repeat(auto-fill,minmax(min(100%,20rem),1fr))] gap-6">
         {recentPosts.map((post) => (
           <BlogCard
@@ -109,8 +117,12 @@ const sections = [
   )}
 
   <!-- Category Showcase -->
-  <section class="py-12 w-full max-w-[72rem] mx-auto px-6" aria-labelledby="explore-heading">
-    <h2 id="explore-heading" class="font-display text-3xl text-tabaco mb-8">{t('home.exploreCuba')}</h2>
+  <section class="bg-arena/40 py-16" aria-labelledby="explore-heading">
+    <div class="w-full max-w-[72rem] mx-auto px-6">
+    <h2 id="explore-heading" class="font-display text-3xl text-tabaco mb-10 flex items-center gap-3">
+      <span class="w-10 h-0.5 bg-coral" aria-hidden="true"></span>
+      {t('home.exploreCuba')}
+    </h2>
     <div class="grid grid-cols-[repeat(auto-fill,minmax(14rem,1fr))] gap-6">
       {sections.map(({ title, description, href, color, featured }) => (
         <a 
@@ -128,6 +140,7 @@ const sections = [
           <p class="text-sm text-piedra-oscura leading-relaxed">{description}</p>
         </a>
       ))}
+    </div>
     </div>
   </section>
 
