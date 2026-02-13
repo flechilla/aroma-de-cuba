@@ -12,6 +12,7 @@ interface Props {
   coverImageAlt: string;
   slug: string;
   featured?: boolean;
+  priority?: boolean;
   lang?: 'es' | 'en';
   readingTime?: number;
 }
@@ -25,6 +26,7 @@ const {
   coverImageAlt,
   slug,
   featured = false,
+  priority = false,
   lang = 'es',
   readingTime,
 } = Astro.props;
@@ -50,7 +52,8 @@ const readingLabel = lang === 'es' ? 'min de lectura' : 'min read';
         width={featured ? 800 : 400}
         height={featured ? 420 : 225}
         class="w-full h-full object-cover transition-transform duration-250 group-hover:scale-[1.03]"
-        loading="lazy"
+        loading={priority ? "eager" : "lazy"}
+        fetchpriority={priority ? "high" : undefined}
       />
     </div>
     <div class="p-4 px-6 pb-6 flex-1 flex flex-col">
