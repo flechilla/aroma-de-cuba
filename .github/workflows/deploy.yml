@@ -9,13 +9,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            cd /home/deploy/projects/aroma-de-cuba
-            git pull origin main
-            docker compose up -d --build
+      - name: Trigger deploy webhook
+        run: |
+          PAYLOAD='{"ref":"refs/heads/main"}'
+          SIGNATURE=$(echo -n "$PAYLOAD" | openssl dgst -sha256 -hmac "${{ secrets.DEPLOY_WEBHOOK_SECRET }}" | awk '{print "sha256="$NF}')
+          curl -s -X POST \
+            -H "Content-Type: application/json" \
+            -H "X-Hub-Signature-256: $SIGNATURE" \
+            -d "$PAYLOAD" \
+            "https://aromadecuba.com/_deploy/aroma-de-cuba"
