@@ -17,7 +17,7 @@ export async function GET() {
 
   const sitemapEntries = recentNews.map(post => {
     // Determine language from slug or id
-    const slug = post.slug || post.id || '';
+    const slug = post.id || '';
     const isSpanish = slug.startsWith('es/') || slug.includes('/es/');
     const lang = isSpanish ? 'es' : 'en';
     
