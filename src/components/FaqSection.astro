@@ -45,3 +45,19 @@ const title = lang === 'es' ? 'Preguntas frecuentes' : 'Frequently Asked Questio
     </dl>
   </section>
 )}
+
+<script is:inline>
+  // 5. FAQ Interaction Tracking
+  document.querySelectorAll('.faq-section details').forEach(function(detail) {
+    detail.addEventListener('toggle', function() {
+      if (detail.open) {
+        var question = detail.querySelector('dt');
+        if (question && typeof gtag === 'function') {
+          gtag('event', 'faq_open', {
+            question_text: (question.textContent || '').trim().substring(0, 100)
+          });
+        }
+      }
+    });
+  });
+</script>

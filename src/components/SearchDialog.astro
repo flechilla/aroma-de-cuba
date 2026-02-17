@@ -98,6 +98,12 @@ const t = useTranslations(lang);
           }
 
           var search = await pf.search(query);
+
+          // 6a. Search Event Tracking
+          if (typeof gtag === 'function') {
+            gtag('event', 'site_search', { search_term: query, results_count: search.results.length });
+          }
+
           if (search.results.length === 0) {
             results.innerHTML = '<p class="text-sm text-piedra text-center py-8">No results found</p>';
             return;
@@ -105,11 +111,24 @@ const t = useTranslations(lang);
 
           var items = await Promise.all(search.results.slice(0, 8).map(function(r) { return r.data(); }));
           results.innerHTML = items.map(function(item) {
-            return '<a href="' + item.url + '" class="block p-3 rounded hover:bg-arena transition-colors no-underline mb-1">' +
+            return '<a href="' + item.url + '" data-search-result class="block p-3 rounded hover:bg-arena transition-colors no-underline mb-1">' +
               '<h3 class="font-heading text-sm font-semibold text-tabaco">' + (item.meta.title || item.url) + '</h3>' +
               '<p class="text-xs text-piedra mt-1">' + item.excerpt + '</p>' +
             '</a>';
           }).join('');
+
+          // 6b. Search Result Click Tracking
+          results.querySelectorAll('[data-search-result]').forEach(function(link) {
+            link.addEventListener('click', function() {
+              if (typeof gtag === 'function') {
+                gtag('event', 'search_result_click', {
+                  search_term: query,
+                  result_url: link.getAttribute('href'),
+                  result_title: (link.querySelector('h3') || {}).textContent || ''
+                });
+              }
+            });
+          });
         }, 200);
       });
     }

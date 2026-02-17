@@ -93,6 +93,83 @@ const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-JGJJFDPTYB');
+
+      // --- Custom GA4 Events ---
+
+      // 1. Scroll Depth Tracking (25%, 50%, 75%, 100%)
+      (function() {
+        var firedThresholds = {};
+        var thresholds = [25, 50, 75, 100];
+        window.addEventListener('scroll', function() {
+          var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          if (docHeight <= 0) return;
+          var pct = Math.round((window.scrollY / docHeight) * 100);
+          for (var i = 0; i < thresholds.length; i++) {
+            var t = thresholds[i];
+            if (pct >= t && !firedThresholds[t]) {
+              firedThresholds[t] = true;
+              gtag('event', 'scroll_depth', { percent_scrolled: t, page_path: location.pathname });
+            }
+          }
+        }, { passive: true });
+      })();
+
+      // 2. Reading Time Tracking (visible time only)
+      (function() {
+        var startTime = Date.now();
+        var totalVisible = 0;
+        var isVisible = !document.hidden;
+
+        document.addEventListener('visibilitychange', function() {
+          if (document.hidden) {
+            if (isVisible) totalVisible += Date.now() - startTime;
+            isVisible = false;
+          } else {
+            startTime = Date.now();
+            isVisible = true;
+          }
+        });
+
+        function sendReadingTime() {
+          if (isVisible) totalVisible += Date.now() - startTime;
+          var seconds = Math.round(totalVisible / 1000);
+          if (seconds > 0) {
+            gtag('event', 'reading_time', { seconds_on_page: seconds, page_path: location.pathname });
+          }
+        }
+
+        document.addEventListener('visibilitychange', function() {
+          if (document.hidden) sendReadingTime();
+        });
+        window.addEventListener('beforeunload', sendReadingTime);
+      })();
+
+      // 3. Internal Link Click Tracking (links to /blog/ pages)
+      document.addEventListener('click', function(e) {
+        var link = e.target.closest('a[href]');
+        if (!link) return;
+        var href = link.getAttribute('href');
+        if (href && (href.indexOf('/blog/') !== -1 || href.indexOf('/en/blog/') !== -1)) {
+          var isInternal = href.charAt(0) === '/' || href.indexOf(location.hostname) !== -1;
+          if (isInternal) {
+            gtag('event', 'internal_link_click', {
+              destination_url: href,
+              link_text: (link.textContent || '').trim().substring(0, 100)
+            });
+          }
+        }
+      });
+
+      // 4. Language Switch Tracking
+      document.addEventListener('click', function(e) {
+        var link = e.target.closest('a');
+        if (!link) return;
+        var parent = link.closest('.flex.items-center.gap-1.font-body.text-sm.font-medium');
+        if (!parent) return;
+        var currentLang = location.pathname.indexOf('/en/') === 0 || location.pathname === '/en' ? 'en' : 'es';
+        var toLang = currentLang === 'es' ? 'en' : 'es';
+        gtag('event', 'language_switch', { from_lang: currentLang, to_lang: toLang });
+      });
     </script>
   </head>
   <body>
