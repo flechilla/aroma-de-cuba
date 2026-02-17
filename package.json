@@ -15,6 +15,7 @@
       "astro check"
     ],
     "src/content/**/*.mdx": [
+      "node scripts/validate-frontmatter.mjs",
       "astro check"
     ]
   },
