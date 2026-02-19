@@ -195,6 +195,34 @@ def publish_photo_post(url: str, title: str, description: str, image_url: str) -
         }
 
 
+def publish_text_post(message: str) -> dict:
+    """
+    Publish a pure text post to Facebook Page (no link, no image).
+    Used for engagement posts: polls, nostalgia, trivia, etc.
+    """
+    if not FB_PAGE_ACCESS_TOKEN:
+        return {"success": False, "error": "No FB_PAGE_ACCESS_TOKEN configured. Run --setup first."}
+
+    endpoint = f"{GRAPH_API_BASE}/{FB_PAGE_ID}/feed"
+
+    payload = {
+        "message": message,
+        "access_token": FB_PAGE_ACCESS_TOKEN,
+    }
+
+    response = requests.post(endpoint, data=payload)
+
+    if response.status_code == 200:
+        post_id = response.json().get("id")
+        return {"success": True, "post_id": post_id}
+    else:
+        error = response.json().get("error", {})
+        return {
+            "success": False,
+            "error": f"{error.get('type', 'Unknown')}: {error.get('message', 'Unknown error')}",
+        }
+
+
 def test_connection():
     """Test the Facebook API connection."""
     if not FB_PAGE_ACCESS_TOKEN:
@@ -232,13 +260,22 @@ def main():
     parser.add_argument("--description", help="Post description")
     parser.add_argument("--image", help="Image URL (required for photo posts)")
     parser.add_argument("--link-only", action="store_true", help="Force link post instead of photo post")
-    
+    parser.add_argument("--message-only", help="Publish a pure text post (no link, no image)")
+
     args = parser.parse_args()
     
     if args.setup:
         setup_token()
     elif args.test:
         test_connection()
+    elif args.message_only:
+        result = publish_text_post(args.message_only)
+        if result["success"]:
+            print(f"✅ Published! Post ID: {result['post_id']}")
+            print(f"   View: https://facebook.com/{result['post_id']}")
+        else:
+            print(f"❌ Failed: {result['error']}")
+            sys.exit(1)
     elif args.url and args.title and args.description:
         # Default: photo post when image provided (better engagement)
         # Use --link-only to force old link-sharing behavior
