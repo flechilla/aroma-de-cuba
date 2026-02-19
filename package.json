@@ -27,6 +27,7 @@
     "@fontsource/lora": "^5.2.8",
     "@fontsource/playfair-display": "^5.2.8",
     "@tailwindcss/vite": "^4.1.18",
+    "@vercel/blob": "^2.2.0",
     "astro": "^5.17.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.1.18"
