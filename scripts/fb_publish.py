@@ -125,13 +125,17 @@ def setup_token():
 
 def publish_post(url: str, title: str, description: str, image_url: str = None) -> dict:
     """
-    Publish a link post to Facebook Page.
-    
+    Publish a link post to Facebook Page feed (timeline).
+
+    Uses /feed endpoint with link parameter so the post appears in the
+    Page timeline as a link card — NOT in the Photos tab.
+    Facebook automatically fetches og:image from the URL for the preview.
+
     Args:
         url: The blog post URL
         title: Post title (used in message)
         description: Post description
-        image_url: Optional image URL (Facebook will scrape from og:image if not provided)
+        image_url: Ignored — Facebook uses og:image from the URL automatically
     
     Returns:
         dict with 'success', 'post_id', and 'error' keys
@@ -139,10 +143,10 @@ def publish_post(url: str, title: str, description: str, image_url: str = None) 
     if not FB_PAGE_ACCESS_TOKEN:
         return {"success": False, "error": "No FB_PAGE_ACCESS_TOKEN configured. Run --setup first."}
     
-    # Compose the message
-    message = f"📰 {title}\n\n{description}\n\n🔗 Lee más en Aroma de Cuba"
+    # Compose the message (no URL in text — it's in the link field)
+    message = f"📰 {title}\n\n{description}"
     
-    # Publish to page feed
+    # Publish to page feed as link post — appears in timeline
     endpoint = f"{GRAPH_API_BASE}/{FB_PAGE_ID}/feed"
     
     payload = {
@@ -166,33 +170,12 @@ def publish_post(url: str, title: str, description: str, image_url: str = None) 
 
 def publish_photo_post(url: str, title: str, description: str, image_url: str) -> dict:
     """
-    Publish a photo post with link in caption.
-    Better engagement than link posts.
+    DEPRECATED: Posts to /photos endpoint — appears in Photos tab, NOT timeline.
+    Use publish_post() instead for timeline link posts.
+    Kept for reference only.
     """
-    if not FB_PAGE_ACCESS_TOKEN:
-        return {"success": False, "error": "No FB_PAGE_ACCESS_TOKEN configured. Run --setup first."}
-    
-    message = f"📰 {title}\n\n{description}\n\n🔗 {url}"
-    
-    endpoint = f"{GRAPH_API_BASE}/{FB_PAGE_ID}/photos"
-    
-    payload = {
-        "caption": message,
-        "url": image_url,
-        "access_token": FB_PAGE_ACCESS_TOKEN,
-    }
-    
-    response = requests.post(endpoint, data=payload)
-    
-    if response.status_code == 200:
-        post_id = response.json().get("id")
-        return {"success": True, "post_id": post_id}
-    else:
-        error = response.json().get("error", {})
-        return {
-            "success": False,
-            "error": f"{error.get('type', 'Unknown')}: {error.get('message', 'Unknown error')}",
-        }
+    # Redirect to feed link post to avoid Photos-tab issue
+    return publish_post(url, title, description)
 
 
 def publish_text_post(message: str) -> dict:
@@ -258,8 +241,8 @@ def main():
     parser.add_argument("--url", help="Blog post URL to publish")
     parser.add_argument("--title", help="Post title")
     parser.add_argument("--description", help="Post description")
-    parser.add_argument("--image", help="Image URL (required for photo posts)")
-    parser.add_argument("--link-only", action="store_true", help="Force link post instead of photo post")
+    parser.add_argument("--image", help="Ignored — Facebook fetches og:image automatically from the URL")
+    parser.add_argument("--link-only", action="store_true", help="(deprecated, now default behavior)")
     parser.add_argument("--message-only", help="Publish a pure text post (no link, no image)")
 
     args = parser.parse_args()
@@ -277,12 +260,9 @@ def main():
             print(f"❌ Failed: {result['error']}")
             sys.exit(1)
     elif args.url and args.title and args.description:
-        # Default: photo post when image provided (better engagement)
-        # Use --link-only to force old link-sharing behavior
-        if args.image and not args.link_only:
-            result = publish_photo_post(args.url, args.title, args.description, args.image)
-        else:
-            result = publish_post(args.url, args.title, args.description, args.image)
+        # Always use /feed link post — appears in timeline, not Photos tab
+        # Facebook auto-fetches og:image from the URL for the link card preview
+        result = publish_post(args.url, args.title, args.description)
         
         if result["success"]:
             print(f"✅ Published! Post ID: {result['post_id']}")
