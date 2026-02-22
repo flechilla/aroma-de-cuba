@@ -159,7 +159,13 @@ def publish_post(url: str, title: str, description: str, image_url: str = None) 
     
     if response.status_code == 200:
         post_id = response.json().get("id")
-        return {"success": True, "post_id": post_id}
+        # Fetch the real permalink URL
+        pr = requests.get(
+            f"{GRAPH_API_BASE}/{post_id}",
+            params={"fields": "permalink_url", "access_token": FB_PAGE_ACCESS_TOKEN}
+        )
+        permalink = pr.json().get("permalink_url", f"https://www.facebook.com/{post_id}")
+        return {"success": True, "post_id": post_id, "permalink": permalink}
     else:
         error = response.json().get("error", {})
         return {
@@ -255,7 +261,7 @@ def main():
         result = publish_text_post(args.message_only)
         if result["success"]:
             print(f"✅ Published! Post ID: {result['post_id']}")
-            print(f"   View: https://facebook.com/{result['post_id']}")
+            print(f"   View: {result.get('permalink', 'https://www.facebook.com/' + result['post_id'])}")
         else:
             print(f"❌ Failed: {result['error']}")
             sys.exit(1)
@@ -266,7 +272,7 @@ def main():
         
         if result["success"]:
             print(f"✅ Published! Post ID: {result['post_id']}")
-            print(f"   View: https://facebook.com/{result['post_id']}")
+            print(f"   View: {result.get('permalink', 'https://www.facebook.com/' + result['post_id'])}")
         else:
             print(f"❌ Failed: {result['error']}")
             sys.exit(1)
