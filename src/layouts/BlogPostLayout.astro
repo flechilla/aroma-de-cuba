@@ -26,6 +26,7 @@ interface Props {
   tags: string[];
   coverImage: ImageMetadata;
   coverImageAlt: string;
+  coverImageCredit?: string;
   lang?: 'es' | 'en';
   slug: string;
   readingTime?: number;
@@ -44,6 +45,7 @@ const {
   tags,
   coverImage,
   coverImageAlt,
+  coverImageCredit,
   lang = 'es',
   slug,
   readingTime,
@@ -134,6 +136,11 @@ const articleData = {
         loading="eager"
         class="w-full h-auto rounded-lg aspect-[1200/630] object-cover"
       />
+      {coverImageCredit && (
+        <p class="text-xs text-piedra italic text-center mt-2">
+          {coverImageCredit}
+        </p>
+      )}
     </div>
 
     <div class="max-w-3xl mx-auto px-6">
