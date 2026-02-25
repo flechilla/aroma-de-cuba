@@ -1,4 +1,38 @@
 {
+      "id": "2026-02-25-trump-planes-deportacion-cubanos-analisis",
+      "title": "¿Regreso forzoso? Trump analiza el futuro de los cubanos en EE.UU.",
+      "titleEn": "Forced Return? Trump Weighs the Future of Cubans in the US",
+      "topics": [
+        "migracion",
+        "deportacion",
+        "trump",
+        "ICE"
+      ],
+      "publishedAt": "2026-02-25T18:30:00Z",
+      "slugEs": "2026-02-25-trump-planes-deportacion-cubanos-analisis",
+      "slugEn": "2026-02-25-trump-planes-deportacion-cubanos-analisis",
+      "sources": [
+        "https://english.elpais.com/international/2026-02-25/trumps-plans-for-cubans-in-the-us-maybe-they-want-to-go-back-theyre-going-to-have-that-choice.html",
+        "https://en.cibercuba.com/noticias/2026-02-19-u1-e208574-s27061-nid321209-regimen-cubano-acepta-primera-vez-deportados-delitos"
+      ],
+      "keywords": [
+        "Trump",
+        "deportacion",
+        "Cuba",
+        "ICE",
+        "retorno voluntario",
+        "plan migratorio"
+      ],
+      "relatedPosts": [
+        "2026-02-25-i220a-fallo-corte-apelaciones-11-circuito",
+        "2026-02-25-i220a-fase-revision-corte-atlanta",
+        "2026-02-20-segundo-vuelo-deportacion-cuba-116-migrantes-2026",
+        "2026-02-23-opciones-legales-cubanos-antecedentes-deportacion",
+        "2026-02-24-trump-restriccion-permisos-trabajo-cubanos"
+      ],
+      "isUpdate": false
+    },
+    {
       "id": "2026-02-25-i220a-fase-revision-corte-atlanta",
       "title": "I-220A ante la Corte: ¿Qué significa el nuevo fallo de Atlanta?",
       "titleEn": "I-220A in Court: What Does the Atlanta Ruling Really Mean?",
