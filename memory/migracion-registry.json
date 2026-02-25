@@ -1,29 +1,217 @@
 {
-  "description": "Registry of published migration news articles to avoid duplicates",
-  "lastUpdated": "2026-02-23",
-  "articles": [
-    {
-      "id": "poblacion-cuba-8-millones-2026-02-23",
-      "title": "Cuba se vacía: población cae a 8 millones tras éxodo histórico",
-      "titleEn": "Emptying Island: Cuba’s Population Drops to 8 Million Amid Exodus",
+      "id": "2026-02-25-i220a-fase-revision-corte-atlanta",
+      "title": "I-220A ante la Corte: ¿Qué significa el nuevo fallo de Atlanta?",
+      "titleEn": "I-220A in Court: What Does the Atlanta Ruling Really Mean?",
       "topics": [
         "migracion",
-        "demografia",
-        "exodo",
-        "crisis"
+        "I-220A",
+        "justicia",
+        "CAA"
       ],
-      "publishedAt": "2026-02-23T00:35:00Z",
-      "slugEs": "2026-02-23-poblacion-cuba-cae-minimo-historico-exodo",
-      "slugEn": "2026-02-23-poblacion-cuba-cae-minimo-historico-exodo",
+      "publishedAt": "2026-02-25T12:30:00Z",
+      "slugEs": "2026-02-25-i220a-fase-revision-corte-atlanta",
+      "slugEn": "2026-02-25-i220a-fase-revision-corte-atlanta",
       "sources": [
-        "https://elpais.com/america/2026-02-22/viaje-a-una-cuba-al-borde-de-la-paralisis-siento-que-es-el-final-de-la-pelicula.html",
-        "https://www.elpais.com.co/politica/analisis-cuba-ante-el-espejo-bloqueo-o-ineficiencia-2204.html"
+        "https://cafefuerte.com/tribunal-de-apelaciones-anula-decisiones-sobre-casos-de-i-220a-y-ordena-nueva-revision-legal/",
+        "https://english.elpais.com/usa/2026-02-17/the-future-of-many-cubans-in-the-us-depends-on-a-long-legal-saga.html",
+        "https://en.cibercuba.com/noticias/2026-02-24-u1-e129488-s27061-nid321559-corte-eeuu-toma-decision-cubanos-220a-litigio"
       ],
+      "keywords": [
+        "I-220A",
+        "Corte de Apelaciones",
+        "11th Circuit",
+        "Mark Prada",
+        "Ley de Ajuste Cubano",
+        "asilo",
+        "revisión administrativa"
+      ],
+      "relatedPosts": [
+        "2026-02-25-i220a-fallo-corte-apelaciones-11-circuito",
+        "2026-02-24-esperanza-cubanos-i220a-audiencia-miami",
+        "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
+        "2026-02-11-formularios-i220-cubanos-guia",
+        "2026-02-25-liberacion-cubano-i220a-detencion-ice"
+      ],
+      "isUpdate": false
+    },
+    {
+      "id": "2026-02-25-i220a-fallo-corte-apelaciones-11-circuito",
+      "title": "Fallo histórico: Corte de Apelaciones abre puerta a cubanos con I-220A",
+      "titleEn": "Historic Ruling: Appeals Court Opens Door for Cubans with I-220A",
+      "topics": [
+        "migracion",
+        "I-220A",
+        "justicia",
+        "CAA"
+      ],
+      "publishedAt": "2026-02-25T06:30:00Z",
+      "slugEs": "2026-02-25-i220a-fallo-corte-apelaciones-11-circuito",
+      "slugEn": "2026-02-25-i220a-fallo-corte-apelaciones-11-circuito",
+      "sources": [
+        "https://cafefuerte.com/tribunal-de-apelaciones-anula-decisiones-sobre-casos-de-i-220a-y-ordena-nueva-revision-legal/",
+        "https://english.elpais.com/usa/2026-02-17/the-future-of-many-cubans-in-the-us-depends-on-a-long-legal-saga.html"
+      ],
+      "keywords": [
+        "I-220A",
+        "Corte de Apelaciones",
+        "11th Circuit",
+        "Ley de Ajuste Cubano",
+        "Mark Prada",
+        "residencia",
+        "Atlanta"
+      ],
+      "relatedPosts": [
+        "2026-02-24-esperanza-cubanos-i220a-audiencia-miami",
+        "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
+        "2026-02-17-i220a-demanda-colectiva-500mil-cubanos",
+        "2026-02-11-formularios-i220-cubanos-guia",
+        "2026-02-24-trump-restriccion-permisos-trabajo-cubanos"
+      ],
+      "isUpdate": false
+    },
+    {
+      "id": "2026-02-25-liberacion-cubano-i220a-detencion-ice",
+      "title": "Liberación de cubano con I-220A tras detención de ICE: esperanza y dudas",
+      "titleEn": "Cuban with I-220A Released After ICE Detention: Hope and Uncertainties",
+      "topics": [
+        "migracion",
+        "I-220A",
+        "detencion",
+        "ICE"
+      ],
+      "publishedAt": "2026-02-25T00:30:00Z",
+      "slugEs": "2026-02-25-liberacion-cubano-i220a-detencion-ice",
+      "slugEn": "2026-02-25-liberacion-cubano-i220a-detencion-ice",
+      "sources": [
+        "https://www.cibercuba.com",
+        "https://www.ice.gov",
+        "https://www.gallardolawyers.com"
+      ],
+      "keywords": [
+        "I-220A",
+        "ICE",
+        "liberacion",
+        "detencion",
+        "cubanos"
+      ],
+      "relatedPosts": [
+        "2026-02-24-esperanza-cubanos-i220a-audiencia-miami",
+        "2026-02-24-trump-restriccion-permisos-trabajo-cubanos",
+        "2026-02-11-formularios-i220-cubanos-guia",
+        "2026-02-20-segundo-vuelo-deportacion-cuba-116-migrantes-2026",
+        "2026-02-23-opciones-legales-cubanos-antecedentes-deportacion"
+      ],
+      "isUpdate": false
+    },
+    {
+      "id": "2026-02-24-trump-restriccion-permisos-trabajo-cubanos",
+      "title": "Restricción de permisos de trabajo 2026: ¿Qué deben saber los cubanos?",
+      "titleEn": "Work Permit Restrictions 2026: What Cubans Need to Know",
+      "topics": [
+        "migracion",
+        "asilo",
+        "permiso-trabajo",
+        "dhs",
+        "trump"
+      ],
+      "publishedAt": "2026-02-24T06:30:00Z",
+      "slugEs": "2026-02-24-trump-restriccion-permisos-trabajo-cubanos",
+      "slugEn": "2026-02-24-trump-restriccion-permisos-trabajo-cubanos",
+      "sources": [
+        "https://www.dhs.gov",
+        "https://www.lanacion.com.ar/estados-unidos/migraciones/desde-abril-2026-vuelve-la-regla-de-los-365-dias-del-uscis-para-permisos-de-trabajo-inicial-en-eeuu-nid24022026/"
+      ],
+      "keywords": [
+        "permiso trabajo",
+        "asilo",
+        "regla 365 dias",
+        "cubanos",
+        "DHS"
+      ],
+      "relatedPosts": [
+        "2026-02-21-lista-dhs-peores-migrantes-errores-1900-cubanos",
+        "2026-02-20-segundo-vuelo-deportacion-cuba-116-migrantes-2026",
+        "2026-02-23-opciones-legales-cubanos-antecedentes-deportacion",
+        "2026-02-17-i220a-demanda-colectiva-500mil-cubanos",
+        "2026-02-21-trump-restringe-permisos-trabajo-solicitantes-asilo"
+      ],
+      "isUpdate": false
+    },
+    {
+      "id": "2026-02-24-esperanza-cubanos-i220a-audiencia-miami",
+      "title": "Esperanza para Cubanos con I-220A: Audiencia Clave en Corte Federal",
+      "titleEn": "Hope for Cubans with I-220A: Key Hearing in Federal Court",
+      "topics": [
+        "migracion",
+        "I-220A",
+        "asilo",
+        "justicia"
+      ],
+      "publishedAt": "2026-02-24T12:30:00Z",
+      "slugEs": "2026-02-24-esperanza-cubanos-i220a-audiencia-miami",
+      "slugEn": "2026-02-24-esperanza-cubanos-i220a-audiencia-miami",
+      "sources": [
+        "https://www.cibercuba.com",
+        "https://www.martinoticias.com",
+        "https://www.ca11.uscourts.gov"
+      ],
+      "keywords": [
+        "I-220A",
+        "11th Circuit",
+        "Miami",
+        "audiencia",
+        "Ley de Ajuste Cubano"
+      ],
+      "relatedPosts": [
+        "2026-02-23-opciones-legales-cubanos-antecedentes-deportacion",
+        "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
+        "2026-02-17-i220a-demanda-colectiva-500mil-cubanos",
+        "2026-02-11-formularios-i220-cubanos-guia",
+        "2026-02-21-lista-dhs-peores-migrantes-errores-1900-cubanos"
+      ],
+      "isUpdate": false
+    },
+    {
+      "id": "2026-02-23-opciones-legales-cubanos-antecedentes-deportacion",
+      "title": "Cubanos con antecedentes y orden de deportación: ¿qué opciones tienen?",
+      "titleEn": "Cubans with Criminal Records and Deportation Orders: What Options?",
+      "topics": [
+        "migracion",
+        "deportacion",
+        "ice",
+        "leyes"
+      ],
+      "publishedAt": "2026-02-23T12:55:00Z",
+      "slugEs": "2026-02-23-opciones-legales-cubanos-antecedentes-deportacion",
+      "slugEn": "2026-02-23-opciones-legales-cubanos-antecedentes-deportacion",
+      "sources": [
+        "https://en.cibercuba.com/noticias/2026-02-20-u1-e129488-s27061-nid321343-pueden-hacer-cubanos-eeuu-tienen-antecedentes"
+      ],
+      "keywords": [
+        "antecedentes penales",
+        "I-220B",
+        "deportacion cuba",
+        "perdon migratorio",
+        "Ismael Labrador"
+      ],
+      "relatedPosts": [
+        "2026-02-20-segundo-vuelo-deportacion-cuba-116-migrantes-2026",
+        "2026-02-18-guardia-costera-eeuu-750-vuelos-deportaciones",
+        "2026-02-22-estafa-abogados-falsos-asilo-tribunal-ficticio-nueva-york",
+        "2026-02-11-formularios-i220-cubanos-guia",
+        "2026-02-17-i220a-demanda-colectiva-500mil-cubanos"
+      ],
+      "isUpdate": false
+    },
+    {
+      "id": "poblacion-cuba-8-millones-2026-02-23",
+      "isUpdate": false,
       "keywords": [
         "poblacion cuba 8 millones",
         "exodo cubano 2026",
         "crisis demografica cuba"
       ],
+      "publishedAt": "2026-02-23T00:35:00Z",
       "relatedPosts": [
         "2026-02-21-dhs-7-porciento-poblacion-cubana-ingreso-eeuu-biden",
         "2026-02-16-opcion-cero-cuba-crisis-migracion",
@@ -31,175 +219,188 @@
         "2026-02-15-cuba-aislamiento-total-riesgo-exodo",
         "2026-02-11-cubanos-deportacion-eeuu-crisis"
       ],
-      "isUpdate": false
+      "slugEn": "2026-02-23-poblacion-cuba-cae-minimo-historico-exodo",
+      "slugEs": "2026-02-23-poblacion-cuba-cae-minimo-historico-exodo",
+      "sources": [
+        "https://elpais.com/america/2026-02-22/viaje-a-una-cuba-al-borde-de-la-paralisis-siento-que-es-el-final-de-la-pelicula.html",
+        "https://www.elpais.com.co/politica/analisis-cuba-ante-el-espejo-bloqueo-o-ineficiencia-2204.html"
+      ],
+      "title": "Cuba se vacía: población cae a 8 millones tras éxodo histórico",
+      "titleEn": "Emptying Island: Cuba’s Population Drops to 8 Million Amid Exodus",
+      "topics": [
+        "migracion",
+        "demografia",
+        "exodo",
+        "crisis"
+      ]
     },
     {
       "date": "2026-02-19",
       "slug": "2026-02-19-cuba-acepta-deportados-delitos-graves-primera-vez",
+      "source": "ICE, CiberCuba, NPR",
       "title": "Cuba acepta por primera vez deportados con delitos graves desde EE.UU.",
-      "topic": "cuba-accepts-criminal-deportees-first-time",
-      "source": "ICE, CiberCuba, NPR"
+      "topic": "cuba-accepts-criminal-deportees-first-time"
     },
     {
       "date": "2026-02-18",
       "slug": "2026-02-18-rubio-negociaciones-secretas-nieto-raul-castro",
+      "source": "Axios, OnCubaNews, El País, Havana Times",
       "title": "Rubio mantiene negociaciones secretas con el nieto de Raúl Castro",
-      "topic": "rubio-secret-talks-castro-grandson",
-      "source": "Axios, OnCubaNews, El País, Havana Times"
+      "topic": "rubio-secret-talks-castro-grandson"
     },
     {
       "date": "2026-02-18",
       "slug": "2026-02-18-guardia-costera-eeuu-750-vuelos-deportaciones",
+      "source": "NBC News, CiberCuba, ICE Flight Monitor",
       "title": "Guardia Costera de EE.UU. desvía más de 750 vuelos para deportaciones",
-      "topic": "coast-guard-750-flights-diverted-deportations",
-      "source": "NBC News, CiberCuba, ICE Flight Monitor"
+      "topic": "coast-guard-750-flights-diverted-deportations"
     },
     {
       "date": "2026-02-17",
       "slug": "2026-02-17-i220a-demanda-colectiva-500mil-cubanos",
+      "source": "El País, Havana Times, USCIS",
       "title": "I-220A: la demanda que decidirá el futuro de 500,000 cubanos en EE.UU.",
-      "topic": "i220a-class-action-lawsuit-500k-cubans",
-      "source": "El País, Havana Times, USCIS"
+      "topic": "i220a-class-action-lawsuit-500k-cubans"
     },
     {
       "date": "2026-02-17",
       "slug": "2026-02-17-balseros-cubanos-rescatados-mar-caribe",
+      "source": "CiberCuba, Periódico Cubano, Asere, Cayman News Service, Royal Caribbean Blog",
       "title": "Balseros cubanos rescatados en México y el Caribe este fin de semana",
-      "topic": "rafters-rescued-mexico-cayman-sea-routes-surge",
-      "source": "CiberCuba, Periódico Cubano, Asere, Cayman News Service, Royal Caribbean Blog"
+      "topic": "rafters-rescued-mexico-cayman-sea-routes-surge"
     },
     {
       "date": "2026-02-17",
       "slug": "2026-02-17-drama-cubanos-deportados-eeuu-testimonios",
+      "source": "Havana Times, CSMonitor",
       "title": "El drama de los cubanos deportados de EE.UU.: testimonios reales",
-      "topic": "deportee-personal-stories-1669-annual-figure",
-      "source": "Havana Times, CSMonitor"
+      "topic": "deportee-personal-stories-1669-annual-figure"
     },
     {
       "date": "2026-02-16",
       "slug": "2026-02-16-opcion-cero-cuba-crisis-migracion",
+      "source": "CiberCuba, RTVE, The Guardian, Havana Times, El País, Rio Times",
       "title": "Cuba activa la 'Opción Cero': el plan de crisis que dispara la emigración",
-      "topic": "zero-option-activation-migration-pressure",
-      "source": "CiberCuba, RTVE, The Guardian, Havana Times, El País, Rio Times"
+      "topic": "zero-option-activation-migration-pressure"
     },
     {
       "date": "2026-02-16",
       "slug": "2026-02-16-nicaragua-visa-128-paises-cubanos",
+      "source": "EFE/Infobae, KSDY50, El País, Ground News",
       "title": "Nicaragua exige visa a 128 países y cierra definitivamente ruta cubana",
-      "topic": "nicaragua-128-visa-decree-cubans-closed",
-      "source": "EFE/Infobae, KSDY50, El País, Ground News"
+      "topic": "nicaragua-128-visa-decree-cubans-closed"
     },
     {
       "date": "2026-02-15",
       "slug": "2026-02-15-cuba-aislamiento-total-riesgo-exodo",
+      "source": "The Guardian, El País, Reuters, Wikipedia",
       "title": "Cuba más aislada que nunca: aliados callan y crece riesgo de éxodo",
-      "topic": "cuba-isolation-allies-crumble-exodus-risk",
-      "source": "The Guardian, El País, Reuters, Wikipedia"
+      "topic": "cuba-isolation-allies-crumble-exodus-risk"
     },
     {
       "date": "2026-02-15",
       "slug": "2026-02-15-ice-expansion-92000-camas-dhs-cierre",
+      "source": "AP, Hartford Courant, CiberCuba, Gov. Ayotte document",
       "title": "ICE planea 92,600 camas de detención pese al cierre parcial del DHS",
-      "topic": "ice-detention-expansion-dhs-shutdown",
-      "source": "AP, Hartford Courant, CiberCuba, Gov. Ayotte document"
+      "topic": "ice-detention-expansion-dhs-shutdown"
     },
     {
       "date": "2026-02-15",
       "slug": "2026-02-15-trampolin-migratorio-nicaragua-negocio",
+      "source": "Infobae, Diálogo Interamericano, Congreso EEUU",
       "title": "El negocio millonario detrás de la ruta migratoria Nicaragua-EEUU",
-      "topic": "nicaragua-migration-business-model-infobae",
-      "source": "Infobae, Diálogo Interamericano, Congreso EEUU"
+      "topic": "nicaragua-migration-business-model-infobae"
     },
     {
       "date": "2026-02-15",
       "slug": "2026-02-15-rubio-munich-cuba-reformas-migracion",
+      "source": "Bloomberg, Miami Herald, CNBC, CiberCuba",
       "title": "Rubio exige reformas a Cuba desde Múnich y vincula crisis con emigración",
-      "topic": "rubio-munich-reform-demands-migration",
-      "source": "Bloomberg, Miami Herald, CNBC, CiberCuba"
+      "topic": "rubio-munich-reform-demands-migration"
     },
     {
       "date": "2026-02-14",
       "slug": "2026-02-14-odisea-cubanos-deportados-guantanamo",
+      "source": "El País, ICE Flight Monitor",
       "title": "La odisea de los cubanos deportados a Guantánamo: testimonios",
-      "topic": "guantanamo-deportee-testimonies-elpais",
-      "source": "El País, ICE Flight Monitor"
+      "topic": "guantanamo-deportee-testimonies-elpais"
     },
     {
       "date": "2026-02-14",
       "slug": "2026-02-14-florida-policia-ice-cubanos",
+      "source": "The Observer, CiberCuba, Florida DFS",
       "title": "Florida paga $1.7 millones a policías por colaborar con ICE",
-      "topic": "florida-police-ice-reimbursement-cubans",
-      "source": "The Observer, CiberCuba, Florida DFS"
+      "topic": "florida-police-ice-reimbursement-cubans"
     },
     {
       "date": "2026-02-14",
       "slug": "2026-02-14-deportaciones-terceros-paises-40-millones",
+      "source": "AP, Washington Post, Common Dreams, Senate Foreign Relations Committee",
       "title": "EE.UU. gastó $40 millones en deportar migrantes a terceros países",
-      "topic": "third-country-deportations-senate-report",
-      "source": "AP, Washington Post, Common Dreams, Senate Foreign Relations Committee"
+      "topic": "third-country-deportations-senate-report"
     },
     {
       "date": "2026-02-13",
       "slug": "2026-02-13-autodeportacion-cubanos-ice",
+      "source": "CBS News, EFE, CiberCuba",
       "title": "28% de migrantes en custodia de ICE eligen autodeportarse en 2025",
-      "topic": "self-deportation-ice-record",
-      "source": "CBS News, EFE, CiberCuba"
+      "topic": "self-deportation-ice-record"
     },
     {
       "date": "2026-02-13",
       "slug": "2026-02-13-trump-acuerdo-cuba-migracion",
+      "source": "Washington Post, Air Force One remarks, Inter-American Dialogue",
       "title": "Trump promete acuerdo con Cuba: impacto en la migración",
-      "topic": "trump-cuba-deal-migration-impact",
-      "source": "Washington Post, Air Force One remarks, Inter-American Dialogue"
+      "topic": "trump-cuba-deal-migration-impact"
     },
     {
       "date": "2026-02-12",
       "slug": "2026-02-12-juez-libera-cubanos-ice-louisiana",
+      "source": "Fox News, Washington Times, DHS, National Today",
       "title": "Juez libera a tres cubanos condenados por homicidio de custodia ICE",
-      "topic": "judge-releases-cuban-criminals-ice",
-      "source": "Fox News, Washington Times, DHS, National Today"
+      "topic": "judge-releases-cuban-criminals-ice"
     },
     {
       "date": "2026-02-12",
       "slug": "2026-02-12-rubio-sabotea-negociaciones-cuba",
+      "source": "Drop Site News, Al Jazeera, Common Dreams, Washington Post",
       "title": "Rubio acusado de sabotear negociaciones entre EE.UU. y Cuba",
-      "topic": "rubio-cuba-negotiations-sabotage",
-      "source": "Drop Site News, Al Jazeera, Common Dreams, Washington Post"
+      "topic": "rubio-cuba-negotiations-sabotage"
     },
     {
       "date": "2026-02-12",
       "slug": "2026-02-12-ice-arresta-cinco-cubanos-antecedentes-penales",
+      "source": "ICE, CubaHeadlines, Periódico Cubano",
       "title": "ICE arresta a cinco cubanos con antecedentes penales graves",
-      "topic": "ice-criminal-arrests",
-      "source": "ICE, CubaHeadlines, Periódico Cubano"
+      "topic": "ice-criminal-arrests"
     },
     {
       "date": "2026-02-12",
       "slug": "2026-02-12-peso-cubano-minimo-historico",
+      "source": "El Toque, Infobae, multiple sources",
       "title": "Peso cubano alcanza mínimo histórico de 500 por dólar",
-      "topic": "economic-crisis-migration",
-      "source": "El Toque, Infobae, multiple sources"
+      "topic": "economic-crisis-migration"
     },
     {
       "date": "2026-02-12",
       "slug": "2026-02-12-geraldo-lunas-campos-homicidio-ice",
+      "source": "American Immigration Council, El Paso Medical Examiner",
       "title": "Muerte de cubano en detención de ICE clasificada como homicidio",
-      "topic": "ice-custody-death",
-      "source": "American Immigration Council, El Paso Medical Examiner"
+      "topic": "ice-custody-death"
     },
     {
       "date": "2026-02-11",
       "slug": "2026-02-11-formularios-i220-cubanos-guia",
+      "source": "Multiple sources",
       "title": "Formularios I-220A e I-220B: Guía completa para cubanos",
-      "topic": "i220-guide",
-      "source": "Multiple sources"
+      "topic": "i220-guide"
     },
     {
       "date": "2026-02-11",
       "slug": "2026-02-11-cubanos-deportacion-eeuu-crisis",
+      "source": "The Guardian",
       "title": "45,000 cubanos con órdenes de deportación en EE.UU.",
-      "topic": "deportation-statistics",
-      "source": "The Guardian"
+      "topic": "deportation-statistics"
     },
     {
       "date": "2026-02-11",
@@ -210,9 +411,9 @@
     {
       "date": "2026-02-11",
       "slug": "2026-02-11-guantanamo-cubanos-detencion-ice",
+      "source": "The New York Times, CiberCuba",
       "title": "De ICE a Guantánamo: El limbo migratorio de cubanos detenidos",
-      "topic": "guantanamo-detention",
-      "source": "The New York Times, CiberCuba"
+      "topic": "guantanamo-detention"
     },
     {
       "date": "2026-02-10",
@@ -223,74 +424,53 @@
     {
       "date": "2026-02-19",
       "slug": "2026-02-19-cubanoamericanos-florida-politica-trump-cuba",
+      "source": "GossipPalace, NYT, NPR, OnCubaNews",
       "title": "Cubanoamericanos en Florida: política de Trump divide a la comunidad",
-      "topic": "cuban-american-voter-backlash",
-      "source": "GossipPalace, NYT, NPR, OnCubaNews"
+      "topic": "cuban-american-voter-backlash"
     },
     {
       "date": "2026-02-20",
       "slug": "2026-02-20-segundo-vuelo-deportacion-cuba-116-migrantes-2026",
+      "source": "EFE/Infobae, CiberCuba, ICE, Martí Noticias",
       "title": "Segundo vuelo de deportación a Cuba: 116 migrantes, 302 en total",
-      "topic": "second-deportation-flight-116-migrants-302-total",
-      "source": "EFE/Infobae, CiberCuba, ICE, Martí Noticias"
+      "topic": "second-deportation-flight-116-migrants-302-total"
     },
     {
       "date": "2026-02-21",
       "slug": "2026-02-21-trump-restringe-permisos-trabajo-solicitantes-asilo",
+      "source": "DHS, CiberCuba, EFE, Café Fuerte",
       "title": "Trump restringe permisos de trabajo a solicitantes de asilo en EE.UU.",
-      "topic": "trump-work-permit-restriction-asylum-365-days",
-      "source": "DHS, CiberCuba, EFE, Café Fuerte"
+      "topic": "trump-work-permit-restriction-asylum-365-days"
     },
     {
       "date": "2026-02-21",
       "slug": "2026-02-21-lista-dhs-peores-migrantes-errores-1900-cubanos",
+      "source": "CNN, CiberCuba, The Mirror, IBTimes",
       "title": "DHS admite errores en lista de peores migrantes: 1,900 cubanos",
-      "topic": "dhs-worst-of-worst-list-errors-1900-cubans",
-      "source": "CNN, CiberCuba, The Mirror, IBTimes"
+      "topic": "dhs-worst-of-worst-list-errors-1900-cubans"
     },
     {
       "date": "2026-02-21",
       "slug": "2026-02-21-dhs-7-porciento-poblacion-cubana-ingreso-eeuu-biden",
+      "source": "DHS, CiberCuba, RedState",
       "title": "DHS: el 7% de la población cubana ingresó a EE.UU. bajo Biden",
-      "topic": "dhs-7-percent-cuban-population-entered-us-biden",
-      "source": "DHS, CiberCuba, RedState"
+      "topic": "dhs-7-percent-cuban-population-entered-us-biden"
     },
     {
       "date": "2026-02-22",
-      "slug": "2026-02-22-ice-cambia-version-muerte-cubano-el-paso-uso-fuerza",
-      "title": "ICE cambia su versión: cubano murió por uso espontáneo de fuerza",
-      "titleEn": "ICE Changes Story: Cuban Man Died from Spontaneous Use of Force",
-      "topic": "ice-changes-story-lunas-campos-death-spontaneous-force",
-      "source": "Texas Tribune, Raw Story, The Mirror, ICE report",
       "isUpdate": true,
       "relatedPosts": [
         "2026-02-12-geraldo-lunas-campos-homicidio-ice"
-      ]
+      ],
+      "slug": "2026-02-22-ice-cambia-version-muerte-cubano-el-paso-uso-fuerza",
+      "source": "Texas Tribune, Raw Story, The Mirror, ICE report",
+      "title": "ICE cambia su versión: cubano murió por uso espontáneo de fuerza",
+      "titleEn": "ICE Changes Story: Cuban Man Died from Spontaneous Use of Force",
+      "topic": "ice-changes-story-lunas-campos-death-spontaneous-force"
     },
     {
       "date": "2026-02-22",
-      "slug": "2026-02-22-cubanos-trabajadores-hospital-liberados-ice-nueva-york",
-      "title": "Dos cubanos salen de detención ICE: sus sindicatos pagaron la fianza",
-      "titleEn": "Cuban Hospital Couple Freed from ICE: Unions Paid Their $20K Bond",
-      "topic": "cuban-hospital-workers-freed-ice-unions-solidarity",
-      "source": "Syracuse.com, CNY Central, InformNNY/Yahoo News",
-      "topics": [
-        "migracion",
-        "asilo",
-        "ice",
-        "sindicatos",
-        "lgbtq",
-        "nueva-york",
-        "deportacion-terceros-paises"
-      ],
-      "publishedAt": "2026-02-22T06:35:00.000Z",
-      "slugEs": "2026-02-22-cubanos-trabajadores-hospital-liberados-ice-nueva-york",
-      "slugEn": "2026-02-22-cubanos-trabajadores-hospital-liberados-ice-nueva-york",
-      "sources": [
-        "https://www.syracuse.com/news/2026/02/second-upstate-hospital-worker-from-cuba-released-from-ice-detention.html",
-        "https://cnycentral.com/news/local/alex-gonzalez-released-on-bond-from-batavia-ice-facility-immigration-cuba-assylum-ice-upstate-hospital-bail-detained-trump-administration",
-        "https://www.yahoo.com/news/articles/alex-yan-cny-hospital-workers-205000762.html"
-      ],
+      "isUpdate": false,
       "keywords": [
         "Alex González",
         "Yan Vázquez",
@@ -303,6 +483,7 @@
         "deportación Ecuador",
         "LGBTQ migración"
       ],
+      "publishedAt": "2026-02-22T06:35:00.000Z",
       "relatedPosts": [
         "2026-02-21-trump-restringe-permisos-trabajo-solicitantes-asilo",
         "2026-02-17-i220a-demanda-colectiva-500mil-cubanos",
@@ -310,32 +491,31 @@
         "2026-02-12-geraldo-lunas-campos-homicidio-ice",
         "2026-02-13-autodeportacion-cubanos-ice"
       ],
-      "isUpdate": false
+      "slug": "2026-02-22-cubanos-trabajadores-hospital-liberados-ice-nueva-york",
+      "slugEn": "2026-02-22-cubanos-trabajadores-hospital-liberados-ice-nueva-york",
+      "slugEs": "2026-02-22-cubanos-trabajadores-hospital-liberados-ice-nueva-york",
+      "source": "Syracuse.com, CNY Central, InformNNY/Yahoo News",
+      "sources": [
+        "https://www.syracuse.com/news/2026/02/second-upstate-hospital-worker-from-cuba-released-from-ice-detention.html",
+        "https://cnycentral.com/news/local/alex-gonzalez-released-on-bond-from-batavia-ice-facility-immigration-cuba-assylum-ice-upstate-hospital-bail-detained-trump-administration",
+        "https://www.yahoo.com/news/articles/alex-yan-cny-hospital-workers-205000762.html"
+      ],
+      "title": "Dos cubanos salen de detención ICE: sus sindicatos pagaron la fianza",
+      "titleEn": "Cuban Hospital Couple Freed from ICE: Unions Paid Their $20K Bond",
+      "topic": "cuban-hospital-workers-freed-ice-unions-solidarity",
+      "topics": [
+        "migracion",
+        "asilo",
+        "ice",
+        "sindicatos",
+        "lgbtq",
+        "nueva-york",
+        "deportacion-terceros-paises"
+      ]
     },
     {
       "date": "2026-02-22",
-      "slug": "2026-02-22-estafa-abogados-falsos-asilo-tribunal-ficticio-nueva-york",
-      "title": "Estafa de asilo en NY: falsas audiencias para robar a inmigrantes",
-      "titleEn": "Fake Immigration Court Scam Targeted Asylum Seekers in New York",
-      "topic": "fake-immigration-court-scam-asylum-new-york",
-      "source": "The Guardian, NY Daily News, DOJ/EDNY, CiberCuba",
-      "topics": [
-        "asilo",
-        "estafa",
-        "abogados-falsos",
-        "nueva-york",
-        "fraude-migratorio",
-        "advertencia"
-      ],
-      "publishedAt": "2026-02-22T12:40:00.000Z",
-      "slugEs": "2026-02-22-estafa-abogados-falsos-asilo-tribunal-ficticio-nueva-york",
-      "slugEn": "2026-02-22-estafa-abogados-falsos-asilo-tribunal-ficticio-nueva-york",
-      "sources": [
-        "https://www.theguardian.com/us-news/2026/feb/21/new-jersey-immigration-scam",
-        "https://www.nydailynews.com/2026/02/20/fake-immigration-lawyers-staged-sham-court-hearings-scam-migrants-feds/",
-        "https://www.justice.gov/usao-edny/pr/five-defendants-charged-impersonating-immigration-judges-law-enforcement-officers-and",
-        "https://en.cibercuba.com/noticias/2026-02-21-u1-e208574-s27061-nid321392-red-impostores-monto-tribunal-migratorio-ficticio"
-      ],
+      "isUpdate": false,
       "keywords": [
         "CM Bufete de Abogados",
         "estafa migratoria",
@@ -347,6 +527,7 @@
         "abogados impostores",
         "jueces falsos"
       ],
+      "publishedAt": "2026-02-22T12:40:00.000Z",
       "relatedPosts": [
         "2026-02-21-trump-restringe-permisos-trabajo-solicitantes-asilo",
         "2026-02-17-i220a-demanda-colectiva-500mil-cubanos",
@@ -354,32 +535,31 @@
         "2026-02-22-cubanos-trabajadores-hospital-liberados-ice-nueva-york",
         "2026-02-13-trump-acuerdo-cuba-migracion"
       ],
-      "isUpdate": false
+      "slug": "2026-02-22-estafa-abogados-falsos-asilo-tribunal-ficticio-nueva-york",
+      "slugEn": "2026-02-22-estafa-abogados-falsos-asilo-tribunal-ficticio-nueva-york",
+      "slugEs": "2026-02-22-estafa-abogados-falsos-asilo-tribunal-ficticio-nueva-york",
+      "source": "The Guardian, NY Daily News, DOJ/EDNY, CiberCuba",
+      "sources": [
+        "https://www.theguardian.com/us-news/2026/feb/21/new-jersey-immigration-scam",
+        "https://www.nydailynews.com/2026/02/20/fake-immigration-lawyers-staged-sham-court-hearings-scam-migrants-feds/",
+        "https://www.justice.gov/usao-edny/pr/five-defendants-charged-impersonating-immigration-judges-law-enforcement-officers-and",
+        "https://en.cibercuba.com/noticias/2026-02-21-u1-e208574-s27061-nid321392-red-impostores-monto-tribunal-migratorio-ficticio"
+      ],
+      "title": "Estafa de asilo en NY: falsas audiencias para robar a inmigrantes",
+      "titleEn": "Fake Immigration Court Scam Targeted Asylum Seekers in New York",
+      "topic": "fake-immigration-court-scam-asylum-new-york",
+      "topics": [
+        "asilo",
+        "estafa",
+        "abogados-falsos",
+        "nueva-york",
+        "fraude-migratorio",
+        "advertencia"
+      ]
     },
     {
       "date": "2026-02-22",
-      "slug": "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
-      "title": "Ley de Ajuste Cubano 2026: quién califica y quién perdió su protección",
-      "titleEn": "Cuban Adjustment Act 2026: Who Still Qualifies and Who Lost Protection",
-      "topic": "cuban-adjustment-act-2026-guide-who-qualifies",
-      "source": "El País, USCIS.gov, CiberCuba/Ismael Labrador",
-      "topics": [
-        "ley-ajuste-cubano",
-        "green-card",
-        "parole",
-        "i220a",
-        "deportacion",
-        "trump",
-        "residencia-permanente"
-      ],
-      "publishedAt": "2026-02-22T18:45:00.000Z",
-      "slugEs": "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
-      "slugEn": "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
-      "sources": [
-        "https://english.elpais.com/usa/2026-02-17/the-future-of-many-cubans-in-the-us-depends-on-a-long-legal-saga.html",
-        "https://www.uscis.gov/save/current-user-agencies/guidance/faqs-on-the-effect-of-changes-to-parole-and-temporary-protected-status-tps-for-save-agencies",
-        "https://en.cibercuba.com/noticias/2026-02-20-u1-e129488-s27061-nid321343-pueden-hacer-cubanos-eeuu-tienen-antecedentes"
-      ],
+      "isUpdate": false,
       "keywords": [
         "Ley de Ajuste Cubano",
         "Cuban Adjustment Act",
@@ -393,6 +573,7 @@
         "deportación Cuba",
         "quién califica"
       ],
+      "publishedAt": "2026-02-22T18:45:00.000Z",
       "relatedPosts": [
         "2026-02-17-i220a-demanda-colectiva-500mil-cubanos",
         "2026-02-11-formularios-i220-cubanos-guia",
@@ -400,9 +581,31 @@
         "2026-02-20-segundo-vuelo-deportacion-cuba-116-migrantes-2026",
         "2026-02-22-cubanos-trabajadores-hospital-liberados-ice-nueva-york"
       ],
-      "isUpdate": false
+      "slug": "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
+      "slugEn": "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
+      "slugEs": "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
+      "source": "El País, USCIS.gov, CiberCuba/Ismael Labrador",
+      "sources": [
+        "https://english.elpais.com/usa/2026-02-17/the-future-of-many-cubans-in-the-us-depends-on-a-long-legal-saga.html",
+        "https://www.uscis.gov/save/current-user-agencies/guidance/faqs-on-the-effect-of-changes-to-parole-and-temporary-protected-status-tps-for-save-agencies",
+        "https://en.cibercuba.com/noticias/2026-02-20-u1-e129488-s27061-nid321343-pueden-hacer-cubanos-eeuu-tienen-antecedentes"
+      ],
+      "title": "Ley de Ajuste Cubano 2026: quién califica y quién perdió su protección",
+      "titleEn": "Cuban Adjustment Act 2026: Who Still Qualifies and Who Lost Protection",
+      "topic": "cuban-adjustment-act-2026-guide-who-qualifies",
+      "topics": [
+        "ley-ajuste-cubano",
+        "green-card",
+        "parole",
+        "i220a",
+        "deportacion",
+        "trump",
+        "residencia-permanente"
+      ]
     }
   ],
+  "description": "Registry of published migration news articles to avoid duplicates",
+  "lastUpdated": "2026-02-25",
   "topics_covered": [
     "rubio-cuba-negotiations-sabotage",
     "deportations",
