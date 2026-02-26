@@ -1,0 +1,2793 @@
+{
+  "published": [
+    {
+      "id": "mexico-ayuda-humanitaria-cuba-2026-02-26",
+      "isUpdate": false,
+      "keywords": ["México", "ayuda humanitaria", "Papaloapan", "Huasteco", "Veracruz", "frijol", "leche"],
+      "publishedAt": "2026-02-26T06:00:00Z",
+      "relatedPosts": ["ayuda-onu-cuba-2026-02-25", "apagones-continuos-cuba-1680mw-2026-02-24", "trump-elimina-aranceles-petroleo-2026-02-24", "terminal-mariel-usd-importaciones-privadas-2026-02-22", "mexico-mediacion-eeuu-cuba-sheinbaum-2026-02-19"],
+      "slugEn": "2026-02-26-mexico-ayuda-humanitaria-cuba-crisis",
+      "slugEs": "2026-02-26-mexico-ayuda-humanitaria-cuba-crisis",
+      "sources": ["https://cnnespanol.cnn.com/2026/02/25/mexico/nuevo-envio-cuba-ayuda-humanitaria-orix", "https://oncubanews.com/cuba/mexico-envia-a-cuba-otros-dos-barcos-con-ayuda-humanitaria/"],
+      "title": "México envía 1,200 toneladas de ayuda a Cuba ante crisis energética",
+      "titleEn": "Mexico Sends 1,200 Tons of Aid to Cuba Amid Energy Crisis",
+      "topics": ["noticias", "ayuda-humanitaria", "mexico", "economia"]
+    },
+    {
+      "id": "cuba-lancha-florida-incidente-2026-02-26",
+      "title": "Cuba abate a cuatro tripulantes de lancha rápida registrada en Florida",
+      "titleEn": "Cuba Abates Four Aboard Speedboat Registered in Florida",
+      "topics": ["noticias", "EE.UU.-Cuba", "incidentes"],
+      "publishedAt": "2026-02-26T00:00:00Z",
+      "slugEs": "2026-02-26-cuba-lancha-florida-incidente-muertos",
+      "slugEn": "2026-02-26-cuba-lancha-florida-incidente-muertos",
+      "sources": ["https://elpais.com/america/2026-02-25/cuba-abate-a-cuatro-tripulantes-de-una-embarcacion-civil-de-estados-unidos.html", "https://www.infobae.com/america/america-latina/2026/02/25/la-dictadura-cubana-intercepto-una-embarcacion-civil-de-estados-unidos-y-mato-a-cuatro-tripulantes/"],
+      "keywords": ["lancha rápida", "Florida", "Tiroteo", "Minint", "Villa Clara"],
+      "relatedPosts": ["ayuda-onu-cuba-2026-02-25", "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17", "hammer-cambio-historico-cuba-2026-02-22"],
+      "isUpdate": false
+    },
+    {
+      "id": "ayuda-onu-cuba-2026-02-25",
+      "title": "Ayuda humanitaria de la ONU a Cuba paralizada por falta de combustible",
+      "titleEn": "UN Humanitarian Aid to Cuba Paralyzed by Fuel Shortage",
+      "topics": ["noticias", "ayuda humanitaria", "crisis energética"],
+      "publishedAt": "2026-02-25T18:00:00Z",
+      "slugEs": "2026-02-25-ayuda-onu-cuba-paralizada-combustible",
+      "slugEn": "2026-02-25-ayuda-onu-cuba-paralizada-combustible",
+      "sources": ["https://apnews.com/article/cuba-cerco-energetico-eeuu-onu-ayuda-36bc89640e53c4b30a43359bf0465d2a", "https://www.jornada.com.mx/2026/02/25/mundo/023n1mun"],
+      "keywords": ["ONU", "ayuda humanitaria", "combustible", "bloqueo", "Havana", "logística"],
+      "relatedPosts": ["crisis-basura-habana-emergencia-sanitaria-2026-02-20", "apagones-continuos-cuba-1680mw-2026-02-24", "sistema-salud-cuba-borde-colapso-bloqueo-2026-02-22"],
+      "isUpdate": false
+    },
+    {
+      "id": "colapso-turismo-cuba-2026-02-25",
+      "isUpdate": true,
+      "keywords": ["turismo", "crisis", "hoteles", "Habana Vieja", "Varadero", "divisas", "ONEI", "Jet A1"],
+      "publishedAt": "2026-02-25T00:00:00Z",
+      "relatedPosts": ["turismo-colapsado-cuba-1-8m-visitantes-2025", "apagones-continuos-cuba-1680mw-2026-02-24", "hoteles-iluminados-hospitales-oscuras-cuba-2026-02-22", "melia-hotels-cuba-2026-02-10", "russia-suspends-flights-cuba-2026-02-11"],
+      "slugEn": "2026-02-25-colapso-turismo-cuba-habitaciones-vacias",
+      "slugEs": "2026-02-25-colapso-turismo-cuba-habitaciones-vacias",
+      "sources": ["https://www.bbc.com/mundo/articles/c15xv9k9exgo"],
+      "title": "Turismo en Cuba al borde del colapso: hoteles vacíos y crisis total",
+      "titleEn": "Cuba's Tourism on the Brink of Collapse: Empty Hotels and Total Crisis",
+      "topics": ["noticias", "economia", "turismo"],
+      "updatesPost": "melia-hotels-cuba-2026-02-10"
+    },
+    {
+      "id": "hermanos-al-rescate-30-aniversario-2026-02-24",
+      "isUpdate": false,
+      "keywords": ["Hermanos al Rescate", "Raúl Castro", "Miami", "exilio", "30 aniversario", "derribo", "justicia"],
+      "publishedAt": "2026-02-24T18:00:00Z",
+      "relatedPosts": ["mike-hammer-transition-2026-02-10", "trump-elimina-aranceles-petroleo-2026-02-24", "eeuu-envios-combustible-cuba-licencias-privadas-2026-02-18", "corte-suprema-helms-burton-cuba-2026-02-22", "i220a-demanda-colectiva-500mil-cubanos-2026-02-17"],
+      "slugEn": "2026-02-24-hermanos-al-rescate-30-aniversario",
+      "slugEs": "2026-02-24-hermanos-al-rescate-30-aniversario",
+      "sources": ["https://www.infobae.com/america/agencias/2026/02/24/temas-del-dia-de-efe-news-latino-del-martes-24-de-febrero-de-2026/", "https://www.martinoticias.com/a/a-30-años-del-derribo-de-las-avionetas-de-hermanos-al-rescate-el-crimen-que-aún-espera-justicia/449465.html"],
+      "title": "Exilio pide imputación de Raúl Castro a 30 años de Hermanos al Rescate",
+      "titleEn": "Exile Demands Raúl Castro Impeachment on 30th Anniversary of Shootdown",
+      "topics": ["noticias", "historico", "politica", "eeuu-cuba"],
+      "updatesPost": null
+    },
+    {
+      "id": "trump-elimina-aranceles-petroleo-2026-02-24",
+      "isUpdate": true,
+      "keywords": ["Trump", "aranceles", "petroleo", "Corte Suprema", "IEEPA", "orden ejecutiva", "sanciones"],
+      "publishedAt": "2026-02-24T12:00:00Z",
+      "relatedPosts": ["eeuu-envios-combustible-cuba-licencias-privadas-2026-02-18", "apagones-continuos-cuba-1680mw-2026-02-24", "cuba-dolar-505-cup-banco-central-2026-02-22", "blackout-record-64-percent-2026-02-12", "petrolero-ruso-sea-horse-desafia-bloqueo-cuba-2026-02-21"],
+      "slugEn": "2026-02-24-trump-elimina-aranceles-petroleo-cuba",
+      "slugEs": "2026-02-24-trump-elimina-aranceles-petroleo-cuba",
+      "sources": ["https://en.cibercuba.com/noticias/2026-02-24-u1-e208933-s27061-nid321530-arancel-petrolero-emergencia-activa-implica-nueva"],
+      "title": "Trump elimina aranceles a países que suministren petróleo a Cuba",
+      "titleEn": "Trump Lifts Tariffs on Countries Supplying Oil to Cuba",
+      "topics": ["noticias", "eeuu-cuba", "combustible", "sanciones"],
+      "updatesPost": "eeuu-evalua-envio-combustible-cuba-2026-02-16"
+    },
+    {
+      "id": "apagones-continuos-cuba-1680mw-2026-02-24",
+      "isUpdate": true,
+      "keywords": ["apagones", "1680 MW", "déficit", "UNE", "crisis energética", "24 horas", "termoeléctricas"],
+      "publishedAt": "2026-02-24T06:00:00Z",
+      "relatedPosts": ["hoteles-iluminados-hospitales-oscuras-cuba-2026-02-22", "cuba-dolar-505-cup-banco-central-2026-02-22", "blackout-record-64-percent-2026-02-12", "sector-privado-importa-combustible-cuba-2026-02-20", "petrolero-ruso-sea-horse-desafia-bloqueo-cuba-2026-02-21"],
+      "slugEn": "2026-02-24-apagones-continuos-cuba-deficit-1680-mw",
+      "slugEs": "2026-02-24-apagones-continuos-cuba-deficit-1680-mw",
+      "sources": ["https://en.cibercuba.com/noticias/2026-02-23-u1-e42839-s27061-nid321498-apagones-tregua-cuba-deficit-podria-alcanzar-1680-mw", "https://oncubanews.com/cuba/apagones-sin-tregua-en-cuba-el-deficit-electrico-volvera-a-superar-los-1500-mw/"],
+      "title": "Apagones sin tregua en Cuba: el déficit eléctrico roza los 1700 MW",
+      "titleEn": "Uninterrupted Blackouts in Cuba: Energy Deficit Reaches 1680 MW",
+      "topics": ["noticias", "crisis-energetica", "habana", "apagones"],
+      "updatesPost": "blackout-record-64-percent-2026-02-12"
+    },
+    {
+      "id": "corte-suprema-helms-burton-cuba-2026-02-22",
+      "title": "Corte Suprema de EEUU examina demandas por bienes confiscados en Cuba",
+      "titleEn": "US Supreme Court Weighs Cuba Property Claims Worth Billions",
+      "topics": ["noticias", "legal", "helms-burton", "confiscaciones", "exxonmobil", "cruceros", "embargo"],
+      "publishedAt": "2026-02-22T18:00:00Z",
+      "slugEs": "2026-02-22-corte-suprema-eeuu-helms-burton-cuba-millones",
+      "slugEn": "2026-02-22-corte-suprema-eeuu-helms-burton-cuba-millones",
+      "sources": [
+        "https://www.reuters.com/world/us/supreme-court-wades-into-us-cuba-business-disputes-with-billions-at-stake-2026-02-22/",
+        "https://www.cnbc.com/2026/02/22/supreme-court-wades-into-us-cuba-business-disputes.html",
+        "https://www.usnews.com/news/world/articles/2026-02-22/supreme-court-wades-into-us-cuba-business-disputes-with-billions-at-stake"
+      ],
+      "keywords": [
+        "corte-suprema", "helms-burton", "titulo-iii", "exxonmobil", "cimex",
+        "confiscaciones", "propiedades", "embargo", "cruceros", "carnival",
+        "royal-caribbean", "norwegian", "msc-cruises", "muelle-habana",
+        "inmunidad-soberana", "miles-de-millones", "trump-cuba"
+      ],
+      "relatedPosts": [
+        "hammer-cambio-historico-cuba-2026-02-22",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17",
+        "sistema-salud-cuba-borde-colapso-bloqueo-2026-02-22",
+        "cuba-preparada-bloqueo-total-onu-2026-02-20",
+        "petrolero-ruso-sea-horse-desafia-bloqueo-cuba-2026-02-21"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "hammer-cambio-historico-cuba-2026-02-22",
+      "title": "Mike Hammer: 'Sí, va a haber un cambio histórico en Cuba en 2026'",
+      "titleEn": "Mike Hammer: 'Yes, Cuba Will See Historic Change in 2026'",
+      "topics": ["noticias", "diplomacia", "eeuu-cuba", "transicion", "trump", "regimen", "rubio"],
+      "publishedAt": "2026-02-22T12:00:00Z",
+      "slugEs": "2026-02-22-hammer-eeuu-cambio-historico-cuba-2026",
+      "slugEn": "2026-02-22-hammer-eeuu-cambio-historico-cuba-2026",
+      "sources": [
+        "https://www.abc.es/internacional/mike-hammer-2026-vamos-ver-cambio-historico-20260220040701-nt.html",
+        "https://www.infobae.com/america/america-latina/2026/02/22/el-encargado-de-negocios-de-eeuu-en-cuba-afirmo-que-podria-haber-un-cambio-de-regimen-en-la-isla-en-2026/",
+        "https://lapatilla.com/2026/02/22/encargado-de-negocios-de-eeuu-afirmo-que-podria-haber-un-cambio-historico-en-cuba-en-2026/"
+      ],
+      "keywords": [
+        "mike-hammer", "cambio-historico", "transicion", "cuba-libre", "trump",
+        "rubio", "regimen", "contactos-secretos", "dia-despues", "gaesa",
+        "petroleo-cuba", "bloqueo-energetico", "presos-politicos", "abc-espana"
+      ],
+      "relatedPosts": [
+        "mike-hammer-transition-2026-02-10",
+        "sistema-salud-cuba-borde-colapso-bloqueo-2026-02-22",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17",
+        "petrolero-ruso-sea-horse-desafia-bloqueo-cuba-2026-02-21",
+        "rubio-apertura-economica-cuba-munich-2026-02-16"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "muere-willie-colon-salsa-cuba-2026-02-22",
+      "title": "Muere Willie Colón, leyenda de la salsa con alma cubana, a los 75 años",
+      "titleEn": "Willie Colón, Salsa Legend With a Cuban Soul, Dies at 75",
+      "topics": ["noticias", "musica", "salsa", "obituario", "celia-cruz", "fania-records", "hector-lavoe", "ruben-blades"],
+      "publishedAt": "2026-02-22T06:00:00Z",
+      "slugEs": "2026-02-22-muere-willie-colon-leyenda-salsa-75-anos",
+      "slugEn": "2026-02-22-muere-willie-colon-leyenda-salsa-75-anos",
+      "sources": [
+        "https://www.bbc.com/mundo/articles/cvg184mk1z0o",
+        "https://oncubanews.com/cultura/musica/muere-willie-colon-icono-de-la-salsa-en-new-york/",
+        "https://cnnespanol.cnn.com/2026/02/21/latinoamerica/fallece-leyenda-salsa-willie-colon-75-anios-orix",
+        "https://elpais.com/us/2026-02-21/muere-willie-colon-leyenda-de-la-salsa-en-nueva-york.html"
+      ],
+      "keywords": [
+        "willie-colon", "salsa", "fania-records", "obituario", "celia-cruz", "ruben-blades",
+        "hector-lavoe", "siembra", "pedro-navaja", "el-gran-varon", "idilio", "bronx",
+        "trombonista", "75-anos", "Lawrence-hospital"
+      ],
+      "relatedPosts": [
+        "let-cuba-live-celebrities-2026-02-10",
+        "cuba-caribbean-series-comeback-2026-02-10",
+        "housing-law-emigrants-2026-02-11",
+        "sistema-salud-cuba-borde-colapso-bloqueo-2026-02-22"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "terminal-mariel-usd-importaciones-privadas-2026-02-22",
+      "title": "Terminal del Mariel cobrará en dólares desde marzo",
+      "titleEn": "Mariel Port to Charge USD from Private Sector Starting March",
+      "topics": [
+        "noticias",
+        "economia",
+        "mariel",
+        "dolarizacion",
+        "mipymes",
+        "sector-privado"
+      ],
+      "publishedAt": "2026-02-22T00:51:00Z",
+      "slugEs": "2026-02-22-terminal-mariel-cobrara-usd-importaciones-privadas",
+      "slugEn": "2026-02-22-terminal-mariel-cobrara-usd-importaciones-privadas",
+      "sources": [
+        "https://oncubanews.com/cuba/economia/terminal-de-contenedores-del-mariel-cobrara-en-dolares-las-importaciones-de-actores-economicos-no-estatales/"
+      ],
+      "keywords": [
+        "mariel",
+        "usd",
+        "dolares",
+        "dolarizacion",
+        "mipymes",
+        "sector-privado",
+        "importaciones",
+        "zona-especial",
+        "TC-mariel"
+      ],
+      "relatedPosts": [
+        "cuba-exonera-impuestos-energia-renovable-2026-02-20"
+      ],
+      "isUpdate": false
+    },
+    {
+      "id": "sistema-salud-cuba-borde-colapso-bloqueo-2026-02-22",
+      "title": "Sistema de salud de Cuba al borde del colapso por el bloqueo",
+      "titleEn": "Cuba Health System On Brink of Collapse Due to US Oil Blockade",
+      "topics": [
+        "noticias",
+        "salud",
+        "crisis-energetica",
+        "bloqueo",
+        "hospitales"
+      ],
+      "publishedAt": "2026-02-22T00:00:00Z",
+      "slugEs": "2026-02-22-sistema-salud-cuba-borde-colapso-bloqueo",
+      "slugEn": "2026-02-22-sistema-salud-cuba-borde-colapso-bloqueo",
+      "sources": [
+        "https://fortune.com/2026/02/21/us-blockade-cuba-oil-supply-economy-health-system-collapse/",
+        "https://www.euronews.com/2026/02/21/cubas-healthcare-system-is-being-pushed-to-the-brink-by-us-blockades-says-health-minister",
+        "https://apnews.com/article/cuba-health-system-oil-blockade-collapse"
+      ],
+      "keywords": [
+        "portal miranda",
+        "salud",
+        "colapso",
+        "ambulancias",
+        "quimioterapia",
+        "radioterapia",
+        "5 millones",
+        "enfermos cronicos",
+        "hospitales",
+        "asedio energetico"
+      ],
+      "relatedPosts": [
+        "petrolero-ruso-sea-horse-desafia-bloqueo-cuba-2026-02-21",
+        "fuerzas-cubanas-salen-venezuela-presion-eeuu-2026-02-21"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-exonera-impuestos-energia-renovable-2026-02-20",
+      "title": "Cuba exonera 8 años de impuestos a inversiones renovables",
+      "titleEn": "Cuba grants 8-year tax exemption for renewable energy investments",
+      "topics": [
+        "noticias",
+        "economia",
+        "energia-renovable",
+        "sector-privado",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-20T18:20:00Z",
+      "slugEs": "2026-02-20-cuba-exonera-impuestos-energia-renovable",
+      "slugEn": "2026-02-20-cuba-exonera-impuestos-energia-renovable",
+      "sources": [
+        "https://www.cibercuba.com/noticias/2026-02-20-u1-e135253-s27061-nid321289-gobierno-exonera-ocho-anos-impuestos-privados",
+        "https://www.cibercuba.com/noticias/2026-02-20-u1-e135253-s27061-nid321291-paneles-baterias-inversores-quedaran-exentos",
+        "https://www.gacetaoficial.gob.cu/sites/default/files/goc-2026-ex30.pdf"
+      ],
+      "keywords": [
+        "resolucion-41-2026",
+        "exencion-fiscal",
+        "8-anos",
+        "paneles-solares",
+        "inversores",
+        "baterias",
+        "energia-renovable",
+        "sector-privado",
+        "ONAT",
+        "impuesto-aduanero",
+        "minifin",
+        "precios-controlados",
+        "conexion-red"
+      ],
+      "relatedPosts": [
+        "solar-record-800mw-2026-02-12",
+        "sector-privado-importa-combustible-cuba-2026-02-20",
+        "blackout-record-64-percent-2026-02-12",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "fuerzas-cubanas-salen-venezuela-presion-eeuu-2026-02-21",
+      "title": "Fuerzas cubanas abandonan Venezuela bajo presión de EE.UU.",
+      "titleEn": "Cuban Security Forces Leave Venezuela Under US Pressure",
+      "topics": [
+        "noticias",
+        "venezuela",
+        "geopolitica",
+        "seguridad",
+        "cuba-eeuu"
+      ],
+      "publishedAt": "2026-02-21T18:00:00Z",
+      "slugEs": "2026-02-21-fuerzas-cubanas-salen-venezuela-presion-eeuu",
+      "slugEn": "2026-02-21-fuerzas-cubanas-salen-venezuela-presion-eeuu",
+      "sources": [
+        "https://www.reuters.com/world/americas/cuban-security-forces-exit-venezuela-us-pressure-mounts-2026-02-21/"
+      ],
+      "keywords": [
+        "delcy rodriguez",
+        "dgcim",
+        "guardia cubana",
+        "maduro",
+        "fuerzas seguridad",
+        "asesores militares",
+        "medicos cubanos",
+        "venezuela"
+      ],
+      "relatedPosts": [
+        "petrolero-ruso-sea-horse-desafia-bloqueo-cuba-2026-02-21"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "petrolero-ruso-sea-horse-desafia-bloqueo-cuba-2026-02-21",
+      "title": "Petrolero ruso Sea Horse rumbo a Cuba desafía el bloqueo de Trump",
+      "titleEn": "Russian Tanker Sea Horse Heads to Cuba, Testing Trump Oil Blockade",
+      "topics": [
+        "noticias",
+        "crisis-energetica",
+        "petroleo",
+        "rusia",
+        "bloqueo",
+        "sanciones",
+        "geopolitica"
+      ],
+      "publishedAt": "2026-02-21T06:00:00Z",
+      "slugEs": "2026-02-21-petrolero-ruso-sea-horse-desafia-bloqueo-cuba",
+      "slugEn": "2026-02-21-petrolero-ruso-sea-horse-desafia-bloqueo-cuba",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2026-02-20/cuba-bound-tanker-carrying-russian-fuels-to-test-trump-blockade",
+        "https://www.spokesman.com/stories/2026/feb/20/cuba-bound-tanker-carrying-russian-fuels-to-test-t/",
+        "https://www.cubaheadlines.com/articles/321362",
+        "https://www.irishtimes.com/world/2026/02/20/tanker-carrying-russian-oil-to-fuel-starved-cuba-will-test-trump-blockade-clone/"
+      ],
+      "keywords": [
+        "sea horse",
+        "petrolero ruso",
+        "diesel ruso",
+        "200000 barriles",
+        "kpler",
+        "chipre",
+        "shadow fleet",
+        "bloqueo naval",
+        "ocean mariner",
+        "vortexa"
+      ],
+      "relatedPosts": [
+        "canciller-cuba-putin-moscu-crisis-2026-02-18",
+        "petrolero-nicos-llega-matanzas-crisis-energetica-2026-02-17",
+        "eeuu-envios-combustible-cuba-licencias-privadas-2026-02-18",
+        "sector-privado-importa-combustible-cuba-2026-02-20"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "motin-carcel-canaleta-ciego-avila-cuba-2026-02-20",
+      "title": "Motín en cárcel de Canaleta deja al menos siete muertos en Cuba",
+      "titleEn": "Prison Riot in Cuba's Canaleta Leaves at Least Seven Dead",
+      "topics": [
+        "noticias",
+        "derechos-humanos",
+        "prisiones",
+        "motin",
+        "ciego-de-avila"
+      ],
+      "publishedAt": "2026-02-20T18:05:00Z",
+      "slugEs": "2026-02-20-motin-carcel-canaleta-ciego-avila-cuba",
+      "slugEn": "2026-02-20-motin-carcel-canaleta-ciego-avila-cuba",
+      "sources": [
+        "https://oncubanews.com/cuba/motin-en-carcel-de-alta-seguridad-en-ciego-de-avila-con-victimas-mortales-segun-ongs-y-medios/",
+        "https://efe.com/mundo/2026-02-19/cuba-motin-carcel-alta-seguridad-ciego-avila/",
+        "https://www.infobae.com/america/america-latina/2026/02/20/motin-en-una-prision-de-maxima-seguridad-de-cuba-ong-aseguran-que-la-reyerta-se-origino-por-la-represion-y-los-abusos/",
+        "https://www.abc.es/internacional/siete-muertos-motin-prision-cuba-20260220095442-nt_amp.html"
+      ],
+      "keywords": [
+        "motin",
+        "canaleta",
+        "ciego-de-avila",
+        "prisoners-defenders",
+        "cdpc",
+        "balas-de-goma",
+        "hambre",
+        "patria-y-vida",
+        "siete-muertos"
+      ],
+      "relatedPosts": [
+        "cuba-preparada-bloqueo-total-onu-2026-02-20",
+        "convoy-nuestra-america-ayuda-humanitaria-cuba-2026-02-20"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "convoy-nuestra-america-ayuda-humanitaria-cuba-2026-02-20",
+      "title": "Convoy 'Nuestra América' llevará ayuda a Cuba el 21 de marzo",
+      "titleEn": "Humanitarian Convoy 'Nuestra América' to Reach Havana March 21",
+      "topics": [
+        "noticias",
+        "ayuda-humanitaria",
+        "flotilla",
+        "solidaridad",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-20T12:05:00Z",
+      "slugEs": "2026-02-20-convoy-nuestra-america-ayuda-humanitaria-cuba",
+      "slugEn": "2026-02-20-convoy-nuestra-america-ayuda-humanitaria-cuba",
+      "sources": [
+        "https://oncubanews.com/cuba/flotilla-de-ayuda-a-cuba-se-convierte-en-convoy-y-llegara-a-la-habana-el-21-de-marzo/",
+        "https://www.infobae.com/america/agencias/2026/02/19/flotilla-de-ayuda-a-cuba-se-convierte-en-convoy-y-llegara-a-la-habana-el-21-de-marzo/",
+        "https://www.jornada.com.mx/noticia/2026/02/19/mundo/convoy-para-cuba-con-ayuda-humanitaria-internacional-llegara-en-marzo"
+      ],
+      "keywords": [
+        "nuestra-america",
+        "flotilla",
+        "convoy",
+        "greta-thunberg",
+        "rashida-tlaib",
+        "sumud",
+        "gaza",
+        "ayuda-humanitaria",
+        "malecon",
+        "21-marzo"
+      ],
+      "relatedPosts": [
+        "cuba-preparada-bloqueo-total-onu-2026-02-20",
+        "sector-privado-importa-combustible-cuba-2026-02-20"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "sector-privado-importa-combustible-cuba-2026-02-20",
+      "title": "Sector privado cubano ya importa combustible: una bocanada de aire",
+      "titleEn": "Cuba's Private Sector Now Importing Fuel: A Historic First",
+      "topics": [
+        "noticias",
+        "combustible",
+        "sector-privado",
+        "mipymes",
+        "crisis-energetica",
+        "energia-renovable"
+      ],
+      "publishedAt": "2026-02-20T06:05:00Z",
+      "slugEs": "2026-02-20-sector-privado-importa-combustible-cuba",
+      "slugEn": "2026-02-20-sector-privado-importa-combustible-cuba",
+      "sources": [
+        "https://oncubanews.com/cuba/economia/emprendimientos/el-sector-privado-en-cuba-ya-comenzo-a-importar-combustible-a-la-isla-una-bocanada-de-aire/",
+        "https://en.cibercuba.com/noticias/2026-02-20-u1-e135253-s27061-nid321289-gobierno-exonera-ocho-anos-impuestos-privados"
+      ],
+      "keywords": [
+        "isotanques",
+        "diesel",
+        "monopolio-estatal",
+        "autoconsumo",
+        "resolucion-41-2026",
+        "paneles-solares",
+        "exencion-fiscal",
+        "oscar-perez-oliva"
+      ],
+      "relatedPosts": [
+        "cuba-preparada-bloqueo-total-onu-2026-02-20",
+        "eeuu-evalua-envio-combustible-cuba-2026-02-16",
+        "solar-record-800mw-2026-02-12"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-preparada-bloqueo-total-onu-2026-02-20",
+      "title": "Cuba ante la ONU: 'Estamos preparados para un bloqueo total'",
+      "titleEn": "Cuba at the UN: 'We are prepared for a total blockade'",
+      "topics": [
+        "noticias",
+        "onu",
+        "bloqueo",
+        "eeuu-cuba",
+        "ernesto-soberon",
+        "diplomacia"
+      ],
+      "publishedAt": "2026-02-20T02:20:00Z",
+      "slugEs": "2026-02-20-cuba-preparada-bloqueo-total-onu",
+      "slugEn": "2026-02-20-cuba-preparada-bloqueo-total-onu",
+      "sources": [
+        "https://www.swissinfo.ch/spa/embajador-cubano-en-onu%3a-%22la-habana-est%C3%A1-preparada-para-un-bloqueo-total-de-ee.uu.%22/90970358",
+        "https://www.cibercuba.com/noticias/2026-02-20-u1-e135253-s27061-nid321285-cuba-esta-preparada-bloqueo-total-afirma"
+      ],
+      "keywords": [
+        "ernesto-soberon",
+        "opcion-cero",
+        "periodo-especial",
+        "nueva-york",
+        "mision-cuba",
+        "rendicion",
+        "resistencia"
+      ],
+      "relatedPosts": [
+        "trump-amenaza-aranceles-petroleo-cuba",
+        "crisis-energetica-cuba-2026"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "dhs-refugiados-detencion-asilo-nueva-politica-2026-02-19",
+      "title": "DHS ordena arrestar refugiados con asilo aprobado tras un año en EEUU",
+      "titleEn": "DHS Orders Arrest of Refugees with Asylum After 1 Year in U.S.",
+      "topics": [
+        "noticias",
+        "dhs",
+        "asilo",
+        "refugiados",
+        "ice",
+        "detencion",
+        "migracion-cubana"
+      ],
+      "publishedAt": "2026-02-19T19:25:00Z",
+      "slugEs": "2026-02-19-dhs-refugiados-detencion-asilo-nueva-politica",
+      "slugEn": "2026-02-19-dhs-refugiados-detencion-asilo-nueva-politica",
+      "sources": [
+        "https://www.lawdork.com/p/exclusive-senior-dhs-officials-double",
+        "https://www.washingtontimes.com/news/2026/feb/19/new-dhs-policy-allows-refugees-rearrested-year-us/",
+        "https://www.nbcnews.com/news/us-news/russian-family-ice-facility-mistreatment-released-immigration-rcna259349",
+        "https://www.cibercuba.com/noticias/2026-02-19-u1-e208933-s27061-nid321283-expreso-politico-cubano-paso-18-carcel-ve-cerca-fin"
+      ],
+      "keywords": [
+        "dhs-memo",
+        "edlow",
+        "lyons",
+        "reverificacion",
+        "green-card",
+        "minnesota",
+        "texas",
+        "detencion-indefinida",
+        "refugees-act-1980"
+      ],
+      "relatedPosts": [
+        "deportaciones-cuba-febrero-2026-drama-cubanos-deportados-2026-02-17",
+        "ice-expansion-detencion-2026-02-15"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-canasta-normada-sin-subsidios-abril-2026-02-19",
+      "title": "Cuba eliminará subsidios a productos de la canasta normada en abril",
+      "titleEn": "Cuba to End Product Subsidies in Ration System Starting April 2026",
+      "topics": [
+        "noticias",
+        "economia",
+        "canasta-normada",
+        "reforma-economica"
+      ],
+      "publishedAt": "2026-02-19T12:00:00Z",
+      "slugEs": "2026-02-19-cuba-canasta-normada-sin-subsidios-abril",
+      "slugEn": "2026-02-19-cuba-canasta-normada-sin-subsidios-abril",
+      "sources": [
+        "https://oncubanews.com/cuba/economia/adios-a-los-subsidios-a-productos-nueva-forma-de-distribucion-de-la-canasta-normada-a-partir-de-abril/",
+        "https://www.tribuna.cu/capitalinas/2026-02-17/eliminar-trabas-y-tierras-ociosas"
+      ],
+      "keywords": [
+        "libreta-abastecimiento",
+        "subsidios",
+        "canasta-normada",
+        "abril-2026",
+        "diaz-canel",
+        "produccion-local"
+      ],
+      "relatedPosts": [
+        "mexico-mediacion-eeuu-cuba-sheinbaum-2026-02-19",
+        "sherritt-pausa-operaciones-cuba-crisis-petroleo-2026-02-17"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "mexico-mediacion-eeuu-cuba-sheinbaum-2026-02-19",
+      "title": "México confirma conversaciones para mediar entre EE.UU. y Cuba",
+      "titleEn": "Mexico Confirms Talks to Mediate Between the U.S. and Cuba",
+      "topics": [
+        "noticias",
+        "diplomacia",
+        "mexico",
+        "eeuu-cuba"
+      ],
+      "publishedAt": "2026-02-19T00:00:00Z",
+      "slugEs": "2026-02-19-mexico-mediacion-eeuu-cuba-sheinbaum",
+      "slugEn": "2026-02-19-mexico-mediacion-eeuu-cuba-sheinbaum",
+      "sources": [
+        "https://oncubanews.com/cuba/presidenta-de-mexico-afirma-que-hay-conversaciones-para-mediar-entre-eeuu-y-cuba/",
+        "https://apnews.com/article/cuba-mexico-crisis-eeuu-petroleo-ac81ff8c8ea57642d2aee6028f834c4a",
+        "https://efe.com/mundo/2026-02-18/marco-rubio-conversaciones-secretas-nieto-raul-castro-cuba/"
+      ],
+      "keywords": [
+        "sheinbaum",
+        "mexico",
+        "mediacion",
+        "ayuda-humanitaria",
+        "814-toneladas",
+        "autodeterminacion"
+      ],
+      "relatedPosts": [
+        "rubio-negociaciones-secretas-nieto-raul-castro-2026-02-18",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "sherritt-pausa-operaciones-cuba-crisis-petroleo-2026-02-17",
+      "title": "Sherritt pausa operaciones en Cuba por falta de combustible",
+      "titleEn": "Sherritt Pauses Cuba Operations Over Fuel Shortage",
+      "topics": [
+        "noticias",
+        "crisis-energetica",
+        "mineria",
+        "niquel",
+        "moa"
+      ],
+      "publishedAt": "2026-02-17T18:00:00Z",
+      "slugEs": "2026-02-17-sherritt-pausa-operaciones-cuba-crisis-petroleo",
+      "slugEn": "2026-02-17-sherritt-pausa-operaciones-cuba-crisis-petroleo",
+      "sources": [
+        "https://oncubanews.com/cuba/economia/sherritt-pausara-sus-operaciones-en-cuba-por-el-asedio-petrolero-de-eeuu/",
+        "https://sherritt.com/sherritt-provides-an-update-on-its-operations/"
+      ],
+      "keywords": [
+        "sherritt",
+        "niquel",
+        "cobalto",
+        "moa",
+        "canada",
+        "bloqueo-petrolero",
+        "alberta"
+      ],
+      "relatedPosts": [
+        "petrolero-nicos-llega-matanzas-crisis-energetica-2026-02-17",
+        "cuba-oscurece-imagenes-satelitales-caida-luz-2026-02-17"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "petrolero-nicos-llega-matanzas-crisis-energetica-2026-02-17",
+      "title": "Petrolero Nicos I.V. llega a Matanzas en plena crisis energética",
+      "titleEn": "Oil Tanker Nicos I.V. Arrives in Matanzas Amid Energy Crisis",
+      "topics": [
+        "noticias",
+        "crisis-energetica",
+        "petroleo",
+        "matanzas"
+      ],
+      "publishedAt": "2026-02-17T12:00:00Z",
+      "slugEs": "2026-02-17-petrolero-nicos-llega-matanzas-crisis-energetica",
+      "slugEn": "2026-02-17-petrolero-nicos-llega-matanzas-crisis-energetica",
+      "sources": [
+        "https://efe.com/mundo/2026-02-17/buque-petrolero-cuba-bloqueo/",
+        "https://en.cibercuba.com/noticias/2026-02-17-u1-e135253-s27061-nid321029-petrolero-entra-bahia-matanzas-plena-crisis"
+      ],
+      "keywords": [
+        "nicos-iv",
+        "matanzas",
+        "petrolero",
+        "bloqueo",
+        "crisis-energetica",
+        "ocean-mariner",
+        "grecia"
+      ],
+      "relatedPosts": [
+        "cuba-oscurece-imagenes-satelitales-caida-luz-2026-02-17",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "i220a-demanda-colectiva-500mil-cubanos-2026-02-17",
+      "title": "I-220A: la demanda que decidirá el futuro de 500,000 cubanos",
+      "titleEn": "I-220A: The Lawsuit That Could Decide 500,000 Cubans' Future",
+      "topics": [
+        "noticias",
+        "migracion-cubana",
+        "i-220a",
+        "demanda-colectiva"
+      ],
+      "publishedAt": "2026-02-17T06:40:00Z",
+      "slugEs": "2026-02-17-i220a-demanda-colectiva-500mil-cubanos",
+      "slugEn": "2026-02-17-i220a-demanda-colectiva-500mil-cubanos",
+      "sources": [
+        "https://elpais.com/us/migracion/2026-02-17/la-condena-del-i-220a-el-futuro-de-medio-millon-de-cubanos-en-estados-unidos-depende-de-una-larga-saga-judicial.html",
+        "https://havanatimes.org/features/the-plight-of-cubans-deported-from-the-usa/"
+      ],
+      "keywords": [
+        "i-220a",
+        "parole",
+        "ley ajuste cubano",
+        "demanda colectiva",
+        "mark prada",
+        "500000 cubanos",
+        "limbo legal"
+      ],
+      "relatedPosts": [
+        "formularios-i220-cubanos-guia-2026-02-11",
+        "drama-cubanos-deportados-eeuu-testimonios-2026-02-17"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17",
+      "title": "Trump confirma que Rubio negocia con Cuba un acuerdo humanitario",
+      "titleEn": "Trump Confirms Rubio Is Negotiating a Deal With Cuba",
+      "topics": [
+        "noticias",
+        "diplomacia",
+        "eeuu-cuba",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-17T06:00:00Z",
+      "slugEs": "2026-02-17-trump-confirma-rubio-negocia-cuba-acuerdo",
+      "slugEn": "2026-02-17-trump-confirma-rubio-negocia-cuba-acuerdo",
+      "sources": [
+        "https://www.infobae.com/estados-unidos/2026/02/17/trump-afirmo-que-marco-rubio-mantiene-conversaciones-con-cuba-para-alcanzar-un-acuerdo-en-medio-de-la-crisis-energetica-en-la-isla/"
+      ],
+      "keywords": [
+        "trump",
+        "rubio",
+        "negociaciones",
+        "acuerdo",
+        "nacion fallida",
+        "amenaza humanitaria",
+        "air force one"
+      ],
+      "relatedPosts": [
+        "rubio-apertura-economica-cuba-munich-2026-02-16",
+        "cuba-oscurece-imagenes-satelitales-caida-luz-2026-02-17"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-oscurece-imagenes-satelitales-caida-luz-2026-02-17",
+      "title": "Cuba se oscurece: imágenes satelitales muestran caída del 50% en luz",
+      "titleEn": "Cuba Goes Dark: Satellite Images Show 50% Drop in Nighttime Light",
+      "topics": [
+        "noticias",
+        "crisis-energetica",
+        "apagones",
+        "satelite"
+      ],
+      "publishedAt": "2026-02-17T00:00:00Z",
+      "slugEs": "2026-02-17-cuba-oscurece-imagenes-satelitales-caida-luz",
+      "slugEn": "2026-02-17-cuba-oscurece-imagenes-satelitales-caida-luz",
+      "sources": [
+        "https://www.bloomberg.com/graphics/2026-cuba-electricidad/",
+        "https://en.cibercuba.com/noticias/2026-02-16-u1-e135253-s27061-nid321014-cuba-apaga-imagenes-satelitales-muestran-caida-50"
+      ],
+      "keywords": [
+        "satelite",
+        "nasa",
+        "bloomberg",
+        "luz nocturna",
+        "50%",
+        "santiago",
+        "holguin",
+        "apagones"
+      ],
+      "relatedPosts": [
+        "cuba-cortes-luz-empresas-ahorro-energia-2026-02-16",
+        "blackout-record-64-percent-2026-02-12"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-cortes-luz-empresas-ahorro-energia-2026-02-16",
+      "title": "Cuba cortará la luz 72 horas a empresas que incumplan ahorro energético",
+      "titleEn": "Cuba to Cut Power for 72 Hours to Businesses Breaking Energy Rules",
+      "topics": [
+        "noticias",
+        "crisis-energetica",
+        "empresas",
+        "onure"
+      ],
+      "publishedAt": "2026-02-16T18:00:00Z",
+      "slugEs": "2026-02-16-cuba-cortes-luz-empresas-ahorro-energia",
+      "slugEn": "2026-02-16-cuba-cortes-luz-empresas-ahorro-energia",
+      "sources": [
+        "https://www.periodicocubano.com/cortaran-la-luz-por-un-minimo-de-72-horas-a-empresas-que-incumplan-plan-de-ahorro/",
+        "https://www.cnctvgranma.cu/15/02/2026/cuba/intensifica-transicion-energetica-ante-la-agresion-economica-de-ee-uu/",
+        "https://www.cibercuba.com/noticias/2026-02-16-u1-e199370-s27061-nid320981-otro-dia-tinieblas-deficit-electrico-cuba-rozara"
+      ],
+      "keywords": [
+        "onure",
+        "cortes",
+        "72 horas",
+        "empresas",
+        "ahorro",
+        "deficit",
+        "1700 MW",
+        "las tunas"
+      ],
+      "relatedPosts": [
+        "blackout-record-64-percent-2026-02-12",
+        "eeuu-evalua-envio-combustible-cuba-2026-02-16"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "rubio-apertura-economica-cuba-munich-2026-02-16",
+      "title": "Rubio sugiere apertura económica de Cuba como vía para avanzar",
+      "titleEn": "Rubio Suggests Cuba Economic Opening as 'Possible Way Forward'",
+      "topics": [
+        "noticias",
+        "cuba-eeuu",
+        "economia",
+        "diplomacia"
+      ],
+      "publishedAt": "2026-02-16T12:00:00Z",
+      "slugEs": "2026-02-16-rubio-apertura-economica-cuba-munich",
+      "slugEn": "2026-02-16-rubio-apertura-economica-cuba-munich",
+      "sources": [
+        "https://oncubanews.com/cuba-ee-uu/marco-rubio-sobre-cuba-abrir-la-economia-es-una-posible-via-para-avanzar/",
+        "https://www.youtube.com/watch?v=MVvfjAf4ntM"
+      ],
+      "keywords": [
+        "rubio",
+        "munich",
+        "apertura economica",
+        "bloomberg",
+        "conferencia seguridad",
+        "negociaciones",
+        "cuba-eeuu"
+      ],
+      "relatedPosts": [
+        "eeuu-evalua-envio-combustible-cuba-2026-02-16",
+        "cuba-diplomatic-crisis-secret-talks-2026-02-16",
+        "florida-lawmakers-revoke-licenses-2026-02-12"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "eeuu-evalua-envio-combustible-cuba-2026-02-16",
+      "title": "EE.UU. evalúa enviar combustible a Cuba en plena crisis energética",
+      "titleEn": "U.S. Considers Sending Limited Fuel Shipment to Cuba Amid Crisis",
+      "topics": [
+        "noticias",
+        "crisis-energetica",
+        "eeuu-cuba",
+        "embargo"
+      ],
+      "publishedAt": "2026-02-16T06:00:00Z",
+      "slugEs": "2026-02-16-eeuu-evalua-envio-combustible-cuba",
+      "slugEn": "2026-02-16-eeuu-evalua-envio-combustible-cuba",
+      "sources": [
+        "https://www.directoriocubano.info/cuba/estados-unidos-evalua-enviar-combustible-limitado-a-cuba-en-plena-crisis-energetica/"
+      ],
+      "keywords": [
+        "combustible",
+        "rubio",
+        "gas",
+        "gasoleo",
+        "agua potable",
+        "rusia",
+        "ryabkov",
+        "the economist",
+        "humanitario"
+      ],
+      "relatedPosts": [
+        "cuba-diplomatic-crisis-secret-talks-2026-02-16"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-diplomatic-crisis-secret-talks-2026-02-16",
+      "title": "Diplomáticos en La Habana preparan evacuación mientras Cuba negocia",
+      "titleEn": "Diplomats in Havana Prepare Evacuation as Cuba Negotiates in Secret",
+      "topics": [
+        "noticias",
+        "diplomacia",
+        "crisis-energetica",
+        "negociaciones"
+      ],
+      "publishedAt": "2026-02-16T00:05:00Z",
+      "slugEs": "2026-02-16-cuba-crisis-diplomatica-negociaciones-secretas",
+      "slugEn": "2026-02-16-cuba-crisis-diplomatica-negociaciones-secretas",
+      "sources": [
+        "https://www.theguardian.com/news/ng-interactive/2026/feb/15/cuba-crisis-oil-shortage-venezuela-donald-trump-havana",
+        "https://english.elpais.com/international/2026-02-14/the-mystery-surrounding-cubas-next-ruler-the-man-who-is-emerging-as-the-delcy-rodriguez-of-havana.html"
+      ],
+      "keywords": [
+        "diplomacia",
+        "embajadas",
+        "evacuacion",
+        "PMA",
+        "WFP",
+        "castro espin",
+        "negociaciones secretas",
+        "mexico",
+        "rubio",
+        "munich",
+        "crisis alimentaria"
+      ],
+      "relatedPosts": [
+        "cuba-emergency-measures-2026-02-10",
+        "mexico-halts-oil-2026-02-10",
+        "cubana-aviacion-madrid-cut-2026-02-14"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "electric-vehicles-cuba-2026-02-15",
+      "title": "Vehículos eléctricos reemplazan a los almendrones en Cuba",
+      "titleEn": "Electric Vehicles Replace Classic Cars on Cuba's Streets",
+      "topics": [
+        "noticias",
+        "transporte",
+        "crisis-energetica",
+        "vehiculos-electricos"
+      ],
+      "publishedAt": "2026-02-15T12:00:00Z",
+      "slugEs": "2026-02-15-vehiculos-electricos-cuba-crisis",
+      "slugEn": "2026-02-15-vehiculos-electricos-cuba-crisis",
+      "sources": [
+        "https://www.reuters.com/business/energy/cubans-turn-electric-vehicles-us-tightens-oil-blockade-2026-02-14/"
+      ],
+      "keywords": [
+        "vehiculos electricos",
+        "triciclo",
+        "rickshaw",
+        "alamar",
+        "habana",
+        "combustible",
+        "chevrolet",
+        "almendrones",
+        "china",
+        "transporte"
+      ],
+      "relatedPosts": [
+        "transport-crisis-blockade-2026-02-12",
+        "solar-record-800mw-2026-02-12",
+        "blackout-record-64-percent-2026-02-12",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cubana-aviacion-madrid-cut-2026-02-14",
+      "title": "Cubana de Aviación recorta a un solo vuelo semanal la ruta Madrid-Cuba",
+      "titleEn": "Cubana de Aviación Slashes Madrid Route to Just One Weekly Flight",
+      "topics": [
+        "noticias",
+        "aviacion",
+        "crisis-energetica",
+        "diaspora"
+      ],
+      "publishedAt": "2026-02-14T12:00:00Z",
+      "slugEs": "2026-02-14-cubana-aviacion-recorta-vuelos-madrid",
+      "slugEn": "2026-02-14-cubana-aviacion-recorta-vuelos-madrid",
+      "sources": [
+        "https://en.cibercuba.com/noticias/2026-02-13-u1-e208574-s27061-nid320824-cubana-aviacion-reduce-vuelos-madrid-cuba-crisis",
+        "https://www.infobae.com/america/agencias/2026/02/13/la-economia-de-subsistencia-de-cuba-asfixia-y-complica-la-operativa-a-empresas-espanolas/"
+      ],
+      "keywords": [
+        "cubana de aviacion",
+        "madrid",
+        "vuelo semanal",
+        "NOTAM",
+        "jet a1",
+        "marzo",
+        "empresas españolas",
+        "melia",
+        "NH"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "copa-airlines-tankering-cuba-2026-02-13",
+        "canada-tourism-collapse-2026-02-11",
+        "russia-suspends-flights-cuba-2026-02-11"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "nico-lopez-refinery-fire-2026-02-14",
+      "title": "Incendio en la refinería Ñico López de La Habana agrava crisis",
+      "titleEn": "Fire at Havana's Ñico López Refinery Deepens Cuba's Energy Crisis",
+      "topics": [
+        "noticias",
+        "crisis-energetica",
+        "habana",
+        "petroleo"
+      ],
+      "publishedAt": "2026-02-14T00:05:00Z",
+      "slugEs": "2026-02-14-incendio-refineria-nico-lopez-habana",
+      "slugEn": "2026-02-14-incendio-refineria-nico-lopez-habana",
+      "sources": [
+        "https://elpais.com/america/2026-02-13/un-gran-incendio-alcanza-a-una-de-las-tres-refinerias-cubanas.html",
+        "https://www.infobae.com/america/agencias/2026/02/13/registrado-un-incendio-en-las-instalaciones-de-una-refineria-en-la-habana-en-cuba/",
+        "https://www.semana.com/mundo/articulo/cuba-sin-gasolina-masivo-incendio-en-una-de-las-pocas-refinerias-del-pais/202613/"
+      ],
+      "keywords": [
+        "incendio",
+        "refineria",
+        "nico lopez",
+        "habana",
+        "petroleo",
+        "almacen",
+        "humo",
+        "bahia"
+      ],
+      "relatedPosts": [
+        "blackout-record-64-percent-2026-02-12",
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-aviation-fuel-crisis-2026-02-10",
+      "title": "Cuba se queda sin combustible para aviación: Air Canada suspende vuelos",
+      "titleEn": "Cuba Runs Out of Aviation Fuel: Air Canada Suspends Flights",
+      "topics": [
+        "economia",
+        "politica",
+        "diaspora"
+      ],
+      "publishedAt": "2026-02-10T13:20:00Z",
+      "slugEs": "2026-02-10-cuba-sin-combustible-aviacion-air-canada-suspende-vuelos",
+      "slugEn": "2026-02-10-cuba-aviation-fuel-crisis-air-canada-suspends-flights",
+      "sources": [
+        "https://elpais.com/economia/2026-02-10/la-salida-de-air-canada-da-la-puntilla-al-turismo-en-cuba-y-enciende-las-alertas-en-melia-e-iberostar.html"
+      ],
+      "keywords": [
+        "air canada",
+        "combustible",
+        "aviacion",
+        "turismo",
+        "vuelos"
+      ],
+      "relatedPosts": [],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-rationing-special-period-2026-02-10",
+      "title": "Cómo sobreviven los cubanos el racionamiento - ecos del Período Especial",
+      "titleEn": "How Cubans Survive Rationing - Echoes of the Special Period",
+      "topics": [
+        "economia",
+        "diaspora"
+      ],
+      "publishedAt": "2026-02-10T13:45:00Z",
+      "slugEs": "2026-02-10-cubanos-sobreviven-racionamiento-combustible-periodo-especial",
+      "slugEn": "2026-02-10-cubans-survive-fuel-rationing-special-period",
+      "sources": [
+        "https://www.bbc.com/mundo/articles/cyv9prv250vo"
+      ],
+      "keywords": [
+        "racionamiento",
+        "periodo especial",
+        "carbon",
+        "lena",
+        "apagones",
+        "gasolina"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "nicaragua-closes-route-2026-02-10",
+      "title": "Nicaragua cierra ruta migratoria para cubanos",
+      "titleEn": "Nicaragua Closes Migration Route for Cubans",
+      "topics": [
+        "politica",
+        "diaspora"
+      ],
+      "publishedAt": "2026-02-10T15:00:00Z",
+      "slugEs": "2026-02-10-nicaragua-cierra-ruta-migratoria-cubanos",
+      "slugEn": "2026-02-10-nicaragua-closes-migration-route-cubans",
+      "sources": [
+        "https://www.nytimes.com/2026/02/10/world/americas/nicaragua-cuba-us-immigration.html"
+      ],
+      "keywords": [
+        "nicaragua",
+        "migracion",
+        "visa",
+        "frontera",
+        "estados unidos"
+      ],
+      "relatedPosts": [],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-emergency-measures-2026-02-10",
+      "title": "Cuba implementa medidas de emergencia: universidades cerradas, semana laboral de 4 días",
+      "titleEn": "Cuba Implements Emergency Measures: Universities Closed, 4-Day Work Week",
+      "topics": [
+        "economia",
+        "politica"
+      ],
+      "publishedAt": "2026-02-10T15:35:00Z",
+      "slugEs": "2026-02-10-cuba-medidas-emergencia-universidades-hospitales",
+      "slugEn": "2026-02-10-cuba-emergency-measures-universities-hospitals",
+      "sources": [
+        "https://www.cbs19news.com/emergency-measures-hobble-cuba-as-fuel-supplies-dwindle-under-us-pressure/article_16d1f722-d39b-5da9-87bf-e4f9adfed073.html",
+        "https://www.cnbc.com/2026/02/09/cuba-airlines-fuel-energy-oil-us-trump-pressure.html"
+      ],
+      "keywords": [
+        "universidades",
+        "hospitales",
+        "semana laboral",
+        "escuelas",
+        "opcion cero",
+        "medidas emergencia"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "cuba-rationing-special-period-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "mexico-halts-oil-2026-02-10",
+      "title": "México corta envíos de petróleo a Cuba por primera vez en una década",
+      "titleEn": "Mexico Halts Oil Shipments to Cuba for First Time in a Decade",
+      "topics": [
+        "economia",
+        "politica"
+      ],
+      "publishedAt": "2026-02-10T15:55:00Z",
+      "slugEs": "2026-02-10-mexico-corta-envios-petroleo-cuba-primera-vez-decada",
+      "slugEn": "2026-02-10-mexico-halts-oil-shipments-cuba-first-time-decade",
+      "sources": [
+        "https://www.reuters.com/business/energy/mexican-oil-shipments-cuba-currently-halted-president-says-2026-02-09/",
+        "https://www.bloomberg.com/news/articles/2026-02-09/cuba-gets-no-oil-for-first-time-in-a-decade-as-mexico-pulls-back",
+        "https://www.nytimes.com/2026/02/10/world/americas/mexico-cuba-oil.html"
+      ],
+      "keywords": [
+        "mexico",
+        "petroleo",
+        "crudo",
+        "sheinbaum",
+        "trump",
+        "aranceles"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "mexico-humanitarian-aid-2026-02-10",
+      "title": "Sheinbaum anuncia segunda entrega de ayuda humanitaria a Cuba",
+      "titleEn": "Sheinbaum Announces Second Humanitarian Aid Shipment to Cuba",
+      "topics": [
+        "politica",
+        "economia"
+      ],
+      "publishedAt": "2026-02-10T15:56:00Z",
+      "slugEs": "2026-02-10-sheinbaum-segunda-entrega-ayuda-humanitaria-cuba",
+      "slugEn": "2026-02-10-sheinbaum-announces-second-humanitarian-aid-shipment-cuba",
+      "sources": [
+        "https://www.elfinanciero.com.mx/nacional/2026/02/09/claudia-sheinbaum-mananera-temas-hoy-9-de-febrero-de-2026-en-vivo/",
+        "https://www.reuters.com/business/energy/mexican-oil-shipments-cuba-currently-halted-president-says-2026-02-09/"
+      ],
+      "keywords": [
+        "mexico",
+        "ayuda humanitaria",
+        "sheinbaum",
+        "alimentos",
+        "solidaridad"
+      ],
+      "relatedPosts": [
+        "mexico-halts-oil-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-pensions-crisis-2026-02-10",
+      "title": "Gobierno cubano promete garantizar pensiones pese a la crisis",
+      "titleEn": "Cuban Government Promises Pensions Despite Crisis",
+      "topics": [
+        "economia",
+        "politica"
+      ],
+      "publishedAt": "2026-02-10T15:57:00Z",
+      "slugEs": "2026-02-10-gobierno-cuba-promete-pensiones-pese-crisis",
+      "slugEn": "2026-02-10-cuban-government-promises-pensions-despite-crisis",
+      "sources": [
+        "https://en.cibercuba.com/noticias/2026-02-10-u1-e208933-s27061-nid320469-regimen-cubano-promete-garantizar-pensiones-pese"
+      ],
+      "keywords": [
+        "pensiones",
+        "jubilados",
+        "presupuesto",
+        "mesa redonda",
+        "regueiro"
+      ],
+      "relatedPosts": [
+        "cuba-rationing-special-period-2026-02-10",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-it-convention-postponed-2026-02-10",
+      "title": "Cuba pospone Convención de Informática 2026 por crisis",
+      "titleEn": "Cuba Postpones IT Convention 2026 Due to Energy Crisis",
+      "topics": [
+        "economia",
+        "tecnologia"
+      ],
+      "publishedAt": "2026-02-10T15:58:00Z",
+      "slugEs": "2026-02-10-posponen-convencion-informatica-cuba-crisis",
+      "slugEn": "2026-02-10-cuba-postpones-it-convention-energy-crisis",
+      "sources": [
+        "http://www.cubadebate.cu/noticias/2026/02/09/posponen-xx-convencion-y-feria-internacional-informatica-2026/"
+      ],
+      "keywords": [
+        "informatica",
+        "tecnologia",
+        "convencion",
+        "evento",
+        "aplazado"
+      ],
+      "relatedPosts": [
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-mesa-redonda-criticism-2026-02-10",
+      "title": "Cubanos estallan en críticas tras Mesa Redonda: 'Todo es mentira'",
+      "titleEn": "Cubans Erupt in Criticism After Mesa Redonda: 'Everything Is a Lie'",
+      "topics": [
+        "politica",
+        "economia"
+      ],
+      "publishedAt": "2026-02-10T15:59:00Z",
+      "slugEs": "2026-02-10-cubanos-estallan-criticas-mesa-redonda-mentiras",
+      "slugEn": "2026-02-10-cubans-erupt-criticism-mesa-redonda-lies",
+      "sources": [
+        "https://en.cibercuba.com/noticias/2026-02-10-u1-e135253-s27061-nid320473-todo-mentira-enganan-nadie-estallan-criticas-tras"
+      ],
+      "keywords": [
+        "mesa redonda",
+        "criticas",
+        "redes sociales",
+        "apagones",
+        "bancos"
+      ],
+      "relatedPosts": [
+        "cuba-pensions-crisis-2026-02-10",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "mike-hammer-transition-2026-02-10",
+      "title": "Diplomático de EE.UU. anticipa transición política en Cuba",
+      "titleEn": "US Diplomat Predicts Political Transition in Cuba",
+      "topics": [
+        "politica",
+        "diplomacia"
+      ],
+      "publishedAt": "2026-02-10T16:00:00Z",
+      "slugEs": "2026-02-10-mike-hammer-anticipa-transicion-politica-cuba-2026",
+      "slugEn": "2026-02-10-mike-hammer-predicts-political-transition-cuba-2026",
+      "sources": [
+        "https://www.univision.com/local/miami-wltv/jefe-de-mision-diplomatica-de-eeuu-en-la-habana-dice-que-se-acerca-un-cambio-en-cuba-video",
+        "https://www.youtube.com/watch?v=VEH5k4qzjYs",
+        "https://www.martinoticias.com/a/embajador-hammer-cumple-encomienda-de-rubio-visita-a-m%C3%A1s-cubanos-y-promete-ayuda-adicional-video/446699.html"
+      ],
+      "keywords": [
+        "mike hammer",
+        "eeuu",
+        "transicion",
+        "diplomacia",
+        "embajada",
+        "cambio politico"
+      ],
+      "relatedPosts": [
+        "cuba-emergency-measures-2026-02-10",
+        "cuba-mesa-redonda-criticism-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-caribbean-series-comeback-2026-02-10",
+      "title": "Cuba firma remontada épica ante Curazao: 14-12 en la Serie del Caribe",
+      "titleEn": "Cuba Stages Epic Comeback Against Curaçao: 14-12 at Caribbean Series",
+      "topics": [
+        "cultura",
+        "deportes"
+      ],
+      "publishedAt": "2026-02-10T17:00:00Z",
+      "slugEs": "2026-02-10-cuba-remontada-epica-serie-caribe-curazao",
+      "slugEn": "2026-02-10-cuba-epic-comeback-caribbean-series-curacao",
+      "sources": [
+        "http://www.cubadebate.cu/noticias/2026/02/09/cuba-firma-remontada-ante-curazao-en-la-serie-del-caribe/"
+      ],
+      "keywords": [
+        "beisbol",
+        "serie del caribe",
+        "curazao",
+        "caracas",
+        "remontada",
+        "german mesa",
+        "despaigne"
+      ],
+      "relatedPosts": [],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-economy-contracted-5-percent-2025-02-10",
+      "title": "La economía de Cuba se contrajo un 5% en 2025: estudio oficial",
+      "titleEn": "Cuba's Economy Contracted 5% in 2025: Official Study",
+      "topics": [
+        "economia",
+        "politica"
+      ],
+      "publishedAt": "2026-02-10T17:20:00Z",
+      "slugEs": "2026-02-10-economia-cuba-se-contrajo-cinco-porciento-2025",
+      "slugEn": "2026-02-10-cuba-economy-contracted-five-percent-2025",
+      "sources": [
+        "https://efe.com/economia/2026-02-09/cuba-economia-contraccion-2025-crisis-pib/",
+        "https://es.investing.com/news/economy-news/la-economia-de-cuba-se-contrajo-un-5--en-2025-segun-un-centro-de-estudios-oficial-3507242"
+      ],
+      "keywords": [
+        "pib",
+        "economia",
+        "ceec",
+        "contraccion",
+        "emigracion",
+        "inflacion",
+        "mortalidad infantil"
+      ],
+      "relatedPosts": [
+        "cuba-emergency-measures-2026-02-10",
+        "cuba-rationing-special-period-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "russia-cuba-situation-critical-2026-02-10",
+      "title": "Rusia declara 'crítica' la situación en Cuba y acusa a EE.UU. de 'asfixiar' la isla",
+      "titleEn": "Russia Declares Cuba Situation 'Critical,' Accuses US of 'Suffocating' the Island",
+      "topics": [
+        "politica",
+        "diplomacia",
+        "geopolitica"
+      ],
+      "publishedAt": "2026-02-10T17:21:00Z",
+      "slugEs": "2026-02-10-rusia-declara-situacion-cuba-critica-acusa-eeuu",
+      "slugEn": "2026-02-10-russia-declares-cuba-situation-critical-accuses-us",
+      "sources": [
+        "https://www.reuters.com/business/energy/kremlin-says-fuel-situation-cuba-is-critical-criticises-us-blockade-2026-02-09/",
+        "https://www.aljazeera.com/news/2026/2/10/russia-warns-cuba-fuel-situation-critical-as-havana-slams-cruel-us-tactic"
+      ],
+      "keywords": [
+        "rusia",
+        "kremlin",
+        "peskov",
+        "lavrov",
+        "eeuu",
+        "bloqueo",
+        "asfixiar",
+        "diplomacia"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "mexico-halts-oil-2026-02-10",
+        "mike-hammer-transition-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "canadian-rescue-flights-cuba-2026-02-10",
+      "title": "Air Canada y WestJet envían aviones vacíos para rescatar 3,000 turistas de Cuba",
+      "titleEn": "Air Canada and WestJet Send Empty Planes to Rescue 3,000 Tourists from Cuba",
+      "topics": [
+        "turismo",
+        "economia",
+        "diaspora"
+      ],
+      "publishedAt": "2026-02-10T19:40:00Z",
+      "slugEs": "2026-02-10-aerolineas-canadienses-rescatan-turistas-cuba",
+      "slugEn": "2026-02-10-canadian-airlines-rescue-tourists-cuba",
+      "sources": [
+        "https://www.nytimes.com/2026/02/09/world/americas/air-canada-flight-cancellations-cuba-jet-fuel.html",
+        "https://www.cbsnews.com/news/trump-cuba-jet-fuel-shortage-airlines-adjust-tariffs-sanctions/",
+        "https://www.reuters.com/business/energy/cuba-warns-airlines-it-will-run-out-jet-fuel-2026-02-09/"
+      ],
+      "keywords": [
+        "air canada",
+        "westjet",
+        "turistas",
+        "canadienses",
+        "repatriacion",
+        "rescate",
+        "aviones vacios",
+        "3000"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10"
+      ],
+      "isUpdate": true,
+      "updatesPost": "cuba-aviation-fuel-crisis-2026-02-10"
+    },
+    {
+      "id": "china-offers-help-cuba-2026-02-10",
+      "title": "China se declara dispuesta a ayudar a Cuba en medio de la crisis de combustible",
+      "titleEn": "China Declares Willingness to Help Cuba Amid Fuel Crisis",
+      "topics": [
+        "politica",
+        "diplomacia",
+        "geopolitica"
+      ],
+      "publishedAt": "2026-02-10T19:20:00Z",
+      "slugEs": "2026-02-10-china-dispuesta-ayudar-cuba-crisis-combustible",
+      "slugEn": "2026-02-10-china-willing-help-cuba-fuel-crisis",
+      "sources": [
+        "https://www.reuters.com/world/china/china-willing-help-cuba-amid-jet-fuel-shortage-foreign-ministry-says-2026-02-10/"
+      ],
+      "keywords": [
+        "china",
+        "lin jian",
+        "ayuda",
+        "soberania",
+        "geopolitica",
+        "combustible"
+      ],
+      "relatedPosts": [
+        "russia-cuba-situation-critical-2026-02-10",
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "mexico-halts-oil-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "us-deports-170-cubans-2026-02-10",
+      "title": "EE.UU. deporta 170 cubanos en el primer vuelo del año: algunos venían de Guantánamo",
+      "titleEn": "US Deports 170 Cubans in First Flight of 2026: Some Came from Guantánamo",
+      "topics": [
+        "politica",
+        "migracion",
+        "diaspora"
+      ],
+      "publishedAt": "2026-02-10T22:00:00Z",
+      "slugEs": "2026-02-10-eeuu-deporta-170-cubanos-primer-vuelo-2026",
+      "slugEn": "2026-02-10-us-deports-170-cubans-first-flight-2026",
+      "sources": [
+        "https://www.nytimes.com/2026/02/10/us/politics/cubans-sent-to-us-prison-at-guantanamo-are-returned-to-cuba.html",
+        "https://en.cibercuba.com/noticias/2026-02-10-u1-e208933-s27061-nid320528-primer-vuelo-deportados-ano-eeuu-170-cubanos"
+      ],
+      "keywords": [
+        "deportacion",
+        "ice",
+        "guantanamo",
+        "trump",
+        "170",
+        "migrantes",
+        "repatriacion"
+      ],
+      "relatedPosts": [
+        "nicaragua-closes-route-2026-02-10",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "dollar-breaks-500-peso-barrier-2026-02-10",
+      "title": "El dólar rompe la barrera de los 500 pesos cubanos en el mercado informal",
+      "titleEn": "Dollar Breaks 500 Cuban Peso Barrier in Black Market",
+      "topics": [
+        "economia",
+        "crisis"
+      ],
+      "publishedAt": "2026-02-10T23:00:00Z",
+      "slugEs": "2026-02-10-dolar-rompe-barrera-500-pesos-cubanos",
+      "slugEn": "2026-02-10-dollar-breaks-500-cuban-peso-barrier",
+      "sources": [
+        "https://oncubanews.com/cuba/economia/el-dolar-rompe-la-barrera-de-los-500-pesos-en-el-mercado-informal/"
+      ],
+      "keywords": [
+        "dolar",
+        "peso cubano",
+        "500 pesos",
+        "mercado informal",
+        "tasa de cambio",
+        "devaluacion",
+        "inflacion"
+      ],
+      "relatedPosts": [
+        "cuba-economy-contracted-5-percent-2025-02-10",
+        "cuba-rationing-special-period-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "let-cuba-live-celebrities-2026-02-10",
+      "title": "Susan Sarandon y Mark Ruffalo firman carta abierta contra la política de Trump hacia Cuba",
+      "titleEn": "Susan Sarandon and Mark Ruffalo Sign Open Letter Against Trump's Cuba Policy",
+      "topics": [
+        "politica",
+        "cuba-usa",
+        "cultura"
+      ],
+      "publishedAt": "2026-02-10T23:22:00Z",
+      "slugEs": "2026-02-10-susan-sarandon-mark-ruffalo-carta-trump-cuba",
+      "slugEn": "2026-02-10-susan-sarandon-mark-ruffalo-open-letter-trump-cuba",
+      "sources": [
+        "https://oncubanews.com/cuba-ee-uu/susan-sarandon-y-mark-ruffalo-entre-los-firmantes-de-una-carta-abierta-a-trump-por-su-politica-hacia-cuba/"
+      ],
+      "keywords": [
+        "susan sarandon",
+        "mark ruffalo",
+        "let cuba live",
+        "carta abierta",
+        "hollywood",
+        "bloqueo",
+        "trump"
+      ],
+      "relatedPosts": [
+        "cuba-emergency-measures-2026-02-10",
+        "cuba-aviation-fuel-crisis-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "minsap-medical-brigades-2026-02-10",
+      "title": "MINSAP reduce personal y crea brigadas médicas para enfrentar la crisis energética",
+      "titleEn": "Cuba's Health Ministry Reduces Hospital Staff, Creates Medical Brigades Amid Energy Crisis",
+      "topics": [
+        "noticias",
+        "salud",
+        "crisis"
+      ],
+      "publishedAt": "2026-02-10T23:41:00Z",
+      "slugEs": "2026-02-10-minsap-reduce-personal-brigadas-medicas-crisis",
+      "slugEn": "2026-02-10-minsap-reduces-staff-medical-brigades-crisis",
+      "sources": [
+        "https://oncubanews.com/cuba/minsap-anuncia-reduccion-de-personal-y-creacion-de-brigadas-medicas-para-sostener-servicios-en-medio-de-la-crisis-energetica/"
+      ],
+      "keywords": [
+        "minsap",
+        "salud",
+        "hospitales",
+        "brigadas medicas",
+        "cirugias",
+        "crisis energetica",
+        "portal miranda"
+      ],
+      "relatedPosts": [
+        "cuba-emergency-measures-2026-02-10",
+        "cuba-rationing-special-period-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "earthquake-santiago-cuba-2026-02-10",
+      "title": "Cuba registra segundo sismo de magnitud 5 en tres días al sur de Santiago",
+      "titleEn": "Cuba Records Second Magnitude 5 Earthquake in Three Days Near Santiago",
+      "topics": [
+        "noticias",
+        "santiago-de-cuba"
+      ],
+      "publishedAt": "2026-02-10T23:22:00Z",
+      "slugEs": "2026-02-10-sismo-magnitud-5-santiago-cuba-segundo-dias",
+      "slugEn": "2026-02-10-earthquake-magnitude-5-santiago-cuba-second-days",
+      "sources": [
+        "https://oncubanews.com/cuba/cuba-registra-otro-sismo-de-magnitud-5-aunque-bien-al-sur-de-santiago-de-cuba/"
+      ],
+      "keywords": [
+        "sismo",
+        "terremoto",
+        "santiago de cuba",
+        "guantanamo",
+        "cenais",
+        "magnitud 5",
+        "falla oriente"
+      ],
+      "relatedPosts": [],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "melia-hotels-cuba-2026-02-10",
+      "title": "Meliá reduce su disponibilidad hotelera en Cuba ante la caída del turismo",
+      "titleEn": "Meliá Reduces Hotel Availability in Cuba Amid Tourism Collapse",
+      "topics": [
+        "economia",
+        "turismo"
+      ],
+      "publishedAt": "2026-02-10T23:22:00Z",
+      "slugEs": "2026-02-10-melia-reduce-hoteles-cuba-crisis-turismo",
+      "slugEn": "2026-02-10-melia-reduces-hotels-cuba-tourism-crisis",
+      "sources": [
+        "https://oncubanews.com/cuba/economia/melia-reduce-su-disponibilidad-hotelera-en-cuba/"
+      ],
+      "keywords": [
+        "melia",
+        "hoteles",
+        "turismo",
+        "ocupacion",
+        "espana",
+        "crisis turistica"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "canadian-rescue-flights-cuba-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "guiteras-power-plant-fails-2026-02-11",
+      "title": "Termoeléctrica Guiteras sale de servicio: déficit energético roza los 2,000 MW",
+      "titleEn": "Guiteras Power Plant Fails Again: Energy Deficit Approaches 2,000 MW",
+      "topics": [
+        "noticias",
+        "crisis-energetica",
+        "matanzas"
+      ],
+      "publishedAt": "2026-02-11T00:05:00Z",
+      "slugEs": "2026-02-11-guiteras-fuera-servicio-deficit-2000-mw",
+      "slugEn": "2026-02-11-guiteras-power-plant-fails-2000-mw-deficit",
+      "sources": [
+        "https://oncubanews.com/cuba/el-deficit-energetico-rozara-los-2-mil-mw-esta-noche-tras-la-salida-de-la-guiteras-por-grieta-en-la-caldera/"
+      ],
+      "keywords": [
+        "guiteras",
+        "termoelectrica",
+        "2000 mw",
+        "deficit",
+        "caldera",
+        "grieta",
+        "apagones",
+        "matanzas",
+        "union electrica"
+      ],
+      "relatedPosts": [
+        "cuba-emergency-measures-2026-02-10",
+        "cuba-rationing-special-period-2026-02-10",
+        "minsap-medical-brigades-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "isdi-building-collapse-2026-02-11",
+      "title": "Colapsa otra parte del Instituto Superior de Diseño en La Habana",
+      "titleEn": "Historic Design Institute Building Collapses Again in Havana",
+      "topics": [
+        "noticias",
+        "arquitectura",
+        "patrimonio",
+        "habana"
+      ],
+      "publishedAt": "2026-02-11T01:25:00Z",
+      "slugEs": "2026-02-11-isdi-derrumbe-la-habana",
+      "slugEn": "2026-02-11-isdi-building-collapse-havana",
+      "sources": [
+        "https://oncubanews.com/cuba/colapsa-otra-parte-del-instituto-superior-de-diseno-a-un-ano-de-su-anterior-derrumbe-y-planes-de-demolicion/"
+      ],
+      "keywords": [
+        "isdi",
+        "derrumbe",
+        "colapso",
+        "instituto superior de diseno",
+        "habana",
+        "maloja",
+        "patrimonio",
+        "arquitectura",
+        "edificio"
+      ],
+      "relatedPosts": [],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "canada-tourism-collapse-2026-02-11",
+      "title": "Cuba pierde su principal emisor de turistas tras suspensión de vuelos canadienses",
+      "titleEn": "Cuba Loses Its Top Tourist Market as Canadian Airlines Suspend All Flights",
+      "topics": [
+        "turismo",
+        "economia",
+        "crisis"
+      ],
+      "publishedAt": "2026-02-11T10:45:00Z",
+      "slugEs": "2026-02-11-canada-turismo-cuba-crisis",
+      "slugEn": "2026-02-11-canada-turismo-cuba-crisis",
+      "sources": [
+        "https://oncubanews.com/cuba/economia/turismo/cuba-pierde-su-principal-emisor-de-turistas-tras-la-suspension-de-vuelos-desde-canada/"
+      ],
+      "keywords": [
+        "canada",
+        "turismo",
+        "vuelos",
+        "air canada",
+        "westjet",
+        "transat",
+        "sunwing",
+        "40 porciento",
+        "754000",
+        "repatriacion"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "canadian-rescue-flights-cuba-2026-02-10",
+        "melia-hotels-cuba-2026-02-10"
+      ],
+      "isUpdate": true,
+      "updatesPost": "canadian-rescue-flights-cuba-2026-02-10"
+    },
+    {
+      "id": "children-cancer-blockade-2026-02-11",
+      "title": "El bloqueo reduce sobrevida de niños con cáncer en Cuba al 65%",
+      "titleEn": "Blockade Cuts Cuban Childrens Cancer Survival Rate from 80% to 65%",
+      "topics": [
+        "noticias",
+        "salud",
+        "crisis",
+        "bloqueo"
+      ],
+      "publishedAt": "2026-02-11T14:00:00Z",
+      "slugEs": "2026-02-11-ninos-cancer-bloqueo-cuba",
+      "slugEn": "2026-02-11-ninos-cancer-bloqueo-cuba",
+      "sources": [
+        "https://www.jornada.com.mx/noticia/2026/02/10/politica/cuba-el-bloqueo-trumpista-reduce-las-esperanzas-de-sobrevivir-de-ninos-con-cancer"
+      ],
+      "keywords": [
+        "cancer",
+        "ninos",
+        "oncopediatria",
+        "sobrevida",
+        "80",
+        "65",
+        "medicamentos",
+        "bloqueo",
+        "salud"
+      ],
+      "relatedPosts": [
+        "minsap-medical-brigades-2026-02-10",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuban-bishops-vatican-cancelled-2026-02-11",
+      "title": "Obispos cubanos cancelan visita al Vaticano por crisis de combustible",
+      "titleEn": "Cuban Bishops Cancel Vatican Visit Due to Fuel Crisis",
+      "topics": [
+        "noticias",
+        "religion",
+        "diplomacia"
+      ],
+      "publishedAt": "2026-02-11T18:05:00Z",
+      "slugEs": "2026-02-11-obispos-cubanos-vaticano",
+      "slugEn": "2026-02-11-obispos-cubanos-vaticano",
+      "sources": [
+        "https://oncubanews.com/cuba/obispos-cubanos-anulan-visita-al-vaticano-por-los-problemas-de-combustible/"
+      ],
+      "keywords": [
+        "obispos",
+        "vaticano",
+        "papa leon xiv",
+        "iglesia catolica",
+        "visita ad limina",
+        "combustible",
+        "aviacion"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "canada-tourism-collapse-2026-02-11",
+        "guiteras-power-plant-fails-2026-02-11"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "housing-law-emigrants-2026-02-11",
+      "title": "Cuba eliminará confiscación de viviendas a emigrados con nueva ley",
+      "titleEn": "Cuba to End Property Confiscation for Emigrants Under New Housing Law",
+      "topics": [
+        "noticias",
+        "vivienda",
+        "diaspora",
+        "leyes"
+      ],
+      "publishedAt": "2026-02-11T20:05:00Z",
+      "slugEs": "2026-02-11-ley-vivienda-cuba-emigrados",
+      "slugEn": "2026-02-11-ley-vivienda-cuba-emigrados",
+      "sources": [
+        "https://oncubanews.com/cuba/sociedad-cuba/nueva-ley-de-vivienda-en-cuba-eliminara-confiscacion-para-emigrados-y-abrira-paso-al-financiamiento-hipotecario/"
+      ],
+      "keywords": [
+        "vivienda",
+        "ley",
+        "emigrados",
+        "diaspora",
+        "confiscacion",
+        "hipoteca",
+        "propiedad",
+        "herencia"
+      ],
+      "relatedPosts": [],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "russia-suspends-flights-cuba-2026-02-11",
+      "title": "Rusia suspende vuelos a Cuba y evacúa a 4,000 turistas varados",
+      "titleEn": "Russia Halts Cuba Flights, Evacuates 4,000 Tourists Amid Crisis",
+      "topics": [
+        "noticias",
+        "turismo",
+        "crisis-energetica",
+        "rusia"
+      ],
+      "publishedAt": "2026-02-11T22:05:00Z",
+      "slugEs": "2026-02-11-rusia-suspende-vuelos-cuba",
+      "slugEn": "2026-02-11-rusia-suspende-vuelos-cuba",
+      "sources": [
+        "https://oncubanews.com/cuba/rusia-anuncia-cese-temporal-de-vuelos-a-cuba-por-la-crisis-de-combustible-en-la-isla/",
+        "https://cnnespanol.cnn.com/2026/02/11/latinoamerica/rusia-suspension-vuelos-cuba-evacuacion-orix",
+        "https://elpais.com/internacional/2026-02-11/rusia-anuncia-la-repatriacion-de-sus-turistas-de-cuba.html",
+        "https://www.infobae.com/america/agencias/2026/02/11/dos-aerolineas-rusas-suspenden-sus-vuelos-a-cuba-por-la-escasez-de-combustible/"
+      ],
+      "keywords": [
+        "rusia",
+        "vuelos",
+        "rossiya",
+        "nordwind",
+        "aeroflot",
+        "pegas touristik",
+        "turistas rusos",
+        "4000",
+        "evacuacion",
+        "rosaviatsia",
+        "combustible"
+      ],
+      "relatedPosts": [
+        "russia-cuba-situation-critical-2026-02-10",
+        "canada-tourism-collapse-2026-02-11",
+        "cuba-aviation-fuel-crisis-2026-02-10"
+      ],
+      "isUpdate": true,
+      "updatesPost": "russia-cuba-situation-critical-2026-02-10"
+    },
+    {
+      "id": "solar-record-800mw-2026-02-12",
+      "title": "Cuba alcanza récord de 800 MW de generación solar en plena crisis",
+      "titleEn": "Cuba Hits Record 800 MW Solar Generation Amid Energy Crisis",
+      "topics": [
+        "noticias",
+        "energia-renovable",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-12T00:05:00Z",
+      "slugEs": "2026-02-12-record-solar-cuba-800-mw",
+      "slugEn": "2026-02-12-record-solar-cuba-800-mw",
+      "sources": [
+        "https://oncubanews.com/cuba/union-electrica-reporta-record-de-generacion-solar-al-mediodia-de-este-martes/"
+      ],
+      "keywords": [
+        "solar",
+        "fotovoltaica",
+        "800 mw",
+        "record",
+        "union electrica",
+        "renovable",
+        "bess",
+        "china",
+        "holguin"
+      ],
+      "relatedPosts": [
+        "guiteras-power-plant-fails-2026-02-11",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "china-rice-no-oil-2026-02-12",
+      "title": "China envía arroz a Cuba pero evita comprometerse con petróleo",
+      "titleEn": "China Sends Rice to Cuba but Avoids Oil Commitment",
+      "topics": [
+        "noticias",
+        "diplomacia",
+        "geopolitica",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-12T02:05:00Z",
+      "slugEs": "2026-02-12-china-arroz-petroleo-cuba",
+      "slugEn": "2026-02-12-china-arroz-petroleo-cuba",
+      "sources": [
+        "https://www.elfinanciero.com.mx/mundo/2026/02/11/china-envia-a-cuba-90-mil-toneladas-de-arroz-y-se-abstiene-de-mandar-petroleo-a-la-habana/"
+      ],
+      "keywords": [
+        "china",
+        "arroz",
+        "petroleo",
+        "lin jian",
+        "90000 toneladas",
+        "80 millones",
+        "ayuda humanitaria",
+        "sanciones"
+      ],
+      "relatedPosts": [
+        "china-offers-help-cuba-2026-02-10",
+        "mexico-halts-oil-2026-02-10",
+        "cuba-aviation-fuel-crisis-2026-02-10"
+      ],
+      "isUpdate": true,
+      "updatesPost": "china-offers-help-cuba-2026-02-10"
+    },
+    {
+      "id": "blackout-record-64-percent-2026-02-12",
+      "title": "Cuba rompe récord de apagones: 64% del país sin electricidad",
+      "titleEn": "Cuba Sets Blackout Record: 64% of Country Without Power",
+      "topics": [
+        "noticias",
+        "crisis-energetica",
+        "apagones"
+      ],
+      "publishedAt": "2026-02-12T04:05:00Z",
+      "slugEs": "2026-02-12-apagon-record-64-porciento-cuba",
+      "slugEn": "2026-02-12-apagon-record-64-porciento-cuba",
+      "sources": [
+        "https://www.infobae.com/america/america-latina/2026/02/12/el-regimen-de-cuba-se-hunde-en-una-crisis-energetica-y-economica-sin-la-ayuda-de-venezuela-y-la-presion-de-estados-unidos/",
+        "https://www.elnacional.com/2026/02/apagon-masivo-en-cuba-cortes-electricos-afectaran-simultaneamente-a-59-del-pais-este-miercoles/"
+      ],
+      "keywords": [
+        "apagon",
+        "64 porciento",
+        "record",
+        "union electrica",
+        "deficit",
+        "1760 mw",
+        "termoelectricas"
+      ],
+      "relatedPosts": [
+        "guiteras-power-plant-fails-2026-02-11",
+        "solar-record-800mw-2026-02-12",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": true,
+      "updatesPost": "guiteras-power-plant-fails-2026-02-11"
+    },
+    {
+      "id": "cuba-semifinal-serie-americas-2026-02-12",
+      "title": "Cuba clasifica a semifinales de la Serie de las Américas 2026",
+      "titleEn": "Cuba Advances to Serie de las Américas 2026 Semifinals",
+      "topics": [
+        "cultura",
+        "deportes"
+      ],
+      "publishedAt": "2026-02-12T06:05:00Z",
+      "slugEs": "2026-02-12-cuba-semifinal-serie-americas",
+      "slugEn": "2026-02-12-cuba-semifinal-serie-americas",
+      "sources": [
+        "https://www.telesurtv.net/cuba-pasaje-semifinales-serie-de-las-americas/",
+        "https://elemergente.com/2026/02/asi-va-la-lvbp-resultados-de-la-serie-de-las-americas-el-miercoles-11-posiciones-pitchers-y-transmisiones-tv-del-jueves-12-de-febrero-de-2026.html"
+      ],
+      "keywords": [
+        "beisbol",
+        "serie americas",
+        "semifinal",
+        "colombia",
+        "despaigne",
+        "german mesa",
+        "venezuela",
+        "magallanes"
+      ],
+      "relatedPosts": [
+        "cuba-caribbean-series-comeback-2026-02-10"
+      ],
+      "isUpdate": true,
+      "updatesPost": "cuba-caribbean-series-comeback-2026-02-10"
+    },
+    {
+      "id": "florida-lawmakers-revoke-licenses-2026-02-12",
+      "title": "Florida: exigen revocar licencias a empresas de EE.UU. en Cuba",
+      "titleEn": "Florida Lawmakers Demand Revocation of US Business Licenses with Cuba",
+      "topics": [
+        "noticias",
+        "cuba-eeuu",
+        "sanciones"
+      ],
+      "publishedAt": "2026-02-12T12:00:00Z",
+      "slugEs": "2026-02-12-congresistas-florida-revocar-licencias-cuba",
+      "slugEn": "2026-02-12-congresistas-florida-revocar-licencias-cuba",
+      "sources": [
+        "https://oncubanews.com/cuba-ee-uu/congresistas-de-florida-exigen-revocar-licencias-de-empresas-de-eeuu-con-negocios-con-cuba/"
+      ],
+      "keywords": [
+        "congresistas",
+        "florida",
+        "salazar",
+        "gimenez",
+        "diaz-balart",
+        "OFAC",
+        "licencias",
+        "helms-burton",
+        "sanciones"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "transport-crisis-blockade-2026-02-12",
+      "title": "Crisis del transporte en Cuba: precios duplicados, buses parados",
+      "titleEn": "Cuba's Transport Crisis: Fares Double as Public Transit Collapses",
+      "topics": [
+        "noticias",
+        "transporte",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-12T16:00:00Z",
+      "slugEs": "2026-02-12-crisis-transporte-cuba-bloqueo-petrolero",
+      "slugEn": "2026-02-12-crisis-transporte-cuba-bloqueo-petrolero",
+      "sources": [
+        "https://oncubanews.com/cuba/economia/se-va-a-poner-peor-crisis-del-transporte-tras-el-bloqueo-petrolero-a-cuba/"
+      ],
+      "keywords": [
+        "transporte",
+        "combustible",
+        "taxi",
+        "omnibus",
+        "piquera",
+        "triciclo",
+        "precios",
+        "habana",
+        "cupet"
+      ],
+      "relatedPosts": [
+        "cuba-emergency-measures-2026-02-10",
+        "cuba-rationing-special-period-2026-02-10",
+        "blackout-record-64-percent-2026-02-12"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "un-condemns-blockade-2026-02-13",
+      "title": "Expertos de la ONU condenan bloqueo energético de EE.UU. a Cuba",
+      "titleEn": "UN Experts Condemn US Energy Blockade Against Cuba",
+      "topics": [
+        "noticias",
+        "derechos-humanos",
+        "bloqueo",
+        "diplomacia"
+      ],
+      "publishedAt": "2026-02-13T00:05:00Z",
+      "slugEs": "2026-02-13-onu-condena-bloqueo-energetico-cuba",
+      "slugEn": "2026-02-13-onu-condena-bloqueo-energetico-cuba",
+      "sources": [
+        "https://www.infobae.com/america/agencias/2026/02/12/expertos-de-la-onu-condenan-el-bloqueo-de-combustible-a-cuba-impuesto-por-eeuu/",
+        "https://apnews.com/article/mexico-cuba-humanitarian-aid-havana-us-sanctions-52c44db94c9423511d67366662e78ac4",
+        "https://elpais.com/mexico/2026-02-12/una-nueva-flotilla-internacional-se-organiza-para-llevar-ayuda-humanitaria-a-cuba.html"
+      ],
+      "keywords": [
+        "ONU",
+        "derechos humanos",
+        "relatores",
+        "bloqueo",
+        "petroleo",
+        "orden ejecutiva",
+        "castigo colectivo",
+        "mexico",
+        "armada",
+        "flotilla"
+      ],
+      "relatedPosts": [
+        "cuba-emergency-measures-2026-02-10",
+        "mexico-humanitarian-aid-2026-02-10",
+        "blackout-record-64-percent-2026-02-12",
+        "russia-cuba-situation-critical-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "mexico-navy-aid-arrives-2026-02-13",
+      "title": "Buques de la Armada de México llegan a Cuba con 814 toneladas de ayuda",
+      "titleEn": "Mexican Navy Ships Deliver 814 Tons of Humanitarian Aid to Cuba",
+      "topics": [
+        "noticias",
+        "ayuda-humanitaria",
+        "mexico",
+        "crisis"
+      ],
+      "publishedAt": "2026-02-13T06:05:00Z",
+      "slugEs": "2026-02-13-buques-mexico-ayuda-humanitaria-cuba",
+      "slugEn": "2026-02-13-buques-mexico-ayuda-humanitaria-cuba",
+      "sources": [
+        "https://www.bbc.com/mundo/articles/c8jxynk810vo",
+        "https://apnews.com/article/mexico-cuba-humanitarian-aid-havana-us-sanctions-52c44db94c9423511d67366662e78ac4",
+        "https://www.aljazeera.com/news/2026/2/12/mexican-ships-arrive-in-cuba-with-humanitarian-cargo-amid-us-oil-blockade"
+      ],
+      "keywords": [
+        "mexico",
+        "armada",
+        "papaloapan",
+        "isla holbox",
+        "ayuda humanitaria",
+        "814 toneladas",
+        "alimentos",
+        "leche",
+        "sheinbaum",
+        "veracruz",
+        "flotilla"
+      ],
+      "relatedPosts": [
+        "mexico-humanitarian-aid-2026-02-10",
+        "mexico-halts-oil-2026-02-10",
+        "blackout-record-64-percent-2026-02-12"
+      ],
+      "isUpdate": true,
+      "updatesPost": "mexico-humanitarian-aid-2026-02-10"
+    },
+    {
+      "id": "copa-airlines-tankering-cuba-2026-02-13",
+      "title": "Copa Airlines mantiene vuelos a Cuba cargando fuel en Panamá",
+      "titleEn": "Copa Airlines Keeps Flying to Cuba by Tankering Fuel from Panama",
+      "topics": [
+        "noticias",
+        "aviacion",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-13T12:00:00Z",
+      "slugEs": "2026-02-13-copa-airlines-vuelos-cuba-crisis",
+      "slugEn": "2026-02-13-copa-airlines-vuelos-cuba-crisis",
+      "sources": [
+        "https://oncubanews.com/cuba/copa-airlines-mantiene-sus-vuelos-a-cuba-con-normalidad-a-pesar-del-cerco-petrolero-de-eeuu/"
+      ],
+      "keywords": [
+        "copa airlines",
+        "panama",
+        "tankering",
+        "vuelos",
+        "combustible",
+        "aviacion",
+        "habana"
+      ],
+      "relatedPosts": [
+        "cuba-aviation-fuel-crisis-2026-02-10",
+        "canada-tourism-collapse-2026-02-11",
+        "russia-suspends-flights-cuba-2026-02-11"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "el4tico-influencers-prison-2026-02-13",
+      "title": "Prisión provisional para creadores de El4tico en Holguín, Cuba",
+      "titleEn": "Cuban Dissident Influencers from El4tico Held in Provisional Prison",
+      "topics": [
+        "noticias",
+        "derechos-humanos",
+        "libertad-expresion",
+        "represion"
+      ],
+      "publishedAt": "2026-02-13T18:05:00Z",
+      "slugEs": "2026-02-13-prision-influencers-el4tico-cuba",
+      "slugEn": "2026-02-13-prision-influencers-el4tico-cuba",
+      "sources": [
+        "https://oncubanews.com/cuba/prision-provisional-para-los-influencers-disidentes-de-el4tico-a-la-espera-de-las-decisiones-procesales-correspondientes/",
+        "https://www.elmundo.es/internacional/2026/02/13/698e78eee9cf4af15d8b45b4.html"
+      ],
+      "keywords": [
+        "el4tico",
+        "influencers",
+        "prision",
+        "holguin",
+        "libertad expresion",
+        "amnistia internacional",
+        "kamil zayas",
+        "ernesto medina",
+        "propaganda",
+        "orden constitucional"
+      ],
+      "relatedPosts": [
+        "cuba-mesa-redonda-criticism-2026-02-10",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "highway-accident-zaza-2026-02-14",
+      "title": "Accidente en la Autopista Nacional de Cuba deja 4 muertos y 16 heridos",
+      "titleEn": "Highway Accident in Cuba Kills 4, Injures 16 on National Motorway",
+      "topics": [
+        "noticias",
+        "transporte",
+        "accidente"
+      ],
+      "publishedAt": "2026-02-14T06:05:00Z",
+      "slugEs": "2026-02-14-accidente-autopista-nacional-cuba",
+      "slugEn": "2026-02-14-accidente-autopista-nacional-cuba",
+      "sources": [
+        "https://oncubanews.com/cuba/accidente-en-autopista-nacional-deja-cuatro-muertos-y-16-heridos-dos-en-estado-critico/",
+        "https://www.escambray.cu/2026/cuatro-fallecidos-y-16-lesionados-en-accidente-masivo-en-la-autopista-nacional-noticia-en-construccion/"
+      ],
+      "keywords": [
+        "accidente",
+        "autopista nacional",
+        "omnibus diana",
+        "zaza",
+        "sancti spiritus",
+        "muertos",
+        "heridos"
+      ],
+      "relatedPosts": [
+        "transport-crisis-blockade-2026-02-12"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "flotilla-nuestra-america-2026-02-14",
+      "title": "Flotilla 'Nuestra América' se organiza para llevar ayuda a Cuba",
+      "titleEn": "Flotilla 'Nuestra América' Mobilizes Humanitarian Aid for Cuba",
+      "topics": [
+        "noticias",
+        "ayuda-humanitaria",
+        "solidaridad",
+        "bloqueo"
+      ],
+      "publishedAt": "2026-02-14T18:00:00Z",
+      "slugEs": "2026-02-14-flotilla-nuestra-america-ayuda-cuba",
+      "slugEn": "2026-02-14-flotilla-nuestra-america-ayuda-cuba",
+      "sources": [
+        "https://oncubanews.com/cuba/organizador-de-flotilla-con-ayuda-a-cuba-no-podemos-permitir-que-se-normalice-el-asedio-contra-la-isla/"
+      ],
+      "keywords": [
+        "flotilla",
+        "nuestra america",
+        "internacional progresista",
+        "david adler",
+        "ayuda humanitaria",
+        "gaza",
+        "solidaridad",
+        "bloqueo"
+      ],
+      "relatedPosts": [
+        "mexico-navy-aid-arrives-2026-02-13",
+        "un-condemns-blockade-2026-02-13",
+        "nico-lopez-refinery-fire-2026-02-14"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "festival-habano-cancelled-2026-02-15",
+      "title": "Cuba cancela el Festival del Habano por la crisis energética",
+      "titleEn": "Cuba Cancels Festival del Habano Amid Energy Crisis",
+      "topics": [
+        "noticias",
+        "tabaco",
+        "economia",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-15T00:05:00Z",
+      "slugEs": "2026-02-15-festival-habano-cancelado-crisis",
+      "slugEn": "2026-02-15-festival-habano-cancelado-crisis",
+      "sources": [
+        "https://oncubanews.com/cuba/economia/bloqueo-energetico-de-eeuu-hace-que-se-postergue-feria-del-habano-cuba-perdera-millones-de-euros-por-subasta/"
+      ],
+      "keywords": [
+        "festival habano",
+        "tabaco",
+        "cigars",
+        "humidor",
+        "subasta",
+        "cohiba",
+        "montecristo",
+        "cancelado",
+        "crisis energetica"
+      ],
+      "relatedPosts": [
+        "nico-lopez-refinery-fire-2026-02-14",
+        "blackout-record-64-percent-2026-02-12",
+        "cuba-aviation-fuel-crisis-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "hemodialysis-patients-risk-2026-02-15",
+      "title": "Pacientes de hemodiálisis en Cuba en riesgo por falta de combustible",
+      "titleEn": "Dialysis Patients in Cuba at Risk as Fuel Crisis Halts Transport",
+      "topics": [
+        "noticias",
+        "salud",
+        "crisis-energetica",
+        "combustible"
+      ],
+      "publishedAt": "2026-02-15T06:05:00Z",
+      "slugEs": "2026-02-15-hemodialisis-cuba-crisis-combustible",
+      "slugEn": "2026-02-15-hemodialisis-cuba-crisis-combustible",
+      "sources": [
+        "https://en.cibercuba.com/noticias/2026-02-14-u1-e208574-s27061-nid320860-pacientes-hemodialisis-enfrentan-riesgo-falta",
+        "https://www.martinoticias.com/a/pacientes-de-hemodialisis-en-cuba-en-riesgo-por-la-paralizaci%C3%B3n-del-transporte/448110.html"
+      ],
+      "keywords": [
+        "hemodialisis",
+        "insuficiencia renal",
+        "transporte medico",
+        "combustible",
+        "3000 pacientes",
+        "nefrologia",
+        "apagones"
+      ],
+      "relatedPosts": [
+        "minsap-medical-brigades-2026-02-10",
+        "blackout-record-64-percent-2026-02-12",
+        "children-cancer-blockade-2026-02-11"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-spain-foreign-ministers-2026-02-15",
+      "title": "Cancilleres de Cuba y España se reúnen en Madrid por la crisis",
+      "titleEn": "Cuba and Spain Foreign Ministers Meet in Madrid Amid Crisis",
+      "topics": [
+        "noticias",
+        "diplomacia",
+        "españa",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-15T18:05:00Z",
+      "slugEs": "2026-02-15-cancilleres-cuba-espana-madrid",
+      "slugEn": "2026-02-15-cancilleres-cuba-espana-madrid",
+      "sources": [
+        "https://oncubanews.com/cuba/cancilleres-de-cuba-y-espana-se-reuniran-en-madrid-para-analizar-la-situacion-de-la-isla/"
+      ],
+      "keywords": [
+        "cancilleres",
+        "españa",
+        "albares",
+        "bruno rodriguez",
+        "madrid",
+        "diplomacia",
+        "cumbre iberoamericana",
+        "china",
+        "vietnam"
+      ],
+      "relatedPosts": [
+        "nico-lopez-refinery-fire-2026-02-14",
+        "blackout-record-64-percent-2026-02-12",
+        "china-rice-no-oil-2026-02-12",
+        "mexico-navy-aid-arrives-2026-02-13"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    }
+  ],
+  "lastCheck": "2026-02-22T06:03:00.000000",
+  "schema": {
+    "version": 2,
+    "fields": {
+      "id": "unique identifier (slug-date format)",
+      "title": "Spanish title",
+      "titleEn": "English title",
+      "topics": "array of topic tags",
+      "publishedAt": "ISO timestamp",
+      "slugEs": "Spanish post filename",
+      "slugEn": "English post filename",
+      "sources": "array of source URLs used",
+      "keywords": "array of keywords for duplicate detection",
+      "relatedPosts": "array of related post IDs (for internal links)",
+      "isUpdate": "boolean - true if this updates a previous story",
+      "updatesPost": "ID of post this updates (if isUpdate=true)"
+    }
+  },
+  "posts": [
+    {
+      "id": "euro-record-cuba-2026-02-23",
+      "title": "Euro alcanza récord de 570 CUP en Cuba: el peso sigue su caída",
+      "titleEn": "Euro Hits Record 570 CUP in Cuba: The Peso Continues Its Downfall",
+      "topics": [
+        "noticias",
+        "economia",
+        "dolar",
+        "cup",
+        "mercado-informal",
+        "inflacion"
+      ],
+      "publishedAt": "2026-02-23T12:00:00Z",
+      "slugEs": "2026-02-23-euro-record-cuba-mercado-informal",
+      "slugEn": "2026-02-23-euro-record-cuba-mercado-informal",
+      "sources": [
+        "https://www.cibercuba.com/noticias/2026-02-23-u1-e129488-s27061-nid321475-novedades-tasa-cambio-aumenta-precio-dos-divisas",
+        "https://eltoque.com/tasas-de-cambio-de-moneda-en-cuba-hoy"
+      ],
+      "keywords": [
+        "euro",
+        "dolar",
+        "570 CUP",
+        "505 CUP",
+        "mercado informal",
+        "elToque",
+        "inflacion",
+        "peso cubano",
+        "MLC"
+      ],
+      "relatedPosts": [
+        "cuba-dolar-505-cup-banco-central-2026-02-22",
+        "terminal-mariel-usd-importaciones-privadas-2026-02-22",
+        "hoteles-iluminados-hospitales-oscuras-cuba-2026-02-22",
+        "canada-ayuda-humanitaria-cuba-sherritt-moa-2026-02-22",
+        "hammer-cambio-historico-cuba-2026-02-22"
+      ],
+      "isUpdate": false
+    },
+    {
+      "id": "envios-miami-cuba-2026-02-17",
+      "title": "Envíos a Cuba desde Miami: restricciones y presión política en 2026",
+      "titleEn": "Sending Packages to Cuba from Miami: Restrictions and Political Pressure in 2026",
+      "topics": [
+        "paquetería",
+        "envíos",
+        "Cubamax",
+        "sanciones",
+        "crisis-energética"
+      ],
+      "publishedAt": "2026-02-17T18:00:00Z",
+      "slugEs": "2026-02-17-envios-cuba-miami-crisis-paqueteria",
+      "slugEn": "2026-02-17-envios-cuba-miami-crisis-paqueteria",
+      "keywords": [
+        "Cubamax",
+        "Panavana",
+        "envíos Cuba",
+        "paquetería Cuba Miami",
+        "restricciones envíos Cuba",
+        "Puerto Miami Cuba",
+        "Carlos Giménez Cuba",
+        "crisis combustible Cuba"
+      ],
+      "isUpdate": false
+    },
+    {
+      "id": "eeuu-envios-combustible-cuba-licencias-privadas-2026-02-18",
+      "title": "EE.UU. ya envía combustible a Cuba: 10 buques llegan por vía privada",
+      "titleEn": "US Already Shipping Fuel to Cuba: 10 Tankers Arrive via Private Route",
+      "topics": [
+        "noticias",
+        "eeuu-cuba",
+        "combustible",
+        "crisis-energetica",
+        "sanciones"
+      ],
+      "publishedAt": "2026-02-18T06:00:00Z",
+      "slugEs": "2026-02-18-eeuu-envios-combustible-cuba-licencias-privadas",
+      "slugEn": "2026-02-18-eeuu-envios-combustible-cuba-licencias-privadas",
+      "sources": [
+        "https://en.cibercuba.com/noticias/2026-02-17-u1-e129488-s27061-nid321050-pequenos-envios-combustible-cuba-eeuu-abren-nuevo",
+        "https://en.cibercuba.com/noticias/2026-02-18-u1-e197721-s27061-nid321114-secretario-general-onu-pide-dialogo-crisis",
+        "https://efe.com/mundo/2026-02-16/antonio-guterres-onu-alerta-crisis-energetica-cuba-llamado-dialogo/"
+      ],
+      "keywords": [
+        "OFAC",
+        "licencias",
+        "combustible",
+        "envios",
+        "buques cisterna",
+        "10 tanqueros",
+        "empresas privadas",
+        "guterres",
+        "ONU",
+        "dialogo"
+      ],
+      "relatedPosts": [
+        "eeuu-evalua-envio-combustible-cuba-2026-02-16",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17",
+        "un-condemns-blockade-2026-02-13"
+      ],
+      "isUpdate": true,
+      "updatesPost": "eeuu-evalua-envio-combustible-cuba-2026-02-16"
+    },
+    {
+      "id": "canciller-cuba-putin-moscu-crisis-2026-02-18",
+      "title": "Canciller cubano se reúne con Putin y Lavrov en Moscú en plena crisis",
+      "titleEn": "Cuba's Foreign Minister Meets Putin and Lavrov in Moscow Amid Crisis",
+      "topics": [
+        "noticias",
+        "diplomacia",
+        "cuba-rusia",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-18T18:00:00Z",
+      "slugEs": "2026-02-18-canciller-cuba-putin-moscu-crisis",
+      "slugEn": "2026-02-18-canciller-cuba-putin-moscu-crisis",
+      "sources": [
+        "https://oncubanews.com/cuba/canciller-cubano-se-reunira-con-putin-tras-encuentro-con-lavrov-donde-llamaron-a-eeuu-al-dialogo/"
+      ],
+      "keywords": [
+        "bruno rodriguez",
+        "putin",
+        "lavrov",
+        "moscu",
+        "kremlin",
+        "bloqueo naval",
+        "petroleo rusia",
+        "peskov",
+        "diplomacia",
+        "ucrania ginebra"
+      ],
+      "relatedPosts": [
+        "russia-cuba-situation-critical-2026-02-10",
+        "russia-suspends-flights-cuba-2026-02-11",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17",
+        "cuba-spain-foreign-ministers-2026-02-15"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "eeuu-presiona-misiones-medicas-cubanas-2026-02-19",
+      "title": "EE.UU. presiona y países cancelan misiones médicas cubanas en 2026",
+      "titleEn": "US Pressure Leads Countries to Cancel Cuban Medical Missions in 2026",
+      "topics": [
+        "noticias",
+        "misiones-medicas",
+        "eeuu-cuba",
+        "economia",
+        "sanciones"
+      ],
+      "publishedAt": "2026-02-19T06:00:00Z",
+      "slugEs": "2026-02-19-eeuu-presiona-misiones-medicas-cubanas-paises-cancelan",
+      "slugEn": "2026-02-19-eeuu-presiona-misiones-medicas-cubanas-paises-cancelan",
+      "sources": [
+        "https://www.elnuevoherald.com/noticias/america-latina/cuba-es/article314717340.html",
+        "https://en.cibercuba.com/noticias/2026-02-19-u1-e135253-s27061-nid321212-eeuu-golpea-otra-fuente-clave-ingresos-cuba-misiones",
+        "https://en.cibercuba.com/noticias/2026-02-17-u1-e208933-s27061-nid321094-ministro-jamaica-dice-renegocian-programa-medico"
+      ],
+      "keywords": [
+        "misiones medicas",
+        "rubio",
+        "bahamas",
+        "guyana",
+        "guatemala",
+        "jamaica",
+        "trabajo forzado",
+        "6000 millones",
+        "600000 profesionales",
+        "prisoners defenders"
+      ],
+      "relatedPosts": [
+        "minsap-medical-brigades-2026-02-10",
+        "rubio-apertura-economica-cuba-munich-2026-02-16",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "crisis-basura-habana-emergencia-sanitaria-2026-02-20",
+      "title": "La Habana se ahoga en basura: solo 44 de 106 camiones funcionan",
+      "titleEn": "Havana Drowning in Garbage: Only 44 of 106 Trash Trucks Operating",
+      "topics": [
+        "noticias",
+        "habana",
+        "basura",
+        "crisis-sanitaria",
+        "combustible",
+        "crisis-energetica"
+      ],
+      "publishedAt": "2026-02-20T00:05:00Z",
+      "slugEs": "2026-02-20-crisis-basura-habana-cuba-emergencia-sanitaria",
+      "slugEn": "2026-02-20-crisis-basura-habana-cuba-emergencia-sanitaria",
+      "sources": [
+        "https://www.reuters.com/sustainability/climate-energy/cubas-havana-piles-with-trash-us-chokehold-halts-garbage-trucks-2026-02-16/",
+        "https://www.infobae.com/america/america-latina/2026/02/17/emergencia-en-cuba-montanas-de-basura-y-servicios-paralizados-por-la-falta-de-combustible-agravan-el-peligro-sanitario/",
+        "https://en.cibercuba.com/noticias/2026-02-17-u1-e199370-s27061-nid321040-crisis-basura-habana-salta-prensa-internacional",
+        "https://lavocedinewyork.com/en/news/2026/02/19/cuba-in-crisis-fuel-shortages-no-waste-collection-amid-diplomatic-tensions/"
+      ],
+      "keywords": [
+        "basura",
+        "habana",
+        "44 camiones",
+        "106",
+        "recogida residuos",
+        "dengue",
+        "leptospirosis",
+        "ratas",
+        "mosquitos",
+        "crisis sanitaria",
+        "ticket",
+        "combustible"
+      ],
+      "relatedPosts": [
+        "minsap-medical-brigades-2026-02-10",
+        "hemodialysis-patients-risk-2026-02-15",
+        "blackout-record-64-percent-2026-02-12",
+        "cuba-emergency-measures-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cuba-dolar-505-cup-banco-central-2026-02-22",
+      "title": "Dólar a 505 CUP: el Banco Central reacciona tarde ante la crisis",
+      "titleEn": "Dollar Hits 505 CUP: Cuba's Central Bank Reacts Too Little, Too Late",
+      "topics": ["noticias", "economia", "dolar", "cup", "banco-central", "mercado-informal"],
+      "publishedAt": "2026-02-22T19:30:00Z",
+      "slugEs": "2026-02-22-cuba-dolar-505-cup-banco-central-tasa-flotante",
+      "slugEn": "2026-02-22-cuba-dolar-505-cup-banco-central-tasa-flotante",
+      "sources": [
+        "https://en.cibercuba.com/noticias/2026-02-21-u1-e207888-s27061-nid321372-banco-central-acelera-tasa-flotante-tras-nuevo-salto",
+        "https://www.eltoque.com/",
+        "https://www.cubaheadlines.com/articles/321371"
+      ],
+      "keywords": [
+        "dolar", "cup", "505-cup", "tasa-flotante", "banco-central",
+        "mercado-informal", "eltoque", "inflacion", "remesas", "devaluacion"
+      ],
+      "relatedPosts": [
+        "dolar-barrera-500-pesos-2026-02-10",
+        "economia-cuba-contrajo-5-porciento-2025-02-10",
+        "cuba-canasta-normada-sin-subsidios-2026-02-19",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17",
+        "terminal-mariel-cobrara-usd-2026-02-22"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "canada-ayuda-humanitaria-cuba-sherritt-moa-2026-02-22",
+      "title": "Canadá evalúa ayuda a Cuba mientras Sherritt para en Moa",
+      "titleEn": "Canada Weighs Cuba Aid as Sherritt Halts Moa Nickel Mine",
+      "topics": ["noticias", "canada", "ayuda-humanitaria", "sherritt", "niquel", "moa"],
+      "publishedAt": "2026-02-22T19:30:00Z",
+      "slugEs": "2026-02-22-canada-ayuda-humanitaria-cuba-sherritt-moa",
+      "slugEn": "2026-02-22-canada-ayuda-humanitaria-cuba-sherritt-moa",
+      "sources": [
+        "https://www.cbc.ca/news/politics/cuba-canada-embargo-aid-9.7100202",
+        "https://en.cibercuba.com/noticias/2026-02-21-u1-e208933-s27061-nid321400-canada-evalua-enviar-ayuda-cuba-mientras-isla-hunde",
+        "https://www.redcross.ca/about-us/media-news/news-releases/canadian-red-cross-launches-appeal-to-support-people-impacted-by-crisis-in-cuba"
+      ],
+      "keywords": [
+        "canada", "sherritt", "moa", "niquel", "cobalto", "ayuda-humanitaria",
+        "mark-carney", "ndp", "bloc-quebecois", "cruz-roja-canadiense",
+        "air-canada", "westjet", "transat", "sunwing", "turistas-repatriados"
+      ],
+      "relatedPosts": [
+        "canada-turismo-cuba-crisis-2026-02-11",
+        "aerolineas-canadienses-rescatan-turistas-2026-02-10",
+        "fuerzas-cubanas-salen-venezuela-2026-02-21",
+        "convoy-nuestra-america-ayuda-humanitaria-2026-02-20",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "rusa-mitina-cuba-error-turismo-energia-2026-02-22",
+      "title": "Dirigente rusa: Cuba cometió 'error fatal' al priorizar turismo",
+      "titleEn": "Russian Communist Leader: Cuba Made a 'Fatal Error' Betting on Tourism",
+      "topics": ["noticias", "rusia", "energia", "turismo", "geopolitica", "critica"],
+      "publishedAt": "2026-02-22T19:30:00Z",
+      "slugEs": "2026-02-22-rusa-mitina-cuba-error-turismo-energia",
+      "slugEn": "2026-02-22-rusa-mitina-cuba-error-turismo-energia",
+      "sources": [
+        "https://en.cibercuba.com/noticias/2026-02-21-u1-e208574-s27061-nid321408-dirigente-comunista-rusa-dice-cuba-cometio-error",
+        "https://www.pravda.ru/news/videochannel/2334327-caribbean-crisis/",
+        "https://www.cubaheadlines.com/articles/321408"
+      ],
+      "keywords": [
+        "mitina", "pravda", "partido-comunista-ruso", "error-estrategico",
+        "turismo-32-porciento", "energia-12-porciento", "crisis-caribe",
+        "china-2000-mw", "misiles-cubanos-2.0", "gaviota", "varadero"
+      ],
+      "relatedPosts": [
+        "rusia-declara-situacion-cuba-critica-2026-02-10",
+        "petrolero-ruso-sea-horse-desafia-bloqueo-2026-02-21",
+        "record-solar-cuba-800-mw-2026-02-12",
+        "apagon-record-64-porciento-2026-02-12",
+        "canciller-cuba-putin-moscu-2026-02-18"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "cancilleres-francia-cuba-paris-contexto-tenso-2026-02-22",
+      "title": "Cancilleres de Francia y Cuba se reúnen en París en contexto tenso",
+      "titleEn": "French and Cuban Foreign Ministers Meet in Paris Amid Tense Context",
+      "topics": ["noticias", "diplomacia", "francia", "cuba", "paris", "derechos-humanos"],
+      "publishedAt": "2026-02-22T19:30:00Z",
+      "slugEs": "2026-02-22-cancilleres-francia-cuba-paris-contexto-tenso",
+      "slugEn": "2026-02-22-cancilleres-francia-cuba-paris-contexto-tenso",
+      "sources": [
+        "https://oncubanews.com/cuba/cancilleres-de-francia-y-cuba-abordan-complicado-y-tenso-contexto-para-la-isla/",
+        "https://media.franceintheus.org/21830/",
+        "https://www.globalsecurity.org/wmd/library/news/france/2026/france-260220-france-meaeb01.htm"
+      ],
+      "keywords": [
+        "barrot", "rodriguez-parrilla", "paris", "quai-dorsay", "derechos-humanos",
+        "libres fundamentales", "ue", "acuerdo-dialogo-politico", "unesco",
+        "jaled-al-anani", "gira-europea", "moscu", "madrid"
+      ],
+      "relatedPosts": [
+        "cancilleres-cuba-espana-madrid-2026-02-15",
+        "canciller-cuba-putin-moscu-2026-02-18",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17",
+        "cuba-preparada-bloqueo-total-onu-2026-02-20",
+        "mexico-mediacion-eeuu-cuba-2026-02-19"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    },
+    {
+      "id": "hoteles-iluminados-hospitales-oscuras-cuba-2026-02-22",
+      "title": "Hoteles iluminados, hospitales a oscuras: las dos Cubas",
+      "titleEn": "Hotels Lit Up, Hospitals in the Dark: Cuba's Two Worlds",
+      "topics": ["noticias", "crisis-energetica", "apagones", "hoteles", "hospitales", "gaesa", "desigualdad"],
+      "publishedAt": "2026-02-22T19:30:00Z",
+      "slugEs": "2026-02-22-hoteles-iluminados-hospitales-oscuras-cuba",
+      "slugEn": "2026-02-22-hoteles-iluminados-hospitales-oscuras-cuba",
+      "sources": [
+        "https://en.cibercuba.com/noticias/2026-02-22-u1-e199894-s27061-nid321413-hoteles-electricidad-cenas-especiales-mientras"
+      ],
+      "keywords": [
+        "hotel-playa-pesquero", "sagua-de-tanamo", "gaesa", "gaviota",
+        "apagones", "hospitales", "joankelin-sanchez", "holguin",
+        "red-electrica-prioritaria", "desigualdad-energetica"
+      ],
+      "relatedPosts": [
+        "sistema-salud-cuba-borde-colapso-bloqueo-2026-02-22",
+        "apagon-record-64-porciento-2026-02-12",
+        "cuba-oscurece-imagenes-satelitales-2026-02-17",
+        "record-solar-cuba-800-mw-2026-02-12",
+        "cuba-medidas-emergencia-universidades-hospitales-2026-02-10"
+      ],
+      "isUpdate": false,
+      "updatesPost": null
+    }
+  ]
+}
