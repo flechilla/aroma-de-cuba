@@ -1,6 +1,29 @@
 {
   "articles": [
     {
+      "id": "2026-02-26-fallo-i220a-corte-atlanta-nueva-revision",
+      "title": "Fallo I-220A: Corte de Atlanta ordena nueva revisión en casos clave",
+      "titleEn": "I-220A Ruling: Atlanta Court Orders New Review in Key Cases",
+      "topics": ["migracion", "I-220A", "justicia", "CAA"],
+      "publishedAt": "2026-02-26T06:30:00Z",
+      "slugEs": "2026-02-26-fallo-i220a-corte-atlanta-nueva-revision",
+      "slugEn": "2026-02-26-fallo-i220a-corte-atlanta-nueva-revision",
+      "sources": [
+        "https://cafefuerte.com/tribunal-de-apelaciones-anula-decisiones-sobre-casos-de-i-220a-y-ordena-nueva-revision-legal/",
+        "https://oncubanews.com/cuba-ee-uu/fallo-federal-reabre-debate-entre-cubanos-con-i-220a-tras-ordenar-nueva-revision-de-dos-casos/",
+        "https://www.cubanet.org/tribunal-de-apelaciones-anula-decision-sobre-dos-cubanas-con-i-220a/"
+      ],
+      "keywords": ["I-220A", "11th Circuit", "Atlanta", "Ley de Ajuste Cubano", "Mark Prada", "BIA"],
+      "relatedPosts": [
+        "2026-02-25-i220a-fase-revision-corte-atlanta",
+        "2026-02-25-i220a-fallo-corte-apelaciones-11-circuito",
+        "2026-02-11-formularios-i220-cubanos-guia",
+        "2026-02-22-ley-ajuste-cubano-2026-quien-califica-proteccion",
+        "2026-02-24-esperanza-cubanos-i220a-audiencia-miami"
+      ],
+      "isUpdate": false
+    },
+    {
       "id": "2026-02-26-deportaciones-trump-opcion-retorno-cuba",
       "title": "Deportaciones 2026: La nueva 'opción' de Trump para los cubanos",
       "titleEn": "Deportations 2026: Trump's New 'Choice' for Cubans in the US",
