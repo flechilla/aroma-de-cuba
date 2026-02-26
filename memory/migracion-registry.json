@@ -1,4 +1,6 @@
 {
+  "articles": [
+    {
       "id": "2026-02-26-deportaciones-trump-opcion-retorno-cuba",
       "title": "Deportaciones 2026: La nueva 'opción' de Trump para los cubanos",
       "titleEn": "Deportations 2026: Trump's New 'Choice' for Cubans in the US",
@@ -673,7 +675,7 @@
     }
   ],
   "description": "Registry of published migration news articles to avoid duplicates",
-  "lastUpdated": "2026-02-25",
+  "lastUpdated": "2026-02-26",
   "topics_covered": [
     "rubio-cuba-negotiations-sabotage",
     "deportations",
