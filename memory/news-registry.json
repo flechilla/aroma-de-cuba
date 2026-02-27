@@ -1,6 +1,40 @@
 {
   "published": [
     {
+      "id": "cuba-diaz-canel-tiroteo-lancha-2026-02-27",
+      "isUpdate": true,
+      "keywords": [
+        "Díaz-Canel",
+        "tiroteo",
+        "lancha rápida",
+        "Villa Clara",
+        "soberanía",
+        "EE.UU.-Cuba"
+      ],
+      "publishedAt": "2026-02-27T18:00:00Z",
+      "relatedPosts": [
+        "cuba-lancha-florida-incidente-2026-02-26",
+        "hammer-cambio-historico-cuba-2026-02-22",
+        "mexico-mediacion-eeuu-cuba-sheinbaum-2026-02-19",
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17",
+        "cuba-preparada-bloqueo-total-onu-2026-02-20"
+      ],
+      "slugEn": "2026-02-27-cuba-diaz-canel-justifica-tiroteo-lancha",
+      "slugEs": "2026-02-27-cuba-diaz-canel-justifica-tiroteo-lancha",
+      "sources": [
+        "https://www.bbc.com/mundo/articles/c2e4j21n1l8o",
+        "http://www.cubadebate.cu/noticias/2026/02/27/que-trae-la-prensa-cubana-viernes-27-de-febrero-de-2026/"
+      ],
+      "title": "Cuba justifica tiroteo a lancha civil de EE.UU.: 'No agrede ni amenaza'",
+      "titleEn": "Cuba Defends Shootdown of Florida-Registered Speedboat: 'We Are Not Aggressive'",
+      "topics": [
+        "noticias",
+        "EE.UU.-Cuba",
+        "politica"
+      ],
+      "updatesPost": "cuba-lancha-florida-incidente-2026-02-26"
+    },
+    {
       "id": "mexico-ayuda-humanitaria-cuba-2026-02-26",
       "isUpdate": false,
       "keywords": ["México", "ayuda humanitaria", "Papaloapan", "Huasteco", "Veracruz", "frijol", "leche"],
