@@ -1,6 +1,28 @@
 {
   "published": [
     {
+      "id": "trump-friendly-takeover-cuba-2026-02-28",
+      "title": "Trump sugiere una 'toma amistosa' de Cuba ante crisis energética",
+      "titleEn": "Trump Suggests 'Friendly Takeover' of Cuba Amid Energy Crisis",
+      "topics": ["noticias", "eeuu-cuba", "trump", "rubio"],
+      "publishedAt": "2026-02-28T06:00:00Z",
+      "slugEs": "2026-02-28-trump-friendly-takeover-cuba",
+      "slugEn": "2026-02-28-trump-friendly-takeover-cuba",
+      "sources": [
+        "https://www.theguardian.com/us-news/2026/feb/27/trump-cuba-regime-change",
+        "https://www.reuters.com/world/us/trump-raises-prospect-friendly-takeover-cuba-2026-02-27/",
+        "https://en.cibercuba.com/noticias/2026-02-27-u1-e208574-s27061-nid321860-significa-toma-amistosa-controlada-cuba-anuncio"
+      ],
+      "keywords": ["Trump", "takeover", "Rubio", "Cuba", "crisis energética"],
+      "relatedPosts": [
+        "trump-confirma-rubio-negocia-cuba-acuerdo-2026-02-17",
+        "cuba-dolar-505-cup-banco-central-2026-02-22",
+        "apagones-continuos-cuba-1680mw-2026-02-24",
+        "hammer-cambio-historico-cuba-2026-02-22",
+        "sistema-salud-cuba-borde-colapso-bloqueo-2026-02-22"
+      ]
+    },
+    {
       "id": "cuba-diaz-canel-tiroteo-lancha-2026-02-27",
       "isUpdate": true,
       "keywords": [
